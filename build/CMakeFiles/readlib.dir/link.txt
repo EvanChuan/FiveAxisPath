@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libreadlib.a CMakeFiles/readlib.dir/src/MCF_Skeleton_example.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libreadlib.a
