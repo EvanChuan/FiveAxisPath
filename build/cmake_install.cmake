@@ -1,4 +1,4 @@
-# Install script for directory: /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis
+# Install script for directory: /Users/evanchuan/Desktop/3DP/FiveAxisPath
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

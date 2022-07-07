@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/src/MCF_Skeleton_example.cpp" "CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o" "gcc" "CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o.d"
-  "/Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/src/readfile_test.cpp" "CMakeFiles/readfile.dir/src/readfile_test.cpp.o" "gcc" "CMakeFiles/readfile.dir/src/readfile_test.cpp.o.d"
+  "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp" "CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o" "gcc" "CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o.d"
+  "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/readfile_test.cpp" "CMakeFiles/readfile.dir/src/readfile_test.cpp.o" "gcc" "CMakeFiles/readfile.dir/src/readfile_test.cpp.o.d"
+  "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/sorting.cpp" "CMakeFiles/readfile.dir/src/sorting.cpp.o" "gcc" "CMakeFiles/readfile.dir/src/sorting.cpp.o.d"
   )
 
 # Targets to which this target links.

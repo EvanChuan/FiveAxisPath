@@ -29,19 +29,19 @@ void MCF_Skeleton::MCF_Skeleton_Fun(Skeletonization::Skeleton& skeleton,
   // get the correspondent surface points
   mcs.convert_to_skeleton(skeleton);
 
-  std::cout << "Number of vertices of the skeleton: " << boost::num_vertices(skeleton) << "\n";
-  std::cout << "Number of edges of the skeleton: " << boost::num_edges(skeleton) << "\n";
-
+  //std::cout << "Number of vertices of the skeleton: " << boost::num_vertices(skeleton) << "\n";
+  //std::cout << "Number of edges of the skeleton: " << boost::num_edges(skeleton) << "\n";
+  /*
   // Output all the edges of the skeleton.
   std::ofstream output("skel-poly.polylines.txt");
   for(Skeleton_edge e : CGAL::make_range(edges(skeleton)))
   {
-    const Point& s = skeleton[source(e, skeleton)].point;
-    const Point& t = skeleton[target(e, skeleton)].point;
+    const Point& s = skeleton[source(e, skeleton)].point;    // start point of edge
+    const Point& t = skeleton[target(e, skeleton)].point;    // end point of edge
     output << "2 "<< s << " " << t << "\n";
   }
   output.close();
-
+  */
   /*
   // Output skeleton points and the corresponding surface points
   output.open("correspondance-poly.polylines.txt");
@@ -49,6 +49,8 @@ void MCF_Skeleton::MCF_Skeleton_Fun(Skeletonization::Skeleton& skeleton,
     for(vertex_descriptor vd : skeleton[v].vertices)
       output << "2 " << skeleton[v].point << "  " << get(CGAL::vertex_point, tmesh, vd)  << "\n";
   */
+
+  std::cout << "Done Skeletonize!" << "\n";
   return;
 }
 

@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o.d"
   "CMakeFiles/readfile.dir/src/readfile_test.cpp.o"
   "CMakeFiles/readfile.dir/src/readfile_test.cpp.o.d"
+  "CMakeFiles/readfile.dir/src/sorting.cpp.o"
+  "CMakeFiles/readfile.dir/src/sorting.cpp.o.d"
   "readfile"
   "readfile.pdb"
 )

@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.23.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis
+CMAKE_SOURCE_DIR = /Users/evanchuan/Desktop/3DP/FiveAxisPath
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build
+CMAKE_BINARY_DIR = /Users/evanchuan/Desktop/3DP/FiveAxisPath/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/readfile.dir/depend.make
@@ -72,47 +72,63 @@ include CMakeFiles/readfile.dir/flags.make
 CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o: CMakeFiles/readfile.dir/flags.make
 CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o: ../src/MCF_Skeleton_example.cpp
 CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o: CMakeFiles/readfile.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o -MF CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o.d -o CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o -c /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/src/MCF_Skeleton_example.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o -MF CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o.d -o CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp
 
 CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/src/MCF_Skeleton_example.cpp > CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp > CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.i
 
 CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/src/MCF_Skeleton_example.cpp -o CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp -o CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.s
 
 CMakeFiles/readfile.dir/src/readfile_test.cpp.o: CMakeFiles/readfile.dir/flags.make
 CMakeFiles/readfile.dir/src/readfile_test.cpp.o: ../src/readfile_test.cpp
 CMakeFiles/readfile.dir/src/readfile_test.cpp.o: CMakeFiles/readfile.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/readfile.dir/src/readfile_test.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/readfile_test.cpp.o -MF CMakeFiles/readfile.dir/src/readfile_test.cpp.o.d -o CMakeFiles/readfile.dir/src/readfile_test.cpp.o -c /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/src/readfile_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/readfile.dir/src/readfile_test.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/readfile_test.cpp.o -MF CMakeFiles/readfile.dir/src/readfile_test.cpp.o.d -o CMakeFiles/readfile.dir/src/readfile_test.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/readfile_test.cpp
 
 CMakeFiles/readfile.dir/src/readfile_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/readfile.dir/src/readfile_test.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/src/readfile_test.cpp > CMakeFiles/readfile.dir/src/readfile_test.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/readfile_test.cpp > CMakeFiles/readfile.dir/src/readfile_test.cpp.i
 
 CMakeFiles/readfile.dir/src/readfile_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/readfile.dir/src/readfile_test.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/src/readfile_test.cpp -o CMakeFiles/readfile.dir/src/readfile_test.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/readfile_test.cpp -o CMakeFiles/readfile.dir/src/readfile_test.cpp.s
+
+CMakeFiles/readfile.dir/src/sorting.cpp.o: CMakeFiles/readfile.dir/flags.make
+CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp
+CMakeFiles/readfile.dir/src/sorting.cpp.o: CMakeFiles/readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/readfile.dir/src/sorting.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/sorting.cpp.o -MF CMakeFiles/readfile.dir/src/sorting.cpp.o.d -o CMakeFiles/readfile.dir/src/sorting.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/sorting.cpp
+
+CMakeFiles/readfile.dir/src/sorting.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/readfile.dir/src/sorting.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/sorting.cpp > CMakeFiles/readfile.dir/src/sorting.cpp.i
+
+CMakeFiles/readfile.dir/src/sorting.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/readfile.dir/src/sorting.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/sorting.cpp -o CMakeFiles/readfile.dir/src/sorting.cpp.s
 
 # Object files for target readfile
 readfile_OBJECTS = \
 "CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o" \
-"CMakeFiles/readfile.dir/src/readfile_test.cpp.o"
+"CMakeFiles/readfile.dir/src/readfile_test.cpp.o" \
+"CMakeFiles/readfile.dir/src/sorting.cpp.o"
 
 # External object files for target readfile
 readfile_EXTERNAL_OBJECTS =
 
 readfile: CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o
 readfile: CMakeFiles/readfile.dir/src/readfile_test.cpp.o
+readfile: CMakeFiles/readfile.dir/src/sorting.cpp.o
 readfile: CMakeFiles/readfile.dir/build.make
 readfile: /usr/local/lib/libgmpxx.dylib
 readfile: /usr/local/lib/libmpfr.dylib
 readfile: /usr/local/lib/libgmp.dylib
 readfile: CMakeFiles/readfile.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable readfile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable readfile"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/readfile.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +140,6 @@ CMakeFiles/readfile.dir/clean:
 .PHONY : CMakeFiles/readfile.dir/clean
 
 CMakeFiles/readfile.dir/depend:
-	cd /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build/CMakeFiles/readfile.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/evanchuan/Desktop/3DP/FiveAxisPath/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/evanchuan/Desktop/3DP/FiveAxisPath /Users/evanchuan/Desktop/3DP/FiveAxisPath /Users/evanchuan/Desktop/3DP/FiveAxisPath/build /Users/evanchuan/Desktop/3DP/FiveAxisPath/build /Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles/readfile.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/readfile.dir/depend
 

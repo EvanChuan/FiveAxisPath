@@ -54,10 +54,10 @@ RM = /usr/local/Cellar/cmake/3.23.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis
+CMAKE_SOURCE_DIR = /Users/evanchuan/Desktop/3DP/FiveAxisPath
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build
+CMAKE_BINARY_DIR = /Users/evanchuan/Desktop/3DP/FiveAxisPath/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/readfile.dir/clean
 CMakeFiles/readfile.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build/CMakeFiles --progress-num=1,2,3 "Built target readfile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=1,2,3,4 "Built target readfile"
 .PHONY : CMakeFiles/readfile.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/readfile.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/readfile.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles 0
 .PHONY : CMakeFiles/readfile.dir/rule
 
 # Convenience name for target.
