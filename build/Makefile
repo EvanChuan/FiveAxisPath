@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.23.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis
+CMAKE_SOURCE_DIR = /Users/evanchuan/Desktop/3DP/FiveAxisPath
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build
+CMAKE_BINARY_DIR = /Users/evanchuan/Desktop/3DP/FiveAxisPath/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build/CMakeFiles /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles /Users/evanchuan/Desktop/3DP/FiveAxisPath/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/evanchuan/Desktop/3DP/3DPathcode/fiveaxis/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,30 @@ src/readfile_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/readfile_test.cpp.s
 .PHONY : src/readfile_test.cpp.s
 
+src/sorting.o: src/sorting.cpp.o
+.PHONY : src/sorting.o
+
+# target to build an object file
+src/sorting.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/sorting.cpp.o
+.PHONY : src/sorting.cpp.o
+
+src/sorting.i: src/sorting.cpp.i
+.PHONY : src/sorting.i
+
+# target to preprocess a source file
+src/sorting.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/sorting.cpp.i
+.PHONY : src/sorting.cpp.i
+
+src/sorting.s: src/sorting.cpp.s
+.PHONY : src/sorting.s
+
+# target to generate assembly for a file
+src/sorting.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/sorting.cpp.s
+.PHONY : src/sorting.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... src/readfile_test.o"
 	@echo "... src/readfile_test.i"
 	@echo "... src/readfile_test.s"
+	@echo "... src/sorting.o"
+	@echo "... src/sorting.i"
+	@echo "... src/sorting.s"
 .PHONY : help
 
 
