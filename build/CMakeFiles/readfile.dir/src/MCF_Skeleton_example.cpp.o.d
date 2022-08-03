@@ -3178,4 +3178,41 @@ CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o: \
   /usr/local/include/eigen3/Eigen/src/Eigenvalues/./RealQZ.h \
   /usr/local/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/local/include/CGAL/Eigen_vector.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton.h
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton.h \
+  /usr/local/include/CGAL/Surface_mesh.h \
+  /usr/local/include/CGAL/license/Surface_mesh.h \
+  /usr/local/include/CGAL/Surface_mesh/Surface_mesh_fwd.h \
+  /usr/local/include/CGAL/Surface_mesh/Surface_mesh.h \
+  /usr/local/include/CGAL/Surface_mesh/IO.h \
+  /usr/local/include/CGAL/Surface_mesh/IO/3MF.h \
+  /usr/local/include/CGAL/IO/3MF.h \
+  /usr/local/include/CGAL/IO/3MF/read_3mf.h \
+  /usr/local/include/CGAL/IO/3MF/write_3mf.h \
+  /usr/local/include/CGAL/Surface_mesh/IO/OFF.h \
+  /usr/local/include/CGAL/Surface_mesh/IO/PLY.h \
+  /usr/local/include/CGAL/IO/PLY.h \
+  /usr/local/include/CGAL/IO/PLY/PLY_reader.h \
+  /usr/local/include/CGAL/IO/PLY/PLY_writer.h \
+  /usr/local/include/CGAL/boost/graph/io.h \
+  /usr/local/include/CGAL/boost/graph/IO/3MF.h \
+  /usr/local/include/CGAL/boost/graph/IO/GOCAD.h \
+  /usr/local/include/CGAL/IO/GOCAD.h \
+  /usr/local/include/CGAL/boost/graph/IO/INP.h \
+  /usr/local/include/CGAL/boost/graph/IO/OBJ.h \
+  /usr/local/include/CGAL/IO/OBJ.h \
+  /usr/local/include/CGAL/IO/OBJ/File_writer_wavefront.h \
+  /usr/local/include/CGAL/boost/graph/IO/PLY.h \
+  /usr/local/include/CGAL/boost/graph/IO/STL.h \
+  /usr/local/include/CGAL/IO/STL.h \
+  /usr/local/include/CGAL/IO/STL/STL_reader.h \
+  /usr/local/include/CGAL/boost/graph/IO/VTK.h \
+  /usr/local/include/CGAL/IO/VTK.h \
+  /usr/local/include/CGAL/IO/VTK/VTK_reader.h \
+  /usr/local/include/CGAL/IO/VTK/VTK_writer.h \
+  /usr/local/include/CGAL/boost/graph/IO/WRL.h \
+  /usr/local/include/CGAL/boost/graph/IO/polygon_mesh_io.h \
+  /usr/local/include/CGAL/Surface_mesh/Properties.h \
+  /usr/local/include/CGAL/boost/graph/graph_traits_Surface_mesh.h \
+  /usr/local/include/CGAL/boost/graph/properties_Surface_mesh.h \
+  /usr/local/include/CGAL/boost/graph/properties_Surface_mesh_time_stamp.h \
+  /usr/local/include/CGAL/boost/graph/properties_Surface_mesh_features.h

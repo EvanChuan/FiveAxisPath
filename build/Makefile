@@ -129,6 +129,30 @@ readfile/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/build
 .PHONY : readfile/fast
 
+src/Function.o: src/Function.cpp.o
+.PHONY : src/Function.o
+
+# target to build an object file
+src/Function.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/Function.cpp.o
+.PHONY : src/Function.cpp.o
+
+src/Function.i: src/Function.cpp.i
+.PHONY : src/Function.i
+
+# target to preprocess a source file
+src/Function.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/Function.cpp.i
+.PHONY : src/Function.cpp.i
+
+src/Function.s: src/Function.cpp.s
+.PHONY : src/Function.s
+
+# target to generate assembly for a file
+src/Function.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/Function.cpp.s
+.PHONY : src/Function.cpp.s
+
 src/MCF_Skeleton_example.o: src/MCF_Skeleton_example.cpp.o
 .PHONY : src/MCF_Skeleton_example.o
 
@@ -210,6 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... readfile"
+	@echo "... src/Function.o"
+	@echo "... src/Function.i"
+	@echo "... src/Function.s"
 	@echo "... src/MCF_Skeleton_example.o"
 	@echo "... src/MCF_Skeleton_example.i"
 	@echo "... src/MCF_Skeleton_example.s"

@@ -3,33 +3,34 @@
 #include <algorithm>
 #include <fstream>
 #include <vector>
+#include <set>
 #include "Function.h"
 #include "MCF_Skeleton.h"
 
 using namespace std;
 
-bool Function::compareZ(Skel_Points p1, Skel_Points p2){
-   return p1.Z < p2.Z;
+bool Function::compareZ(std::vector<double> p1, std::vector<double> p2){
+   return p1[2] < p2[2];
 }
 
-void Function::Sorting(std::vector<Function::Skel_Points> points){
+void Function::Sorting(std::vector<std::vector<double>>& points){
 	std::cout << "Start Sorting!" << "\n";
 	std::sort(points.begin(), points.end(), compareZ);
-    
+
 	std::ofstream output2("order_skel_points.txt");
-	for(std::vector<struct Skel_Points>::iterator it = points.begin(); it != points.end(); ++it)
+	for(std::vector<std::vector<double>>::iterator it = points.begin(); it != points.end(); ++it)
 	{
-		output2 << "X" << it->X << " Y" << it->Y << " Z" << it->Z << "\n";
+		output2 << "X" << it[0][0] << " Y" << it[0][1] << " Z" << it[0][2] << "\n";
 	}
 	output2.close();
 	return;
 }
 
-std::vector<Function::Skel_Points> Function::ExtractSkelPoints(Skeletonization::Skeleton& skeleton){
+// Extract points ~ ~ ~
+std::vector<std::vector<double>> Function::ExtractSkelPoints(Skeletonization::Skeleton& skeleton){
 	std::cout << "Start Extract Points!" << "\n";
 	// Output all the edges of the skeleton.
-	std::vector<Function::Skel_Points> Res_SKP;  // the result of skeleton points
-	Function::Skel_Points SP;
+	set<std::vector<double>> Res_SKP_Set;  // the result of skeleton points
 	//std::ofstream output("skel_points.txt");
 	for(Skeleton_edge e : CGAL::make_range(edges(skeleton)))
 	{
@@ -37,12 +38,11 @@ std::vector<Function::Skel_Points> Function::ExtractSkelPoints(Skeletonization::
     	//std::cout << s[0] << "\n";
     	//const Point& t = skeleton[target(e, skeleton)].point;    // end point of edge
     	//output << s << "\n";
-    	SP.X = s[0];
-    	SP.Y = s[1];
-    	SP.Z = s[2];
-    	Res_SKP.push_back(SP);
+		Res_SKP_Set.insert({s[0],s[1],s[2]});  // use set to avoid duplicates, https://stackoverflow.com/questions/1041620/whats-the-most-efficient-way-to-erase-duplicates-and-sort-a-vector
 	}
 	//output.close();
+	std::vector<std::vector<double>> Res_SKP_Vec;
+	Res_SKP_Vec.assign( Res_SKP_Set.begin(), Res_SKP_Set.end() );
 
-	return Res_SKP;
+	return Res_SKP_Vec;
 }

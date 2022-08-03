@@ -36,11 +36,12 @@ include(CGAL_Eigen3_support)
 
 
 add_executable(readfile
+  src/readfile_test.cpp  
   src/MCF_Skeleton.h
   src/MCF_Skeleton_example.cpp
-  src/readfile_test.cpp
   src/Function.h
   src/sorting.cpp
+  src/Function.cpp
 )
 target_link_libraries(readfile CGAL::CGAL CGAL::Eigen3_support)  # add this line to link CGAL lib and Eigen lib to target project
 
