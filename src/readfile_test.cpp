@@ -2,11 +2,9 @@
 #include <fstream>
 #include <vector>
 #include <algorithm>
+#include <exception>
 #include "MCF_Skeleton.h"
 #include "Function.h"
-
-typedef CGAL::Point_3< CGAL::Simple_cartesian<double>> P;
-typedef std::vector<std::array<double, 3>> skel_points;
 
 int main(int argc, char* argv[])
 {
@@ -16,7 +14,8 @@ int main(int argc, char* argv[])
         return 0;
     }
     std::ifstream input(argv[1]);
-    Polyhedron tmesh;
+    //Polyhedron tmesh;
+    Triangle_mesh tmesh;
     input >> tmesh;
     if (!CGAL::is_triangle_mesh(tmesh))
     {
@@ -32,36 +31,28 @@ int main(int argc, char* argv[])
     
     // Extract Skeleton Points
     Function FN;
-    std::vector<Function::Skel_Points> SKP = FN.ExtractSkelPoints(skeleton);
+    std::vector<std::vector<double>> SKP = FN.ExtractSkelPoints(skeleton);
     // Rearrange the skeleton points. But it needs general solution far.
     FN.Sorting(SKP);
 
-    /*
-    // Output all the edges of the skeleton.
-    std::vector<struct Skel_Points> points;
-    std::ofstream output("skel_points.txt");
-    for(Skeleton_edge e : CGAL::make_range(edges(skeleton)))
-    {
-        const Point& s = skeleton[source(e, skeleton)].point;    // start point of edge  data type : CGAL::Point_3<CGAL::Simple_cartesian<double>>
-        //std::cout << s[0] << "\n";
-        //const Point& t = skeleton[target(e, skeleton)].point;    // end point of edge
-        output << s << "\n";
-        SP.X = s[0];
-        SP.Y = s[1];
-        SP.Z = s[2];
-        points.push_back(SP);
+    // Find cutting plan
+    FN.cutting_plan(SKP);
+    
+    // Get new bulding plan
+    // 
+    try{
+        //ra = RoboFDM.init()  // inital RoboFDM oject in python script
+        //FN.reset(argv[1])  // ("argv[1]") ?
+        //FN.set_poly(poly)
+        //print('--> Actual plane: ', plane)
+        //print('--> Actual evaluation: ', ra.step(plane))
+        //ra.plane_cut(plane)
+        //poly=ra.get_poly()
+        //return_dict[0] = poly
     }
-    output.close();
-    std::sort(points.begin(), points.end(), compareZ);
-    
-    std::ofstream output2("order_skel_points.txt");
-    for(std::vector<struct Skel_Points>::iterator it = points.begin(); it != points.end(); ++it)
-    {
-        output2 << "X" << it->X << " Y" << it->Y << " Z" << it->Z << "\n";
+    catch (std::exception &e) { // exception should be caught by reference
+        cout << "exception: " << e.what() << "\n";
     }
-    output2.close();
-    */
-    
-    
+
     return 0;
 }

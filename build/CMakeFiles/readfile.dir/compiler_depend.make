@@ -3212,7 +3212,44 @@ CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o: ../src/MCF_Skeleton_exam
   /usr/local/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/local/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/local/include/CGAL/Eigen_vector.h \
-  ../src/MCF_Skeleton.h
+  ../src/MCF_Skeleton.h \
+  /usr/local/include/CGAL/Surface_mesh.h \
+  /usr/local/include/CGAL/license/Surface_mesh.h \
+  /usr/local/include/CGAL/Surface_mesh/Surface_mesh_fwd.h \
+  /usr/local/include/CGAL/Surface_mesh/Surface_mesh.h \
+  /usr/local/include/CGAL/Surface_mesh/IO.h \
+  /usr/local/include/CGAL/Surface_mesh/IO/3MF.h \
+  /usr/local/include/CGAL/IO/3MF.h \
+  /usr/local/include/CGAL/IO/3MF/read_3mf.h \
+  /usr/local/include/CGAL/IO/3MF/write_3mf.h \
+  /usr/local/include/CGAL/Surface_mesh/IO/OFF.h \
+  /usr/local/include/CGAL/Surface_mesh/IO/PLY.h \
+  /usr/local/include/CGAL/IO/PLY.h \
+  /usr/local/include/CGAL/IO/PLY/PLY_reader.h \
+  /usr/local/include/CGAL/IO/PLY/PLY_writer.h \
+  /usr/local/include/CGAL/boost/graph/io.h \
+  /usr/local/include/CGAL/boost/graph/IO/3MF.h \
+  /usr/local/include/CGAL/boost/graph/IO/GOCAD.h \
+  /usr/local/include/CGAL/IO/GOCAD.h \
+  /usr/local/include/CGAL/boost/graph/IO/INP.h \
+  /usr/local/include/CGAL/boost/graph/IO/OBJ.h \
+  /usr/local/include/CGAL/IO/OBJ.h \
+  /usr/local/include/CGAL/IO/OBJ/File_writer_wavefront.h \
+  /usr/local/include/CGAL/boost/graph/IO/PLY.h \
+  /usr/local/include/CGAL/boost/graph/IO/STL.h \
+  /usr/local/include/CGAL/IO/STL.h \
+  /usr/local/include/CGAL/IO/STL/STL_reader.h \
+  /usr/local/include/CGAL/boost/graph/IO/VTK.h \
+  /usr/local/include/CGAL/IO/VTK.h \
+  /usr/local/include/CGAL/IO/VTK/VTK_reader.h \
+  /usr/local/include/CGAL/IO/VTK/VTK_writer.h \
+  /usr/local/include/CGAL/boost/graph/IO/WRL.h \
+  /usr/local/include/CGAL/boost/graph/IO/polygon_mesh_io.h \
+  /usr/local/include/CGAL/Surface_mesh/Properties.h \
+  /usr/local/include/CGAL/boost/graph/graph_traits_Surface_mesh.h \
+  /usr/local/include/CGAL/boost/graph/properties_Surface_mesh.h \
+  /usr/local/include/CGAL/boost/graph/properties_Surface_mesh_time_stamp.h \
+  /usr/local/include/CGAL/boost/graph/properties_Surface_mesh_features.h
 
 CMakeFiles/readfile.dir/src/readfile_test.cpp.o: ../src/readfile_test.cpp \
   /usr/local/include/CGAL/Point_set_3.h \
@@ -5273,6 +5310,40 @@ CMakeFiles/readfile.dir/src/readfile_test.cpp.o: ../src/readfile_test.cpp \
   /usr/local/include/CGAL/Intersections_3/internal/Triangle_3_Triangle_3_intersection.h \
   /usr/local/include/CGAL/Intersections_3/Triangle_3_Triangle_3.h \
   /usr/local/include/CGAL/Kernel/Type_equality_wrapper.h \
+  /usr/local/include/CGAL/Surface_mesh.h \
+  /usr/local/include/CGAL/Surface_mesh/Surface_mesh_fwd.h \
+  /usr/local/include/CGAL/Surface_mesh/Surface_mesh.h \
+  /usr/local/include/CGAL/Surface_mesh/IO.h \
+  /usr/local/include/CGAL/Surface_mesh/IO/3MF.h \
+  /usr/local/include/CGAL/IO/3MF.h \
+  /usr/local/include/CGAL/IO/3MF/read_3mf.h \
+  /usr/local/include/CGAL/IO/3MF/write_3mf.h \
+  /usr/local/include/CGAL/Surface_mesh/IO/OFF.h \
+  /usr/local/include/CGAL/Surface_mesh/IO/PLY.h \
+  /usr/local/include/CGAL/boost/graph/io.h \
+  /usr/local/include/CGAL/boost/graph/IO/3MF.h \
+  /usr/local/include/CGAL/boost/graph/IO/GOCAD.h \
+  /usr/local/include/CGAL/IO/GOCAD.h \
+  /usr/local/include/CGAL/boost/graph/IO/INP.h \
+  /usr/local/include/CGAL/boost/graph/IO/OBJ.h \
+  /usr/local/include/CGAL/IO/OBJ.h \
+  /usr/local/include/CGAL/IO/OBJ/File_writer_wavefront.h \
+  /usr/local/include/CGAL/boost/graph/IO/PLY.h \
+  /usr/local/include/CGAL/boost/graph/IO/STL.h \
+  /usr/local/include/CGAL/IO/STL.h \
+  /usr/local/include/CGAL/IO/STL/STL_reader.h \
+  /usr/local/include/CGAL/boost/graph/IO/VTK.h \
+  /usr/local/include/CGAL/IO/VTK.h \
+  /usr/local/include/CGAL/IO/VTK/VTK_reader.h \
+  /usr/local/include/CGAL/IO/VTK/VTK_writer.h \
+  /usr/local/include/CGAL/boost/graph/IO/WRL.h \
+  /usr/local/include/CGAL/boost/graph/IO/polygon_mesh_io.h \
+  /usr/local/include/CGAL/boost/graph/copy_face_graph.h \
+  /usr/local/include/boost/iterator/function_output_iterator.hpp \
+  /usr/local/include/CGAL/boost/graph/graph_traits_Surface_mesh.h \
+  /usr/local/include/CGAL/boost/graph/properties_Surface_mesh.h \
+  /usr/local/include/CGAL/boost/graph/properties_Surface_mesh_time_stamp.h \
+  /usr/local/include/CGAL/boost/graph/properties_Surface_mesh_features.h \
   /usr/local/include/CGAL/Mean_curvature_flow_skeletonization.h \
   /usr/local/include/CGAL/license/Surface_mesh_skeletonization.h \
   /usr/local/include/CGAL/IO/trace.h \
@@ -5283,8 +5354,6 @@ CMakeFiles/readfile.dir/src/readfile_test.cpp.o: ../src/readfile_test.cpp \
   /usr/local/include/CGAL/HalfedgeDS_vertex_max_base_with_id.h \
   /usr/local/include/CGAL/HalfedgeDS_halfedge_max_base_with_id.h \
   /usr/local/include/CGAL/HalfedgeDS_face_max_base_with_id.h \
-  /usr/local/include/CGAL/boost/graph/copy_face_graph.h \
-  /usr/local/include/boost/iterator/function_output_iterator.hpp \
   /usr/local/include/boost/graph/adjacency_list.hpp \
   /usr/local/include/boost/unordered_set.hpp \
   /usr/local/include/boost/unordered/unordered_set.hpp \
@@ -8507,6 +8576,40 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
   /usr/local/include/CGAL/Intersections_3/internal/Triangle_3_Triangle_3_intersection.h \
   /usr/local/include/CGAL/Intersections_3/Triangle_3_Triangle_3.h \
   /usr/local/include/CGAL/Kernel/Type_equality_wrapper.h \
+  /usr/local/include/CGAL/Surface_mesh.h \
+  /usr/local/include/CGAL/Surface_mesh/Surface_mesh_fwd.h \
+  /usr/local/include/CGAL/Surface_mesh/Surface_mesh.h \
+  /usr/local/include/CGAL/Surface_mesh/IO.h \
+  /usr/local/include/CGAL/Surface_mesh/IO/3MF.h \
+  /usr/local/include/CGAL/IO/3MF.h \
+  /usr/local/include/CGAL/IO/3MF/read_3mf.h \
+  /usr/local/include/CGAL/IO/3MF/write_3mf.h \
+  /usr/local/include/CGAL/Surface_mesh/IO/OFF.h \
+  /usr/local/include/CGAL/Surface_mesh/IO/PLY.h \
+  /usr/local/include/CGAL/boost/graph/io.h \
+  /usr/local/include/CGAL/boost/graph/IO/3MF.h \
+  /usr/local/include/CGAL/boost/graph/IO/GOCAD.h \
+  /usr/local/include/CGAL/IO/GOCAD.h \
+  /usr/local/include/CGAL/boost/graph/IO/INP.h \
+  /usr/local/include/CGAL/boost/graph/IO/OBJ.h \
+  /usr/local/include/CGAL/IO/OBJ.h \
+  /usr/local/include/CGAL/IO/OBJ/File_writer_wavefront.h \
+  /usr/local/include/CGAL/boost/graph/IO/PLY.h \
+  /usr/local/include/CGAL/boost/graph/IO/STL.h \
+  /usr/local/include/CGAL/IO/STL.h \
+  /usr/local/include/CGAL/IO/STL/STL_reader.h \
+  /usr/local/include/CGAL/boost/graph/IO/VTK.h \
+  /usr/local/include/CGAL/IO/VTK.h \
+  /usr/local/include/CGAL/IO/VTK/VTK_reader.h \
+  /usr/local/include/CGAL/IO/VTK/VTK_writer.h \
+  /usr/local/include/CGAL/boost/graph/IO/WRL.h \
+  /usr/local/include/CGAL/boost/graph/IO/polygon_mesh_io.h \
+  /usr/local/include/CGAL/boost/graph/copy_face_graph.h \
+  /usr/local/include/boost/iterator/function_output_iterator.hpp \
+  /usr/local/include/CGAL/boost/graph/graph_traits_Surface_mesh.h \
+  /usr/local/include/CGAL/boost/graph/properties_Surface_mesh.h \
+  /usr/local/include/CGAL/boost/graph/properties_Surface_mesh_time_stamp.h \
+  /usr/local/include/CGAL/boost/graph/properties_Surface_mesh_features.h \
   /usr/local/include/CGAL/Mean_curvature_flow_skeletonization.h \
   /usr/local/include/CGAL/license/Surface_mesh_skeletonization.h \
   /usr/local/include/CGAL/IO/trace.h \
@@ -8517,8 +8620,6 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
   /usr/local/include/CGAL/HalfedgeDS_vertex_max_base_with_id.h \
   /usr/local/include/CGAL/HalfedgeDS_halfedge_max_base_with_id.h \
   /usr/local/include/CGAL/HalfedgeDS_face_max_base_with_id.h \
-  /usr/local/include/CGAL/boost/graph/copy_face_graph.h \
-  /usr/local/include/boost/iterator/function_output_iterator.hpp \
   /usr/local/include/boost/graph/adjacency_list.hpp \
   /usr/local/include/boost/unordered_set.hpp \
   /usr/local/include/boost/unordered/unordered_set.hpp \
@@ -9685,12 +9786,6 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
 
 /usr/local/include/CGAL/demangle.h:
 
-/usr/local/include/CGAL/IO/PLY/PLY_writer.h:
-
-/usr/local/include/CGAL/IO/PLY/PLY_reader.h:
-
-/usr/local/include/CGAL/IO/PLY.h:
-
 /usr/local/include/CGAL/Point_set_3/IO/PLY.h:
 
 /usr/local/include/CGAL/IO/write_off_points.h:
@@ -9701,11 +9796,57 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
 
 /usr/local/include/CGAL/IO/read_off_points.h:
 
-/usr/local/include/CGAL/license/Surface_mesh.h:
+/usr/local/include/CGAL/Point_set_3.h:
+
+../src/readfile_test.cpp:
+
+/usr/local/include/CGAL/boost/graph/properties_Surface_mesh_features.h:
+
+/usr/local/include/CGAL/boost/graph/properties_Surface_mesh_time_stamp.h:
+
+/usr/local/include/CGAL/boost/graph/properties_Surface_mesh.h:
 
 /usr/local/include/CGAL/Surface_mesh/Properties.h:
 
-/usr/local/include/CGAL/Point_set_3.h:
+/usr/local/include/CGAL/boost/graph/IO/polygon_mesh_io.h:
+
+/usr/local/include/CGAL/boost/graph/IO/WRL.h:
+
+/usr/local/include/CGAL/IO/VTK/VTK_writer.h:
+
+/usr/local/include/CGAL/IO/STL.h:
+
+/usr/local/include/CGAL/boost/graph/IO/STL.h:
+
+/usr/local/include/CGAL/IO/OBJ/File_writer_wavefront.h:
+
+/usr/local/include/CGAL/boost/graph/IO/OBJ.h:
+
+/usr/local/include/CGAL/boost/graph/IO/INP.h:
+
+/usr/local/include/CGAL/IO/GOCAD.h:
+
+/usr/local/include/CGAL/boost/graph/IO/3MF.h:
+
+/usr/local/include/CGAL/IO/PLY/PLY_writer.h:
+
+/usr/local/include/CGAL/IO/PLY/PLY_reader.h:
+
+/usr/local/include/CGAL/IO/PLY.h:
+
+/usr/local/include/CGAL/Surface_mesh/IO/OFF.h:
+
+/usr/local/include/CGAL/IO/3MF/write_3mf.h:
+
+/usr/local/include/CGAL/IO/3MF.h:
+
+/usr/local/include/CGAL/Surface_mesh/IO/3MF.h:
+
+/usr/local/include/CGAL/Surface_mesh/IO.h:
+
+/usr/local/include/CGAL/Surface_mesh/Surface_mesh_fwd.h:
+
+/usr/local/include/CGAL/license/Surface_mesh.h:
 
 /usr/local/include/boost/type_traits/is_complex.hpp:
 
@@ -10551,6 +10692,8 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
 
 /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/avx512vnniintrin.h:
 
+/usr/local/include/CGAL/IO/3MF/read_3mf.h:
+
 /usr/local/include/boost/fusion/support/detail/is_mpl_sequence.hpp:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include/avx512bitalgintrin.h:
@@ -11089,6 +11232,8 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
 
 /usr/local/include/boost/preprocessor/punctuation/is_begin_parens.hpp:
 
+/usr/local/include/CGAL/boost/graph/graph_traits_Surface_mesh.h:
+
 /usr/local/include/boost/container/new_allocator.hpp:
 
 /usr/local/include/boost/preprocessor/repetition/deduce_z.hpp:
@@ -11337,6 +11482,8 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
 
 /usr/local/include/boost/archive/detail/abi_prefix.hpp:
 
+/usr/local/include/CGAL/boost/graph/io.h:
+
 /usr/local/include/boost/intrusive/detail/algorithm.hpp:
 
 /usr/local/include/boost/multi_index/detail/hash_index_node.hpp:
@@ -11479,8 +11626,6 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
 
 /usr/local/include/CGAL/Intersections_3/Plane_3_Sphere_3.h:
 
-../src/readfile_test.cpp:
-
 /usr/local/include/CGAL/Intersections_3/internal/Plane_3_Point_3_do_intersect.h:
 
 /usr/local/include/CGAL/Intersections_3/Plane_3_Point_3.h:
@@ -11536,6 +11681,8 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
 /usr/local/include/boost/multi_index/hashed_index.hpp:
 
 /usr/local/include/CGAL/Intersections_3/internal/Line_3_Ray_3_intersection.h:
+
+/usr/local/include/CGAL/Surface_mesh/IO/PLY.h:
 
 /usr/local/include/CGAL/Intersections_3/internal/Point_3_Ray_3_do_intersect.h:
 
@@ -12295,6 +12442,8 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
 
 /usr/local/include/boost/integer/integer_log2.hpp:
 
+/usr/local/include/CGAL/Surface_mesh/Surface_mesh.h:
+
 /usr/local/include/boost/random/linear_congruential.hpp:
 
 /usr/local/include/boost/preprocessor/comparison/less.hpp:
@@ -12374,6 +12523,8 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
 /usr/local/include/boost/move/make_unique.hpp:
 
 /usr/local/include/boost/preprocessor/comparison/less_equal.hpp:
+
+/usr/local/include/CGAL/IO/VTK/VTK_reader.h:
 
 /usr/local/include/CGAL/Time_stamper.h:
 
@@ -12520,6 +12671,8 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
 /usr/local/include/eigen3/Eigen/src/Core/CoreIterators.h:
 
 /usr/local/include/boost/type_traits/type_with_alignment.hpp:
+
+/usr/local/include/CGAL/IO/VTK.h:
 
 /usr/local/include/boost/mpl/pop_back_fwd.hpp:
 
@@ -12736,6 +12889,8 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
 /usr/local/include/boost/type_traits/has_bit_xor.hpp:
 
 /usr/local/include/CGAL/boost/graph/property_maps.h:
+
+/usr/local/include/CGAL/IO/STL/STL_reader.h:
 
 /Library/Developer/CommandLineTools/usr/include/c++/v1/exception:
 
@@ -13562,6 +13717,8 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
 /usr/local/include/boost/type_traits/has_greater.hpp:
 
 /usr/local/include/boost/mpl/clear.hpp:
+
+/usr/local/include/CGAL/IO/OBJ.h:
 
 /usr/local/include/CGAL/AABB_tree/internal/AABB_search_tree.h:
 
@@ -14433,6 +14590,8 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
 
 /usr/local/include/boost/mpl/aux_/config/has_apply.hpp:
 
+/usr/local/include/CGAL/boost/graph/IO/PLY.h:
+
 /usr/local/include/CGAL/Intersections_2/Circle_2_Iso_rectangle_2.h:
 
 /usr/local/include/CGAL/IO/VRML.h:
@@ -15099,6 +15258,8 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
 
 /usr/local/include/boost/math/special_functions/polygamma.hpp:
 
+/usr/local/include/CGAL/boost/graph/IO/GOCAD.h:
+
 /usr/local/include/CGAL/FPU.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
@@ -15747,6 +15908,8 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
 
 /usr/local/include/eigen3/Eigen/src/Core/IO.h:
 
+/usr/local/include/CGAL/Surface_mesh.h:
+
 /usr/local/include/boost/type_traits/has_nothrow_assign.hpp:
 
 /usr/local/include/CGAL/Sqrt_extension/Wang_traits.h:
@@ -15872,6 +16035,8 @@ CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp \
 /usr/local/include/CGAL/Homogeneous/distance_predicatesH2.h:
 
 /usr/local/include/boost/numeric/conversion/int_float_mixture_enum.hpp:
+
+/usr/local/include/CGAL/boost/graph/IO/VTK.h:
 
 /usr/local/include/boost/predef/library/std/msl.h:
 

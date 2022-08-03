@@ -16,7 +16,11 @@ public:
     };
     std::vector<Skel_Points> SK_points;
 
-    static bool compareZ(Skel_Points p1, Skel_Points p2);
-    void Sorting(std::vector<Function::Skel_Points> points);
-    std::vector<Function::Skel_Points> ExtractSkelPoints(Skeletonization::Skeleton& skeleton);
+    static bool compareZ(std::vector<double> p1, std::vector<double> p2);
+    void Sorting(std::vector<std::vector<double>>& points);
+    std::vector<std::vector<double>> ExtractSkelPoints(Skeletonization::Skeleton& skeleton);
+    
+    static double angle(std::vector<double> v1,std::vector<double> v2);
+    static std::vector<double> Normal(std::vector<double> v);
+    void cutting_plan(std::vector<std::vector<double>>& points);
 };
