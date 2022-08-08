@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.23.1/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.23.3/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.23.1/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.23.3/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/evanchuan/Desktop/3DP/FiveAxisPath/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.23.1/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.23.3/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.23.1/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.23.3/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -129,6 +129,30 @@ readfile/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/build
 .PHONY : readfile/fast
 
+src/FillHoleCDT.o: src/FillHoleCDT.cpp.o
+.PHONY : src/FillHoleCDT.o
+
+# target to build an object file
+src/FillHoleCDT.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.o
+.PHONY : src/FillHoleCDT.cpp.o
+
+src/FillHoleCDT.i: src/FillHoleCDT.cpp.i
+.PHONY : src/FillHoleCDT.i
+
+# target to preprocess a source file
+src/FillHoleCDT.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.i
+.PHONY : src/FillHoleCDT.cpp.i
+
+src/FillHoleCDT.s: src/FillHoleCDT.cpp.s
+.PHONY : src/FillHoleCDT.s
+
+# target to generate assembly for a file
+src/FillHoleCDT.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.s
+.PHONY : src/FillHoleCDT.cpp.s
+
 src/Function.o: src/Function.cpp.o
 .PHONY : src/Function.o
 
@@ -176,6 +200,30 @@ src/MCF_Skeleton_example.s: src/MCF_Skeleton_example.cpp.s
 src/MCF_Skeleton_example.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.s
 .PHONY : src/MCF_Skeleton_example.cpp.s
+
+src/PlaneCut.o: src/PlaneCut.cpp.o
+.PHONY : src/PlaneCut.o
+
+# target to build an object file
+src/PlaneCut.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/PlaneCut.cpp.o
+.PHONY : src/PlaneCut.cpp.o
+
+src/PlaneCut.i: src/PlaneCut.cpp.i
+.PHONY : src/PlaneCut.i
+
+# target to preprocess a source file
+src/PlaneCut.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/PlaneCut.cpp.i
+.PHONY : src/PlaneCut.cpp.i
+
+src/PlaneCut.s: src/PlaneCut.cpp.s
+.PHONY : src/PlaneCut.s
+
+# target to generate assembly for a file
+src/PlaneCut.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/PlaneCut.cpp.s
+.PHONY : src/PlaneCut.cpp.s
 
 src/readfile_test.o: src/readfile_test.cpp.o
 .PHONY : src/readfile_test.o
@@ -234,12 +282,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... readfile"
+	@echo "... src/FillHoleCDT.o"
+	@echo "... src/FillHoleCDT.i"
+	@echo "... src/FillHoleCDT.s"
 	@echo "... src/Function.o"
 	@echo "... src/Function.i"
 	@echo "... src/Function.s"
 	@echo "... src/MCF_Skeleton_example.o"
 	@echo "... src/MCF_Skeleton_example.i"
 	@echo "... src/MCF_Skeleton_example.s"
+	@echo "... src/PlaneCut.o"
+	@echo "... src/PlaneCut.i"
+	@echo "... src/PlaneCut.s"
 	@echo "... src/readfile_test.o"
 	@echo "... src/readfile_test.i"
 	@echo "... src/readfile_test.s"

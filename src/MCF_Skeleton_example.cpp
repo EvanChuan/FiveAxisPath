@@ -6,7 +6,7 @@
 #include "MCF_Skeleton.h"
 
 void MCF_Skeleton::MCF_Skeleton_Fun(Skeletonization::Skeleton& skeleton,
-                 CGAL::Mean_curvature_flow_skeletonization<Triangle_mesh>& mcs)
+                 CGAL::Mean_curvature_flow_skeletonization<Polyhedron>& mcs)
 {
   std::cout << "Start Skeletonize!" << "\n";
   // 1. Contract the mesh by mean curvature flow.

@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.o"
+  "CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.o.d"
   "CMakeFiles/readfile.dir/src/Function.cpp.o"
   "CMakeFiles/readfile.dir/src/Function.cpp.o.d"
   "CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o"
   "CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o.d"
+  "CMakeFiles/readfile.dir/src/PlaneCut.cpp.o"
+  "CMakeFiles/readfile.dir/src/PlaneCut.cpp.o.d"
   "CMakeFiles/readfile.dir/src/readfile_test.cpp.o"
   "CMakeFiles/readfile.dir/src/readfile_test.cpp.o.d"
   "CMakeFiles/readfile.dir/src/sorting.cpp.o"
