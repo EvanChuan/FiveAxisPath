@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.23.1/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.23.3/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.23.1/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.23.3/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -125,12 +125,42 @@ CMakeFiles/readfile.dir/src/Function.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/readfile.dir/src/Function.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Function.cpp -o CMakeFiles/readfile.dir/src/Function.cpp.s
 
+CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.o: CMakeFiles/readfile.dir/flags.make
+CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.o: ../src/FillHoleCDT.cpp
+CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.o: CMakeFiles/readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.o -MF CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.o.d -o CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/FillHoleCDT.cpp
+
+CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/FillHoleCDT.cpp > CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.i
+
+CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/FillHoleCDT.cpp -o CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.s
+
+CMakeFiles/readfile.dir/src/PlaneCut.cpp.o: CMakeFiles/readfile.dir/flags.make
+CMakeFiles/readfile.dir/src/PlaneCut.cpp.o: ../src/PlaneCut.cpp
+CMakeFiles/readfile.dir/src/PlaneCut.cpp.o: CMakeFiles/readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/readfile.dir/src/PlaneCut.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/PlaneCut.cpp.o -MF CMakeFiles/readfile.dir/src/PlaneCut.cpp.o.d -o CMakeFiles/readfile.dir/src/PlaneCut.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp
+
+CMakeFiles/readfile.dir/src/PlaneCut.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/readfile.dir/src/PlaneCut.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp > CMakeFiles/readfile.dir/src/PlaneCut.cpp.i
+
+CMakeFiles/readfile.dir/src/PlaneCut.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/readfile.dir/src/PlaneCut.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp -o CMakeFiles/readfile.dir/src/PlaneCut.cpp.s
+
 # Object files for target readfile
 readfile_OBJECTS = \
 "CMakeFiles/readfile.dir/src/readfile_test.cpp.o" \
 "CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o" \
 "CMakeFiles/readfile.dir/src/sorting.cpp.o" \
-"CMakeFiles/readfile.dir/src/Function.cpp.o"
+"CMakeFiles/readfile.dir/src/Function.cpp.o" \
+"CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.o" \
+"CMakeFiles/readfile.dir/src/PlaneCut.cpp.o"
 
 # External object files for target readfile
 readfile_EXTERNAL_OBJECTS =
@@ -139,12 +169,14 @@ readfile: CMakeFiles/readfile.dir/src/readfile_test.cpp.o
 readfile: CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o
 readfile: CMakeFiles/readfile.dir/src/sorting.cpp.o
 readfile: CMakeFiles/readfile.dir/src/Function.cpp.o
+readfile: CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.o
+readfile: CMakeFiles/readfile.dir/src/PlaneCut.cpp.o
 readfile: CMakeFiles/readfile.dir/build.make
 readfile: /usr/local/lib/libgmpxx.dylib
 readfile: /usr/local/lib/libmpfr.dylib
 readfile: /usr/local/lib/libgmp.dylib
 readfile: CMakeFiles/readfile.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable readfile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable readfile"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/readfile.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

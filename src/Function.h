@@ -3,6 +3,8 @@
 #include <algorithm>
 #include <fstream>
 #include "MCF_Skeleton.h"
+#include "CustomisedPolyhedron.h"
+#include "PlaneCut.h"
 
 using namespace std;
 
@@ -22,5 +24,10 @@ public:
     
     static double angle(std::vector<double> v1,std::vector<double> v2);
     static std::vector<double> Normal(std::vector<double> v);
-    void cutting_plan(std::vector<std::vector<double>>& points);
+    std::vector<std::vector<double>> cutting_plan(std::vector<std::vector<double>>& points);
+    
+    bool set_poly(Polyhedron& p);
+    bool plane_cut(Polyhedron& p,std::vector<std::vector<double>>& input);
+
+    Polyhedron poly;
 };

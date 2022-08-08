@@ -14,8 +14,8 @@ int main(int argc, char* argv[])
         return 0;
     }
     std::ifstream input(argv[1]);
-    //Polyhedron tmesh;
-    Triangle_mesh tmesh;
+    Polyhedron tmesh;
+    //Triangle_mesh tmesh;
     input >> tmesh;
     if (!CGAL::is_triangle_mesh(tmesh))
     {
@@ -36,19 +36,18 @@ int main(int argc, char* argv[])
     FN.Sorting(SKP);
 
     // Find cutting plan
-    FN.cutting_plan(SKP);
+    //std::vector<std::vector<double>> plane;
+    std::vector<std::vector<double>> plane;
+    plane = FN.cutting_plan(SKP);
     
     // Get new bulding plan
     // 
     try{
-        //ra = RoboFDM.init()  // inital RoboFDM oject in python script
-        //FN.reset(argv[1])  // ("argv[1]") ?
-        //FN.set_poly(poly)
+        FN.set_poly(tmesh);
         //print('--> Actual plane: ', plane)
         //print('--> Actual evaluation: ', ra.step(plane))
-        //ra.plane_cut(plane)
+        FN.plane_cut(tmesh,plane);
         //poly=ra.get_poly()
-        //return_dict[0] = poly
     }
     catch (std::exception &e) { // exception should be caught by reference
         cout << "exception: " << e.what() << "\n";

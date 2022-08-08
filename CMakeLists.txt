@@ -37,11 +37,17 @@ include(CGAL_Eigen3_support)
 
 add_executable(readfile
   src/readfile_test.cpp  
+  src/CustomisedPolyhedron.h
   src/MCF_Skeleton.h
   src/MCF_Skeleton_example.cpp
   src/Function.h
+  src/FillHole.h
+  src/FillHoleCDT.h
   src/sorting.cpp
   src/Function.cpp
+  src/FillHoleCDT.cpp
+  src/PlaneCut.cpp
+  src/PlaneCut.h
 )
 target_link_libraries(readfile CGAL::CGAL CGAL::Eigen3_support)  # add this line to link CGAL lib and Eigen lib to target project
 

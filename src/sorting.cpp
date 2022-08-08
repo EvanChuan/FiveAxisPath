@@ -34,7 +34,7 @@ std::vector<std::vector<double>> Function::ExtractSkelPoints(Skeletonization::Sk
 	//std::ofstream output("skel_points.txt");
 	for(Skeleton_edge e : CGAL::make_range(edges(skeleton)))
 	{
-    	const Point& s = skeleton[source(e, skeleton)].point;    // start point of edge  data type : CGAL::Point_3<CGAL::Simple_cartesian<double>>
+    	const Point3& s = skeleton[source(e, skeleton)].point;    // start point of edge  data type : CGAL::Point_3<CGAL::Simple_cartesian<double>>
     	//std::cout << s[0] << "\n";
     	//const Point& t = skeleton[target(e, skeleton)].point;    // end point of edge
     	//output << s << "\n";
