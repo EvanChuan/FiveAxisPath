@@ -3,8 +3,8 @@
 #include <fstream>
 #include <vector>
 #include <cmath>
-#include "Function.h"
 #include <CGAL/Polygon_mesh_processing/triangulate_hole.h>
+#include "Function.h"
 #include "FillHole.h"
 
 using namespace std;
@@ -18,7 +18,7 @@ std::vector<std::vector<double>> Function::cutting_plan(std::vector<std::vector<
       std::vector<double> unit_it_v = Normal(it_v);
       float tha = angle(unit_it_v,printDIR);
       if( tha > 30){
-          std::cout << "more than 30 " << std::endl;
+          //std::cout << "more than 30 " << std::endl;
           printDIR = unit_it_v;
           std::cout << "cutplan_vector : X" << unit_it_v[0] << " Y"  << unit_it_v[1] << " Z"<< unit_it_v[2] << std::endl;
           preP = {it[0][0],it[0][1],it[0][2]};
@@ -70,24 +70,22 @@ bool Function::set_poly(Polyhedron& p) {
   }
 }
 
-bool Function::plane_cut(Polyhedron& p,std::vector<std::vector<double>>& input) {
+vector<Polyhedron> Function::plane_cut(Polyhedron& p,std::vector<std::vector<double>>& input) {
   std::cout << "Run plane_cut~" << std::endl;
   Plane3 pl;
-  //if (input.size() == 3) {
-  //  pl = MeshCutEval::convert_abg_to_plane(data[0], data[1], data[2], bsphere);
-  //} else {
-  //  pl = Plane(data[0], data[1], data[2], data[3]);
-  //}
+  
   for(std::vector<std::vector<double>>::iterator it = input.begin(); it != input.end(); ++it)
   {
     pl = Plane3(it[0][0], it[0][1], it[0][2], it[0][3]);
-
     PlaneCutter pc;
     Polyhedron _;
     bool res = pc.cut_and_fill(p, _, pl);
     std::cout << "cut_and_fill result:" << res << std::endl;
+    cut_res.push_back(_);
+    //cut_res.push_back(p);
   }
-  return true;
+
+  return cut_res;
 }
 
 std::string Function::get_poly(Polyhedron& poly) {
