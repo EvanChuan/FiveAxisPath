@@ -172,3 +172,27 @@ std::pair<Polyhedron, Polyhedron> PlaneCutter::cut(const Polyhedron& poly, const
 	cut(o1, o2, pl);
 	return std::make_pair(o1, o2);
 }
+
+bool PlaneCutter::cut_and_fill(Polyhedron& poly_left, Polyhedron& poly_right, const Plane3& pl) {
+	std::cout << "Run cut_and_fill~" << std::endl;
+	bool res = cut(poly_left, poly_right, pl);
+	std::cout << "Cut result :" << res << std::endl;
+	if (!res) return res;
+	Vector3 planeDir(pl.a(), pl.b(), pl.c());
+	Vector3 planeDir_N(pl.a()*(-1), pl.b()*(-1), pl.c()*(-1));
+	FillHole fh;
+	fh.fill_hole(poly_left, planeDir);
+	fh.fill_hole(poly_right, planeDir_N);
+	return res;
+}
+
+std::pair<Polyhedron, Polyhedron> PlaneCutter::cut_and_fill(const Polyhedron& poly, const Plane3& pl) {
+	Polyhedron o1 = poly, o2;
+	cut(o1, o2, pl);
+	Vector3 planeDir(pl.a(), pl.b(), pl.c());
+	Vector3 planeDir_N(pl.a()*(-1), pl.b()*(-1), pl.c()*(-1));
+	FillHole fh;
+	fh.fill_hole(o1, planeDir_N);
+	fh.fill_hole(o2, planeDir);
+	return std::make_pair(o1, o2);
+}

@@ -1,5 +1,4 @@
 #pragma once
-
 #include "CustomisedPolyhedron.h"
 
 class FillHole
