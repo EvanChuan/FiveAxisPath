@@ -42,10 +42,9 @@ add_executable(readfile
   src/MCF_Skeleton_example.cpp
   src/Function.h
   src/FillHole.h
-  src/FillHoleCDT.h
   src/sorting.cpp
   src/Function.cpp
-  src/FillHoleCDT.cpp
+  src/FillHole.cpp
   src/PlaneCut.cpp
   src/PlaneCut.h
 )

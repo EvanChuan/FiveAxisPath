@@ -5,7 +5,7 @@
 #include <cmath>
 #include "Function.h"
 #include <CGAL/Polygon_mesh_processing/triangulate_hole.h>
-#include "FillHoleCDT.h"
+#include "FillHole.h"
 
 using namespace std;
 
@@ -36,7 +36,7 @@ double Function::angle(std::vector<double> v1,std::vector<double> v2){
     double scal = sqrt(pow(v1[0],2)+pow(v1[1],2)+pow(v1[2],2))*sqrt(pow(v2[0],2)+pow(v2[1],2)+pow(v2[2],2));
     double cos_th = inner / scal;
     double tha = acos(cos_th)*180/3.14159;
-    std::cout << "angle : " << tha << std::endl;
+    //std::cout << "angle : " << tha << std::endl;
     return tha;
 }
 
@@ -71,6 +71,7 @@ bool Function::set_poly(Polyhedron& p) {
 }
 
 bool Function::plane_cut(Polyhedron& p,std::vector<std::vector<double>>& input) {
+  std::cout << "Run plane_cut~" << std::endl;
   Plane3 pl;
   //if (input.size() == 3) {
   //  pl = MeshCutEval::convert_abg_to_plane(data[0], data[1], data[2], bsphere);
@@ -83,7 +84,14 @@ bool Function::plane_cut(Polyhedron& p,std::vector<std::vector<double>>& input) 
 
     PlaneCutter pc;
     Polyhedron _;
-    pc.cut_and_fill<FillHoleCDT>(p, _, pl);
+    bool res = pc.cut_and_fill(p, _, pl);
+    std::cout << "cut_and_fill result:" << res << std::endl;
   }
   return true;
+}
+
+std::string Function::get_poly(Polyhedron& poly) {
+  std::stringstream ss;
+  ss << std::setprecision(8) << poly;
+  return ss.str();
 }

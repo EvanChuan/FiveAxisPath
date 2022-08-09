@@ -129,29 +129,29 @@ readfile/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/build
 .PHONY : readfile/fast
 
-src/FillHoleCDT.o: src/FillHoleCDT.cpp.o
-.PHONY : src/FillHoleCDT.o
+src/FillHole.o: src/FillHole.cpp.o
+.PHONY : src/FillHole.o
 
 # target to build an object file
-src/FillHoleCDT.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.o
-.PHONY : src/FillHoleCDT.cpp.o
+src/FillHole.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/FillHole.cpp.o
+.PHONY : src/FillHole.cpp.o
 
-src/FillHoleCDT.i: src/FillHoleCDT.cpp.i
-.PHONY : src/FillHoleCDT.i
+src/FillHole.i: src/FillHole.cpp.i
+.PHONY : src/FillHole.i
 
 # target to preprocess a source file
-src/FillHoleCDT.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.i
-.PHONY : src/FillHoleCDT.cpp.i
+src/FillHole.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/FillHole.cpp.i
+.PHONY : src/FillHole.cpp.i
 
-src/FillHoleCDT.s: src/FillHoleCDT.cpp.s
-.PHONY : src/FillHoleCDT.s
+src/FillHole.s: src/FillHole.cpp.s
+.PHONY : src/FillHole.s
 
 # target to generate assembly for a file
-src/FillHoleCDT.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/FillHoleCDT.cpp.s
-.PHONY : src/FillHoleCDT.cpp.s
+src/FillHole.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/FillHole.cpp.s
+.PHONY : src/FillHole.cpp.s
 
 src/Function.o: src/Function.cpp.o
 .PHONY : src/Function.o
@@ -282,9 +282,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... readfile"
-	@echo "... src/FillHoleCDT.o"
-	@echo "... src/FillHoleCDT.i"
-	@echo "... src/FillHoleCDT.s"
+	@echo "... src/FillHole.o"
+	@echo "... src/FillHole.i"
+	@echo "... src/FillHole.s"
 	@echo "... src/Function.o"
 	@echo "... src/Function.i"
 	@echo "... src/Function.s"
