@@ -176,7 +176,7 @@ std::pair<Polyhedron, Polyhedron> PlaneCutter::cut(const Polyhedron& poly, const
 bool PlaneCutter::cut_and_fill(Polyhedron& poly_left, Polyhedron& poly_right, const Plane3& pl) {
 	std::cout << "Run cut_and_fill~" << std::endl;
 	bool res = cut(poly_left, poly_right, pl);
-	std::cout << "Cut result :" << res << std::endl;
+	//std::cout << "Cut result :" << res << std::endl;
 	if (!res) return res;
 	Vector3 planeDir(pl.a(), pl.b(), pl.c());
 	Vector3 planeDir_N(pl.a()*(-1), pl.b()*(-1), pl.c()*(-1));

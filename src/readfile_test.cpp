@@ -42,24 +42,38 @@ int main(int argc, char* argv[])
     plane = FN.cutting_plan(SKP);
     
     // run mesh cut divid. 
-    std::string P;
+    vector<Polyhedron> cut_res;
     try{
-        std::cout << "Try Cut the Plan." << std::endl;
+        //std::cout << "Try Cut the Plan." << std::endl;
         FN.set_poly(tmesh);
         //print('--> Actual plane: ', plane)
         //print('--> Actual evaluation: ', ra.step(plane))
-        FN.plane_cut(tmesh,plane);
-        P = FN.get_poly(tmesh);
-        //std::cout << "P :"<<P << std::endl;
+        cut_res = FN.plane_cut(tmesh,plane);
+        std::cout << "cut_res size :"<< cut_res.size() << std::endl;
     }
     catch (std::exception &e) { // exception should be caught by reference
         cout << "exception: " << e.what() << "\n";
     }
 
     // write the .off file and output
-    std::ofstream out("output.off");
+    std::string P;
+    int res_id = 0;
+    P = FN.get_poly(tmesh);
+    std::ofstream out("output_" + std::to_string(res_id) + ".off");
     out << P;
+    out.clear();
     out.close();
+    res_id++;
+
+    for(vector<Polyhedron>::iterator id=cut_res.end()-1; id!=cut_res.begin()-1; id--){
+        P = FN.get_poly(*id);
+        //std::cout << "ID :"<< std::to_string(res_id) << std::endl;
+        std::ofstream out("output_" + std::to_string(res_id) + ".off");
+        out << P;
+        out.clear();
+        out.close();
+        res_id++;
+    }
 
     return 0;
 }

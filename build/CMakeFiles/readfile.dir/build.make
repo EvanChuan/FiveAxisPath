@@ -73,85 +73,85 @@ CMakeFiles/readfile.dir/src/readfile_test.cpp.o: CMakeFiles/readfile.dir/flags.m
 CMakeFiles/readfile.dir/src/readfile_test.cpp.o: ../src/readfile_test.cpp
 CMakeFiles/readfile.dir/src/readfile_test.cpp.o: CMakeFiles/readfile.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/readfile.dir/src/readfile_test.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/readfile_test.cpp.o -MF CMakeFiles/readfile.dir/src/readfile_test.cpp.o.d -o CMakeFiles/readfile.dir/src/readfile_test.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/readfile_test.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/readfile_test.cpp.o -MF CMakeFiles/readfile.dir/src/readfile_test.cpp.o.d -o CMakeFiles/readfile.dir/src/readfile_test.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/readfile_test.cpp
 
 CMakeFiles/readfile.dir/src/readfile_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/readfile.dir/src/readfile_test.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/readfile_test.cpp > CMakeFiles/readfile.dir/src/readfile_test.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/readfile_test.cpp > CMakeFiles/readfile.dir/src/readfile_test.cpp.i
 
 CMakeFiles/readfile.dir/src/readfile_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/readfile.dir/src/readfile_test.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/readfile_test.cpp -o CMakeFiles/readfile.dir/src/readfile_test.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/readfile_test.cpp -o CMakeFiles/readfile.dir/src/readfile_test.cpp.s
 
 CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o: CMakeFiles/readfile.dir/flags.make
 CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o: ../src/MCF_Skeleton_example.cpp
 CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o: CMakeFiles/readfile.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o -MF CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o.d -o CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o -MF CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o.d -o CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp
 
 CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp > CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp > CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.i
 
 CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp -o CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp -o CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.s
 
 CMakeFiles/readfile.dir/src/sorting.cpp.o: CMakeFiles/readfile.dir/flags.make
 CMakeFiles/readfile.dir/src/sorting.cpp.o: ../src/sorting.cpp
 CMakeFiles/readfile.dir/src/sorting.cpp.o: CMakeFiles/readfile.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/readfile.dir/src/sorting.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/sorting.cpp.o -MF CMakeFiles/readfile.dir/src/sorting.cpp.o.d -o CMakeFiles/readfile.dir/src/sorting.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/sorting.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/sorting.cpp.o -MF CMakeFiles/readfile.dir/src/sorting.cpp.o.d -o CMakeFiles/readfile.dir/src/sorting.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/sorting.cpp
 
 CMakeFiles/readfile.dir/src/sorting.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/readfile.dir/src/sorting.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/sorting.cpp > CMakeFiles/readfile.dir/src/sorting.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/sorting.cpp > CMakeFiles/readfile.dir/src/sorting.cpp.i
 
 CMakeFiles/readfile.dir/src/sorting.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/readfile.dir/src/sorting.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/sorting.cpp -o CMakeFiles/readfile.dir/src/sorting.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/sorting.cpp -o CMakeFiles/readfile.dir/src/sorting.cpp.s
 
 CMakeFiles/readfile.dir/src/Function.cpp.o: CMakeFiles/readfile.dir/flags.make
 CMakeFiles/readfile.dir/src/Function.cpp.o: ../src/Function.cpp
 CMakeFiles/readfile.dir/src/Function.cpp.o: CMakeFiles/readfile.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/readfile.dir/src/Function.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/Function.cpp.o -MF CMakeFiles/readfile.dir/src/Function.cpp.o.d -o CMakeFiles/readfile.dir/src/Function.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Function.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/Function.cpp.o -MF CMakeFiles/readfile.dir/src/Function.cpp.o.d -o CMakeFiles/readfile.dir/src/Function.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Function.cpp
 
 CMakeFiles/readfile.dir/src/Function.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/readfile.dir/src/Function.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Function.cpp > CMakeFiles/readfile.dir/src/Function.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Function.cpp > CMakeFiles/readfile.dir/src/Function.cpp.i
 
 CMakeFiles/readfile.dir/src/Function.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/readfile.dir/src/Function.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Function.cpp -o CMakeFiles/readfile.dir/src/Function.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Function.cpp -o CMakeFiles/readfile.dir/src/Function.cpp.s
 
 CMakeFiles/readfile.dir/src/FillHole.cpp.o: CMakeFiles/readfile.dir/flags.make
 CMakeFiles/readfile.dir/src/FillHole.cpp.o: ../src/FillHole.cpp
 CMakeFiles/readfile.dir/src/FillHole.cpp.o: CMakeFiles/readfile.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/readfile.dir/src/FillHole.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/FillHole.cpp.o -MF CMakeFiles/readfile.dir/src/FillHole.cpp.o.d -o CMakeFiles/readfile.dir/src/FillHole.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/FillHole.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/FillHole.cpp.o -MF CMakeFiles/readfile.dir/src/FillHole.cpp.o.d -o CMakeFiles/readfile.dir/src/FillHole.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/FillHole.cpp
 
 CMakeFiles/readfile.dir/src/FillHole.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/readfile.dir/src/FillHole.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/FillHole.cpp > CMakeFiles/readfile.dir/src/FillHole.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/FillHole.cpp > CMakeFiles/readfile.dir/src/FillHole.cpp.i
 
 CMakeFiles/readfile.dir/src/FillHole.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/readfile.dir/src/FillHole.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/FillHole.cpp -o CMakeFiles/readfile.dir/src/FillHole.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/FillHole.cpp -o CMakeFiles/readfile.dir/src/FillHole.cpp.s
 
 CMakeFiles/readfile.dir/src/PlaneCut.cpp.o: CMakeFiles/readfile.dir/flags.make
 CMakeFiles/readfile.dir/src/PlaneCut.cpp.o: ../src/PlaneCut.cpp
 CMakeFiles/readfile.dir/src/PlaneCut.cpp.o: CMakeFiles/readfile.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/readfile.dir/src/PlaneCut.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/PlaneCut.cpp.o -MF CMakeFiles/readfile.dir/src/PlaneCut.cpp.o.d -o CMakeFiles/readfile.dir/src/PlaneCut.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/PlaneCut.cpp.o -MF CMakeFiles/readfile.dir/src/PlaneCut.cpp.o.d -o CMakeFiles/readfile.dir/src/PlaneCut.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp
 
 CMakeFiles/readfile.dir/src/PlaneCut.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/readfile.dir/src/PlaneCut.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp > CMakeFiles/readfile.dir/src/PlaneCut.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp > CMakeFiles/readfile.dir/src/PlaneCut.cpp.i
 
 CMakeFiles/readfile.dir/src/PlaneCut.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/readfile.dir/src/PlaneCut.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp -o CMakeFiles/readfile.dir/src/PlaneCut.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp -o CMakeFiles/readfile.dir/src/PlaneCut.cpp.s
 
 # Object files for target readfile
 readfile_OBJECTS = \

@@ -1,12 +1,11 @@
 #ifndef CUSTOMISED_POLYHEDRON_H
 #define CUSTOMISED_POLYHEDRON_H
 
+#include <fstream>
 #include <CGAL/Polyhedron_3.h>
 #include <CGAL/Simple_cartesian.h>
 #include <CGAL/Surface_mesh.h>
 #include <CGAL/Mean_curvature_flow_skeletonization.h>
-#include <fstream>
-
 #include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
 #include <CGAL/Polyhedron_items_with_id_3.h>
 
@@ -75,7 +74,6 @@ public:
 	{
 	}
 };
-
 
 template <class Refs, class Tprev, class Tvertex, class Tface>
 class Polyhedron_demo_halfedge :
@@ -252,5 +250,4 @@ typedef Skeletonization::Skeleton                              Skeleton;
 typedef Skeleton::vertex_descriptor                            Skeleton_vertex;
 typedef Skeleton::edge_descriptor                              Skeleton_edge;
 
-
-#endif //ICRA17_BJUT_CUSTOMISED_POLYHEDRON_H
+#endif
