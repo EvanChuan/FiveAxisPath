@@ -225,29 +225,53 @@ src/PlaneCut.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/PlaneCut.cpp.s
 .PHONY : src/PlaneCut.cpp.s
 
-src/readfile_test.o: src/readfile_test.cpp.o
-.PHONY : src/readfile_test.o
+src/RWfile.o: src/RWfile.cpp.o
+.PHONY : src/RWfile.o
 
 # target to build an object file
-src/readfile_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/readfile_test.cpp.o
-.PHONY : src/readfile_test.cpp.o
+src/RWfile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/RWfile.cpp.o
+.PHONY : src/RWfile.cpp.o
 
-src/readfile_test.i: src/readfile_test.cpp.i
-.PHONY : src/readfile_test.i
+src/RWfile.i: src/RWfile.cpp.i
+.PHONY : src/RWfile.i
 
 # target to preprocess a source file
-src/readfile_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/readfile_test.cpp.i
-.PHONY : src/readfile_test.cpp.i
+src/RWfile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/RWfile.cpp.i
+.PHONY : src/RWfile.cpp.i
 
-src/readfile_test.s: src/readfile_test.cpp.s
-.PHONY : src/readfile_test.s
+src/RWfile.s: src/RWfile.cpp.s
+.PHONY : src/RWfile.s
 
 # target to generate assembly for a file
-src/readfile_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/readfile_test.cpp.s
-.PHONY : src/readfile_test.cpp.s
+src/RWfile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/RWfile.cpp.s
+.PHONY : src/RWfile.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 src/sorting.o: src/sorting.cpp.o
 .PHONY : src/sorting.o
@@ -294,9 +318,12 @@ help:
 	@echo "... src/PlaneCut.o"
 	@echo "... src/PlaneCut.i"
 	@echo "... src/PlaneCut.s"
-	@echo "... src/readfile_test.o"
-	@echo "... src/readfile_test.i"
-	@echo "... src/readfile_test.s"
+	@echo "... src/RWfile.o"
+	@echo "... src/RWfile.i"
+	@echo "... src/RWfile.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... src/sorting.o"
 	@echo "... src/sorting.i"
 	@echo "... src/sorting.s"

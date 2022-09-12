@@ -12,7 +12,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Function.cpp" "CMakeFiles/readfile.dir/src/Function.cpp.o" "gcc" "CMakeFiles/readfile.dir/src/Function.cpp.o.d"
   "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp" "CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o" "gcc" "CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o.d"
   "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp" "CMakeFiles/readfile.dir/src/PlaneCut.cpp.o" "gcc" "CMakeFiles/readfile.dir/src/PlaneCut.cpp.o.d"
-  "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/readfile_test.cpp" "CMakeFiles/readfile.dir/src/readfile_test.cpp.o" "gcc" "CMakeFiles/readfile.dir/src/readfile_test.cpp.o.d"
+  "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/RWfile.cpp" "CMakeFiles/readfile.dir/src/RWfile.cpp.o" "gcc" "CMakeFiles/readfile.dir/src/RWfile.cpp.o.d"
+  "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/main.cpp" "CMakeFiles/readfile.dir/src/main.cpp.o" "gcc" "CMakeFiles/readfile.dir/src/main.cpp.o.d"
   "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/sorting.cpp" "CMakeFiles/readfile.dir/src/sorting.cpp.o" "gcc" "CMakeFiles/readfile.dir/src/sorting.cpp.o.d"
   )
 

@@ -69,19 +69,19 @@ include CMakeFiles/readfile.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/readfile.dir/flags.make
 
-CMakeFiles/readfile.dir/src/readfile_test.cpp.o: CMakeFiles/readfile.dir/flags.make
-CMakeFiles/readfile.dir/src/readfile_test.cpp.o: ../src/readfile_test.cpp
-CMakeFiles/readfile.dir/src/readfile_test.cpp.o: CMakeFiles/readfile.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/readfile.dir/src/readfile_test.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/readfile_test.cpp.o -MF CMakeFiles/readfile.dir/src/readfile_test.cpp.o.d -o CMakeFiles/readfile.dir/src/readfile_test.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/readfile_test.cpp
+CMakeFiles/readfile.dir/src/main.cpp.o: CMakeFiles/readfile.dir/flags.make
+CMakeFiles/readfile.dir/src/main.cpp.o: ../src/main.cpp
+CMakeFiles/readfile.dir/src/main.cpp.o: CMakeFiles/readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/readfile.dir/src/main.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/main.cpp.o -MF CMakeFiles/readfile.dir/src/main.cpp.o.d -o CMakeFiles/readfile.dir/src/main.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/main.cpp
 
-CMakeFiles/readfile.dir/src/readfile_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/readfile.dir/src/readfile_test.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/readfile_test.cpp > CMakeFiles/readfile.dir/src/readfile_test.cpp.i
+CMakeFiles/readfile.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/readfile.dir/src/main.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/main.cpp > CMakeFiles/readfile.dir/src/main.cpp.i
 
-CMakeFiles/readfile.dir/src/readfile_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/readfile.dir/src/readfile_test.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/readfile_test.cpp -o CMakeFiles/readfile.dir/src/readfile_test.cpp.s
+CMakeFiles/readfile.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/readfile.dir/src/main.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/main.cpp -o CMakeFiles/readfile.dir/src/main.cpp.s
 
 CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o: CMakeFiles/readfile.dir/flags.make
 CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o: ../src/MCF_Skeleton_example.cpp
@@ -153,30 +153,46 @@ CMakeFiles/readfile.dir/src/PlaneCut.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/readfile.dir/src/PlaneCut.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp -o CMakeFiles/readfile.dir/src/PlaneCut.cpp.s
 
+CMakeFiles/readfile.dir/src/RWfile.cpp.o: CMakeFiles/readfile.dir/flags.make
+CMakeFiles/readfile.dir/src/RWfile.cpp.o: ../src/RWfile.cpp
+CMakeFiles/readfile.dir/src/RWfile.cpp.o: CMakeFiles/readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/readfile.dir/src/RWfile.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/readfile.dir/src/RWfile.cpp.o -MF CMakeFiles/readfile.dir/src/RWfile.cpp.o.d -o CMakeFiles/readfile.dir/src/RWfile.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/RWfile.cpp
+
+CMakeFiles/readfile.dir/src/RWfile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/readfile.dir/src/RWfile.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/RWfile.cpp > CMakeFiles/readfile.dir/src/RWfile.cpp.i
+
+CMakeFiles/readfile.dir/src/RWfile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/readfile.dir/src/RWfile.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/RWfile.cpp -o CMakeFiles/readfile.dir/src/RWfile.cpp.s
+
 # Object files for target readfile
 readfile_OBJECTS = \
-"CMakeFiles/readfile.dir/src/readfile_test.cpp.o" \
+"CMakeFiles/readfile.dir/src/main.cpp.o" \
 "CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o" \
 "CMakeFiles/readfile.dir/src/sorting.cpp.o" \
 "CMakeFiles/readfile.dir/src/Function.cpp.o" \
 "CMakeFiles/readfile.dir/src/FillHole.cpp.o" \
-"CMakeFiles/readfile.dir/src/PlaneCut.cpp.o"
+"CMakeFiles/readfile.dir/src/PlaneCut.cpp.o" \
+"CMakeFiles/readfile.dir/src/RWfile.cpp.o"
 
 # External object files for target readfile
 readfile_EXTERNAL_OBJECTS =
 
-readfile: CMakeFiles/readfile.dir/src/readfile_test.cpp.o
+readfile: CMakeFiles/readfile.dir/src/main.cpp.o
 readfile: CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o
 readfile: CMakeFiles/readfile.dir/src/sorting.cpp.o
 readfile: CMakeFiles/readfile.dir/src/Function.cpp.o
 readfile: CMakeFiles/readfile.dir/src/FillHole.cpp.o
 readfile: CMakeFiles/readfile.dir/src/PlaneCut.cpp.o
+readfile: CMakeFiles/readfile.dir/src/RWfile.cpp.o
 readfile: CMakeFiles/readfile.dir/build.make
 readfile: /usr/local/lib/libgmpxx.dylib
 readfile: /usr/local/lib/libmpfr.dylib
 readfile: /usr/local/lib/libgmp.dylib
 readfile: CMakeFiles/readfile.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable readfile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable readfile"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/readfile.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
