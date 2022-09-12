@@ -1,8 +1,8 @@
 [
 {
   "directory": "/Users/evanchuan/Desktop/3DP/FiveAxisPath/build",
-  "command": "/usr/bin/clang++ -DCGAL_EIGEN3_ENABLED -DCGAL_USE_GMPXX=1 -isystem /usr/local/include -isystem /usr/local/include/eigen3 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++14 -o CMakeFiles/readfile.dir/src/readfile_test.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/readfile_test.cpp",
-  "file": "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/readfile_test.cpp"
+  "command": "/usr/bin/clang++ -DCGAL_EIGEN3_ENABLED -DCGAL_USE_GMPXX=1 -isystem /usr/local/include -isystem /usr/local/include/eigen3 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++14 -o CMakeFiles/readfile.dir/src/main.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/main.cpp",
+  "file": "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/main.cpp"
 },
 {
   "directory": "/Users/evanchuan/Desktop/3DP/FiveAxisPath/build",
@@ -28,5 +28,10 @@
   "directory": "/Users/evanchuan/Desktop/3DP/FiveAxisPath/build",
   "command": "/usr/bin/clang++ -DCGAL_EIGEN3_ENABLED -DCGAL_USE_GMPXX=1 -isystem /usr/local/include -isystem /usr/local/include/eigen3 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++14 -o CMakeFiles/readfile.dir/src/PlaneCut.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp",
   "file": "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp"
+},
+{
+  "directory": "/Users/evanchuan/Desktop/3DP/FiveAxisPath/build",
+  "command": "/usr/bin/clang++ -DCGAL_EIGEN3_ENABLED -DCGAL_USE_GMPXX=1 -isystem /usr/local/include -isystem /usr/local/include/eigen3 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++14 -o CMakeFiles/readfile.dir/src/RWfile.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/RWfile.cpp",
+  "file": "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/RWfile.cpp"
 }
 ]

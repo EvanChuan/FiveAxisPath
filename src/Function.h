@@ -29,7 +29,7 @@ public:
     bool set_poly(Polyhedron& p);
     //bool plane_cut(Polyhedron& p,std::vector<std::vector<double>>& input);
     vector<Polyhedron> plane_cut(Polyhedron& p,std::vector<std::vector<double>>& input);
-    std::string get_poly(Polyhedron& poly);
+    static std::string get_poly(Polyhedron& poly);
 
     Polyhedron poly;
     vector<Polyhedron> cut_res;
