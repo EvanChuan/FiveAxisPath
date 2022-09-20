@@ -46,6 +46,7 @@ int main(int argc, char* argv[])
         //std::cout << "Try Cut the Plan." << std::endl;
         FN.set_poly(tmesh);
         cut_res = FN.plane_cut(tmesh,plane);  // cut model is stored in cut_res vector
+        // First cut plan is the build plan of last sub-part which store in first of cut_res
         std::cout << "cut_res size :"<< cut_res.size() << std::endl;
     }
     catch (std::exception &e) { // exception should be caught by reference
@@ -54,26 +55,46 @@ int main(int argc, char* argv[])
 
     // write the .off file and output
     RWfile::WritePolytoOFF(tmesh,cut_res);
+    
+    // change the data type result of .off data (string to double)
+    vector< vector<Tri> > trianglemesh = FN.TransfertoTriMesh(tmesh,cut_res,plane);
+    
+    //std::vector<std::vector<double>> new_poly_double= RWfile::splitString(FN.get_poly(cut_res[1]));
     /*
-    std::string P;
-    int res_id = 0;
-    P = FN.get_poly(tmesh);
-    std::cout << P << std::endl;
-    std::ofstream out("output_" + std::to_string(res_id) + ".off");
-    out << P;
-    out.clear();
-    out.close();
-    res_id++;
-
-    for(vector<Polyhedron>::iterator id=cut_res.end()-1; id!=cut_res.begin()-1; id--){
-        P = FN.get_poly(*id);
-        //std::cout << "ID :"<< std::to_string(res_id) << std::endl;
-        std::ofstream out("output_" + std::to_string(res_id) + ".off");
-        out << P;
-        out.clear();
-        out.close();
-        res_id++;
+    // print for debug
+    for(int i=0; i<new_poly_double.size();i++){
+    //for(int i=0; i<new_poly_double[0][0]+2;i++){
+        if(new_poly_double[i].size()!=0){
+            std::cout << new_poly_double[i][0] << " " << new_poly_double[i][1] << " " << new_poly_double[i][2];
+            if(new_poly_double[i].size()==4){
+                std::cout <<  " " << new_poly_double[i][3];
+            }
+            std::cout << "\n";
+        }
     }
     */
+    // polygon tranfer to triangle
+    //vector<Tri> trianglemesh = FN.PolytoTri_for_Print(new_poly_double);
+    /*
+    // check trianglemesh
+    ofstream file;
+    file.open("checkoutput.txt");
+    if (!file.is_open()) {
+        cout << "Failed to open file.\n";
+    }
+    for(vector<Tri>::iterator it = trianglemesh.begin(); it!=trianglemesh.end(); it++){
+        string normal_vector = std::to_string(it->n_x) + " " + std::to_string(it->n_y) + " " + std::to_string(it->n_z)+ "\n"; 
+        string P1 = std::to_string(it->P1_x) + " " + std::to_string(it->P1_y) + " " + std::to_string(it->P1_z)+ "\n";  
+        string P2 = std::to_string(it->P2_x) + " " + std::to_string(it->P2_y) + " " + std::to_string(it->P2_z)+ "\n";  
+        string P3 = std::to_string(it->P3_x) + " " + std::to_string(it->P3_y) + " " + std::to_string(it->P3_z)+ "\n";  
+        file << "normal_vector: " << normal_vector;
+        file << "P1: " << P1;
+        file << "P2: " << P2;
+        file << "P3: " << P3;
+    }
+    file.close();
+    */
+    //RWfile::Write_bin_stl("output_1", trianglemesh);
+
     return 0;
 }
