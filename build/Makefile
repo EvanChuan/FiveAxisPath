@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/evanchuan/Desktop/3DP/FiveAxisPath/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.23.3/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.24.1/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named _readfile
+
+# Build rule for target.
+_readfile: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _readfile
+.PHONY : _readfile
+
+# fast build rule for target.
+_readfile/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/build
+.PHONY : _readfile/fast
+
+#=============================================================================
 # Target rules for targets named readfile
 
 # Build rule for target.
@@ -134,7 +147,7 @@ src/FillHole.o: src/FillHole.cpp.o
 
 # target to build an object file
 src/FillHole.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/FillHole.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/FillHole.cpp.o
 .PHONY : src/FillHole.cpp.o
 
 src/FillHole.i: src/FillHole.cpp.i
@@ -142,7 +155,7 @@ src/FillHole.i: src/FillHole.cpp.i
 
 # target to preprocess a source file
 src/FillHole.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/FillHole.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/FillHole.cpp.i
 .PHONY : src/FillHole.cpp.i
 
 src/FillHole.s: src/FillHole.cpp.s
@@ -150,7 +163,7 @@ src/FillHole.s: src/FillHole.cpp.s
 
 # target to generate assembly for a file
 src/FillHole.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/FillHole.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/FillHole.cpp.s
 .PHONY : src/FillHole.cpp.s
 
 src/Function.o: src/Function.cpp.o
@@ -158,7 +171,7 @@ src/Function.o: src/Function.cpp.o
 
 # target to build an object file
 src/Function.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/Function.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Function.cpp.o
 .PHONY : src/Function.cpp.o
 
 src/Function.i: src/Function.cpp.i
@@ -166,7 +179,7 @@ src/Function.i: src/Function.cpp.i
 
 # target to preprocess a source file
 src/Function.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/Function.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Function.cpp.i
 .PHONY : src/Function.cpp.i
 
 src/Function.s: src/Function.cpp.s
@@ -174,7 +187,7 @@ src/Function.s: src/Function.cpp.s
 
 # target to generate assembly for a file
 src/Function.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/Function.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Function.cpp.s
 .PHONY : src/Function.cpp.s
 
 src/MCF_Skeleton_example.o: src/MCF_Skeleton_example.cpp.o
@@ -182,7 +195,7 @@ src/MCF_Skeleton_example.o: src/MCF_Skeleton_example.cpp.o
 
 # target to build an object file
 src/MCF_Skeleton_example.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o
 .PHONY : src/MCF_Skeleton_example.cpp.o
 
 src/MCF_Skeleton_example.i: src/MCF_Skeleton_example.cpp.i
@@ -190,7 +203,7 @@ src/MCF_Skeleton_example.i: src/MCF_Skeleton_example.cpp.i
 
 # target to preprocess a source file
 src/MCF_Skeleton_example.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.i
 .PHONY : src/MCF_Skeleton_example.cpp.i
 
 src/MCF_Skeleton_example.s: src/MCF_Skeleton_example.cpp.s
@@ -198,7 +211,7 @@ src/MCF_Skeleton_example.s: src/MCF_Skeleton_example.cpp.s
 
 # target to generate assembly for a file
 src/MCF_Skeleton_example.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/MCF_Skeleton_example.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.s
 .PHONY : src/MCF_Skeleton_example.cpp.s
 
 src/PlaneCut.o: src/PlaneCut.cpp.o
@@ -206,7 +219,7 @@ src/PlaneCut.o: src/PlaneCut.cpp.o
 
 # target to build an object file
 src/PlaneCut.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/PlaneCut.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o
 .PHONY : src/PlaneCut.cpp.o
 
 src/PlaneCut.i: src/PlaneCut.cpp.i
@@ -214,7 +227,7 @@ src/PlaneCut.i: src/PlaneCut.cpp.i
 
 # target to preprocess a source file
 src/PlaneCut.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/PlaneCut.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/PlaneCut.cpp.i
 .PHONY : src/PlaneCut.cpp.i
 
 src/PlaneCut.s: src/PlaneCut.cpp.s
@@ -222,7 +235,7 @@ src/PlaneCut.s: src/PlaneCut.cpp.s
 
 # target to generate assembly for a file
 src/PlaneCut.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/PlaneCut.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/PlaneCut.cpp.s
 .PHONY : src/PlaneCut.cpp.s
 
 src/RWfile.o: src/RWfile.cpp.o
@@ -230,7 +243,7 @@ src/RWfile.o: src/RWfile.cpp.o
 
 # target to build an object file
 src/RWfile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/RWfile.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/RWfile.cpp.o
 .PHONY : src/RWfile.cpp.o
 
 src/RWfile.i: src/RWfile.cpp.i
@@ -238,7 +251,7 @@ src/RWfile.i: src/RWfile.cpp.i
 
 # target to preprocess a source file
 src/RWfile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/RWfile.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/RWfile.cpp.i
 .PHONY : src/RWfile.cpp.i
 
 src/RWfile.s: src/RWfile.cpp.s
@@ -246,7 +259,7 @@ src/RWfile.s: src/RWfile.cpp.s
 
 # target to generate assembly for a file
 src/RWfile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/RWfile.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/RWfile.cpp.s
 .PHONY : src/RWfile.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -278,7 +291,7 @@ src/sorting.o: src/sorting.cpp.o
 
 # target to build an object file
 src/sorting.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/sorting.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/sorting.cpp.o
 .PHONY : src/sorting.cpp.o
 
 src/sorting.i: src/sorting.cpp.i
@@ -286,7 +299,7 @@ src/sorting.i: src/sorting.cpp.i
 
 # target to preprocess a source file
 src/sorting.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/sorting.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/sorting.cpp.i
 .PHONY : src/sorting.cpp.i
 
 src/sorting.s: src/sorting.cpp.s
@@ -294,7 +307,7 @@ src/sorting.s: src/sorting.cpp.s
 
 # target to generate assembly for a file
 src/sorting.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/src/sorting.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/sorting.cpp.s
 .PHONY : src/sorting.cpp.s
 
 # Help Target
@@ -305,6 +318,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... _readfile"
 	@echo "... readfile"
 	@echo "... src/FillHole.o"
 	@echo "... src/FillHole.i"
