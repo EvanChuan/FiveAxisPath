@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = -DCGAL_EIGEN3_ENABLED -DCGAL_USE_GMPXX=1
 
-CXX_INCLUDES = -isystem /usr/local/include -isystem /usr/local/include/eigen3
+CXX_INCLUDES = -I/Users/evanchuan/Desktop/3DP/FiveAxisPath/include -isystem /usr/local/include -isystem /usr/local/include/eigen3
 
 CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++14
 

@@ -1429,7 +1429,7 @@ CMakeFiles/readfile.dir/src/main.cpp.o: \
   /usr/local/include/CGAL/IO/read_xyz_points.h \
   /usr/local/include/CGAL/IO/write_xyz_points.h \
   /usr/local/include/CGAL/demangle.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton.h \
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/MCF_Skeleton.h \
   /usr/local/include/CGAL/Polyhedron_3.h \
   /usr/local/include/CGAL/license/Polyhedron.h \
   /usr/local/include/CGAL/Polyhedron_3_fwd.h \
@@ -3237,8 +3237,8 @@ CMakeFiles/readfile.dir/src/main.cpp.o: \
   /usr/local/include/eigen3/Eigen/src/Eigenvalues/./RealQZ.h \
   /usr/local/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/local/include/CGAL/Eigen_vector.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/CustomisedPolyhedron.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Function.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/FillHole.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/RWfile.h
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/CustomisedPolyhedron.h \
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Function.h \
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/PlaneCut.h \
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/FillHole.h \
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/RWfile.h

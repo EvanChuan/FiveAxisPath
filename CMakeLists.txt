@@ -1,4 +1,3 @@
-
 cmake_minimum_required(VERSION 3.1...3.22)
 project(fiveaxis)
 
@@ -18,7 +17,6 @@ set(CGAL_DO_NOT_WARN_ABOUT_CMAKE_BUILD_TYPE TRUE)
 
 # Boost and its components
 find_package( Boost REQUIRED )
-
 if ( NOT Boost_FOUND )
 
   message(STATUS "This project requires the Boost library, and will not be compiled.")
@@ -34,23 +32,27 @@ include(CGAL_Eigen3_support)
 
 # include for local package
 
-
-add_executable(readfile
-  src/main.cpp  
-  src/CustomisedPolyhedron.h
-  src/MCF_Skeleton.h
+set(SRCS
   src/MCF_Skeleton_example.cpp
-  src/Function.h
-  src/FillHole.h
   src/sorting.cpp
   src/Function.cpp
   src/FillHole.cpp
   src/PlaneCut.cpp
-  src/PlaneCut.h
-  src/RWfile.h
   src/RWfile.cpp
 )
-target_link_libraries(readfile CGAL::CGAL CGAL::Eigen3_support)  # add this line to link CGAL lib and Eigen lib to target project
 
-#add_executable(refine_fair_example src/refine_fair_example.cpp)
-#target_link_libraries(refine_fair_example CGAL::CGAL CGAL::Eigen3_support)
+add_library(_readfile STATIC ${SRCS})
+
+target_include_directories(_readfile
+  PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+)
+
+target_link_libraries(_readfile CGAL::CGAL CGAL::Eigen3_support)
+
+add_executable(readfile
+  src/main.cpp
+  ${_readfile}
+)
+target_link_libraries(readfile PRIVATE _readfile)  # add CGAL Library to executable file
+#target_link_libraries(readfile CGAL::CGAL CGAL::Eigen3_support)  # add this line to link CGAL lib and Eigen lib to target project
