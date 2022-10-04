@@ -50,7 +50,7 @@ void MCF_Skeleton::MCF_Skeleton_Fun(Skeletonization::Skeleton& skeleton,
       output << "2 " << skeleton[v].point << "  " << get(CGAL::vertex_point, tmesh, vd)  << "\n";
   */
 
-  std::cout << "Done Skeletonize!" << "\n";
+  //std::cout << "Done Skeletonize!" << "\n";
   return;
 }
 

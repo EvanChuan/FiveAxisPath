@@ -39,6 +39,7 @@ set(SRCS
   src/FillHole.cpp
   src/PlaneCut.cpp
   src/RWfile.cpp
+  src/Slicing.cpp
 )
 
 add_library(_readfile STATIC ${SRCS})

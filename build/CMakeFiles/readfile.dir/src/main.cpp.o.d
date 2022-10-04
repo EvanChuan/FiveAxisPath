@@ -3241,4 +3241,5 @@ CMakeFiles/readfile.dir/src/main.cpp.o: \
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Function.h \
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/PlaneCut.h \
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/FillHole.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/RWfile.h
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/RWfile.h \
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Slicing.h
