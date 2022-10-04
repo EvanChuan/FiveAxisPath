@@ -262,6 +262,30 @@ src/RWfile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/RWfile.cpp.s
 .PHONY : src/RWfile.cpp.s
 
+src/Slicing.o: src/Slicing.cpp.o
+.PHONY : src/Slicing.o
+
+# target to build an object file
+src/Slicing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Slicing.cpp.o
+.PHONY : src/Slicing.cpp.o
+
+src/Slicing.i: src/Slicing.cpp.i
+.PHONY : src/Slicing.i
+
+# target to preprocess a source file
+src/Slicing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Slicing.cpp.i
+.PHONY : src/Slicing.cpp.i
+
+src/Slicing.s: src/Slicing.cpp.s
+.PHONY : src/Slicing.s
+
+# target to generate assembly for a file
+src/Slicing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Slicing.cpp.s
+.PHONY : src/Slicing.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -335,6 +359,9 @@ help:
 	@echo "... src/RWfile.o"
 	@echo "... src/RWfile.i"
 	@echo "... src/RWfile.s"
+	@echo "... src/Slicing.o"
+	@echo "... src/Slicing.i"
+	@echo "... src/Slicing.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

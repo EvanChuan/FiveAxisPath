@@ -7,6 +7,7 @@
 #include "MCF_Skeleton.h"
 #include "Function.h"
 #include "RWfile.h"
+#include "Slicing.h"
 
 int main(int argc, char* argv[])
 {
@@ -95,6 +96,11 @@ int main(int argc, char* argv[])
     file.close();
     */
     //RWfile::Write_bin_stl("output_1", trianglemesh);
+
+    // The slicing process (input:trianglemesh  output:pregcode_data)
+    double layerheight = 0.2;
+    Slicer SL;
+    vector<vector<Slicer::slice>> pregcode_data = SL.subpart_slicing(trianglemesh,layerheight);
 
     return 0;
 }

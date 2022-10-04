@@ -153,6 +153,20 @@ CMakeFiles/_readfile.dir/src/RWfile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/RWfile.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/RWfile.cpp -o CMakeFiles/_readfile.dir/src/RWfile.cpp.s
 
+CMakeFiles/_readfile.dir/src/Slicing.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Slicing.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Slicing.cpp
+CMakeFiles/_readfile.dir/src/Slicing.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/_readfile.dir/src/Slicing.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Slicing.cpp.o -MF CMakeFiles/_readfile.dir/src/Slicing.cpp.o.d -o CMakeFiles/_readfile.dir/src/Slicing.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Slicing.cpp
+
+CMakeFiles/_readfile.dir/src/Slicing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Slicing.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Slicing.cpp > CMakeFiles/_readfile.dir/src/Slicing.cpp.i
+
+CMakeFiles/_readfile.dir/src/Slicing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Slicing.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Slicing.cpp -o CMakeFiles/_readfile.dir/src/Slicing.cpp.s
+
 # Object files for target _readfile
 _readfile_OBJECTS = \
 "CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o" \
@@ -160,7 +174,8 @@ _readfile_OBJECTS = \
 "CMakeFiles/_readfile.dir/src/Function.cpp.o" \
 "CMakeFiles/_readfile.dir/src/FillHole.cpp.o" \
 "CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o" \
-"CMakeFiles/_readfile.dir/src/RWfile.cpp.o"
+"CMakeFiles/_readfile.dir/src/RWfile.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Slicing.cpp.o"
 
 # External object files for target _readfile
 _readfile_EXTERNAL_OBJECTS =
@@ -171,9 +186,10 @@ lib_readfile.a: CMakeFiles/_readfile.dir/src/Function.cpp.o
 lib_readfile.a: CMakeFiles/_readfile.dir/src/FillHole.cpp.o
 lib_readfile.a: CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o
 lib_readfile.a: CMakeFiles/_readfile.dir/src/RWfile.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Slicing.cpp.o
 lib_readfile.a: CMakeFiles/_readfile.dir/build.make
 lib_readfile.a: CMakeFiles/_readfile.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library lib_readfile.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library lib_readfile.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/_readfile.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_readfile.dir/link.txt --verbose=$(VERBOSE)
 

@@ -2,7 +2,7 @@
 import sys
 import math
 # Z home at min
-CX,CY,CZ  = 120,135,196  # printing center
+CX,CY,CZ  = 120,135,195.4  # printing center
 prx,pry,prz = 0,0,0
 printing_point = []
 decadeFR = 0.5

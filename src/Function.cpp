@@ -83,7 +83,7 @@ bool Function::set_poly(Polyhedron& p) {
 }
 
 vector<Polyhedron> Function::plane_cut(Polyhedron& p,std::vector<std::vector<double>>& input) {
-  std::cout << "Run plane_cut~" << std::endl;
+  //std::cout << "Run plane_cut~" << std::endl;
   Plane3 pl;
   
   for(std::vector<std::vector<double>>::iterator it = input.begin(); it != input.end(); ++it)
@@ -152,8 +152,8 @@ vector< vector<Tri> > Function::TransfertoTriMesh(Polyhedron& tmesh,vector<Polyh
   triP.n_y = 0;
   triP.n_z = 1;
   triP.n_d = 0;
-  PB.push_back(triP);
-  std::cout << count << std::endl;
+  PB.push_back(triP); // store cut plan data first
+  //std::cout << count << std::endl;
   std::vector<std::vector<double>> new_poly_double= RWfile::splitString(get_poly(tmesh));
   PolytoTri(new_poly_double,PB);
   STLdata.push_back(PB);
@@ -168,8 +168,8 @@ vector< vector<Tri> > Function::TransfertoTriMesh(Polyhedron& tmesh,vector<Polyh
     triP.n_y = it[0][1];
     triP.n_z = it[0][2];
     triP.n_d = it[0][3];
-    PB.push_back(triP);
-    std::cout << count << std::endl;
+    PB.push_back(triP);  // store cut plan data first
+    //std::cout << count << std::endl;
     int ID = len - count; 
     std::vector<std::vector<double>> new_poly_double= RWfile::splitString(get_poly(cut_res[ID]));
     PolytoTri(new_poly_double,PB);
