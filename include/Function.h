@@ -22,11 +22,9 @@ class Function
 {
 public:
     struct Skel_Points {  // skel_points
-        double X;
-        double Y;
-        double Z;
+        double X,Y,Z;
     };
-    std::vector<Skel_Points> SK_points;
+    //std::vector<Skel_Points> SK_points;
 
     static bool compareZ(std::vector<double> p1, std::vector<double> p2);
     void Sorting(std::vector<std::vector<double>>& points);
@@ -34,8 +32,8 @@ public:
     
     static double angle(std::vector<double> v1,std::vector<double> v2);
     static std::vector<double> Normal(std::vector<double> v);
-    std::vector<double> Normal_Vector(std::vector<double>& v1, std::vector<double>& v2);
-    std::vector<std::vector<double>> cutting_plan(std::vector<std::vector<double>>& points);
+    std::vector<double> OuterProduct(std::vector<double>& v1, std::vector<double>& v2);
+    std::vector<std::vector<double>> cutting_plan(std::vector<std::vector<double>>& points,vector<Function::Skel_Points>& plane_points);
     
     bool set_poly(Polyhedron& p);
     //bool plane_cut(Polyhedron& p,std::vector<std::vector<double>>& input);
@@ -48,5 +46,8 @@ public:
 
     Polyhedron poly;
     vector<Polyhedron> cut_res;
+
+    void Show_Vector(double vector[3][1]);
+    void Show_Matrix(double M[3][3]);
 };
 #endif

@@ -10,10 +10,12 @@
 
 using namespace std;
 
-std::vector<std::vector<double>> Function::cutting_plan(std::vector<std::vector<double>>& points){
+std::vector<std::vector<double>> Function::cutting_plan(std::vector<std::vector<double>>& points,vector<Function::Skel_Points>& plane_points)
+{
   std::vector<double> printDIR = {0,0,1};
   std::vector<double> preP = {0,0,0};
   std::vector<std::vector<double>> P;
+  Function::Skel_Points SKP;
   for(std::vector<std::vector<double>>::iterator it = points.begin(); it != points.end(); ++it){
       std::vector<double> it_v = {it[0][0] - preP[0],it[0][1] - preP[1],it[0][2] - preP[2]};
       std::vector<double> unit_it_v = Normal(it_v);
@@ -23,6 +25,10 @@ std::vector<std::vector<double>> Function::cutting_plan(std::vector<std::vector<
           printDIR = unit_it_v;
           //std::cout << "cutplan_vector : X" << unit_it_v[0] << " Y"  << unit_it_v[1] << " Z"<< unit_it_v[2] << std::endl;
           preP = {it[0][0],it[0][1],it[0][2]};
+          SKP.X = it[0][0];
+          SKP.Y = it[0][1];
+          SKP.Z = it[0][2];
+          plane_points.push_back(SKP);
           // D = -(ax+by+cz)
           double D = (unit_it_v[0]*it[0][0]+unit_it_v[1]*it[0][1]+unit_it_v[2]*it[0][2])*(-1);
           //std::cout << "D : " << D << std::endl;
@@ -47,7 +53,8 @@ std::vector<double> Function::Normal(std::vector<double> v){
   return it_v;
 }
 
-std::vector<double> Function::Normal_Vector(std::vector<double>& v1, std::vector<double>& v2){
+std::vector<double> Function::OuterProduct(std::vector<double>& v1, std::vector<double>& v2){
+  // calculate v1xv2
   std::vector<double> NV;
   double N_x = v1[1] * v2[2] - v1[2] * v2[1];
   NV.push_back(N_x);
@@ -131,7 +138,7 @@ void Function::PolytoTri(std::vector<std::vector<double>>& newpoly, vector<Tri>&
     v2.push_back(triP.P3_x-triP.P1_x);
     v2.push_back(triP.P3_y-triP.P1_y);
     v2.push_back(triP.P3_z-triP.P1_z);
-    std::vector<double> NV = Normal_Vector(v1,v2);
+    std::vector<double> NV = OuterProduct(v1,v2);
     std::vector<double> NNV = Normal(NV);
     triP.n_x = NNV[0];
     triP.n_y = NNV[1];
@@ -146,36 +153,47 @@ vector< vector<Tri> > Function::TransfertoTriMesh(Polyhedron& tmesh,vector<Polyh
   vector< vector<Tri> > STLdata;
   int count = 0;
   // the first part is store in tmesh
-  vector<Tri> PB;
+  vector<Tri> tri;
   static Tri triP;
   triP.n_x = 0;
   triP.n_y = 0;
   triP.n_z = 1;
   triP.n_d = 0;
-  PB.push_back(triP); // store cut plan data first
-  //std::cout << count << std::endl;
-  std::vector<std::vector<double>> new_poly_double= RWfile::splitString(get_poly(tmesh));
-  PolytoTri(new_poly_double,PB);
-  STLdata.push_back(PB);
-  PB.clear();
+  tri.push_back(triP); // store cut plan data first
+  vector<vector<double>> new_poly_double= RWfile::splitString(get_poly(tmesh));
+  /*
+  // print for debug
+  for(int i=0; i<new_poly_double.size();i++){
+  //for(int i=0; i<new_poly_double[0][0]+2;i++){
+      if(new_poly_double[i].size()!=0){
+          std::cout << new_poly_double[i][0] << " " << new_poly_double[i][1] << " " << new_poly_double[i][2];
+          if(new_poly_double[i].size()==4){
+              std::cout <<  " " << new_poly_double[i][3];
+          }
+          std::cout << "\n";
+      }
+  }
+  */
+  PolytoTri(new_poly_double,tri);
+  STLdata.push_back(tri);
+  tri.clear();
   count++;
 
   // the second and after part
   int len = cut_res.size();
-  for(std::vector<std::vector<double>>::iterator it = input.end()-1; it != input.begin()-1; it--){
+  for(vector<vector<double>>::iterator it = input.end()-1; it != input.begin()-1; it--){
     static Tri triP;
     triP.n_x = it[0][0];
     triP.n_y = it[0][1];
     triP.n_z = it[0][2];
     triP.n_d = it[0][3];
-    PB.push_back(triP);  // store cut plan data first
-    //std::cout << count << std::endl;
+    tri.push_back(triP);  // store cut plan data first
     int ID = len - count; 
     std::vector<std::vector<double>> new_poly_double= RWfile::splitString(get_poly(cut_res[ID]));
-    PolytoTri(new_poly_double,PB);
-    STLdata.push_back(PB);
+    PolytoTri(new_poly_double,tri);
+    STLdata.push_back(tri);
     count++;
-    PB.clear();
+    tri.clear();
   }
   return STLdata;
 }
@@ -205,7 +223,7 @@ vector<Tri> Function::PolytoTri_for_Print(std::vector<std::vector<double>>& newp
     v2.push_back(triP.P3_x-triP.P1_x);
     v2.push_back(triP.P3_y-triP.P1_y);
     v2.push_back(triP.P3_z-triP.P1_z);
-    std::vector<double> NV = Normal_Vector(v1,v2);
+    std::vector<double> NV = OuterProduct(v1,v2);
     std::vector<double> NNV = Normal(NV);
     triP.n_x = NNV[0];
     triP.n_y = NNV[1];
@@ -214,4 +232,21 @@ vector<Tri> Function::PolytoTri_for_Print(std::vector<std::vector<double>>& newp
     tri.push_back(triP);
   }
   return tri;
+}
+
+
+void Function::Show_Vector(double vector[3][1]){
+  std::cout << " X" << vector[0][0];
+  std::cout << " Y" << vector[1][0];
+  std::cout << " Z" << vector[2][0] << std::endl;
+}
+
+void Function::Show_Matrix(double M[3][3]){
+  std::cout << "Print out the matrix." << std::endl;
+  for(int m=0; m<3; m++){
+      for(int n=0; n<3; n++){
+          std::cout << M[m][n] << "\t";
+      }
+      std::cout << "\n";
+  }
 }

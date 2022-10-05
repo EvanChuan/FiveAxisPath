@@ -15,7 +15,7 @@ bool Function::compareZ(std::vector<double> p1, std::vector<double> p2){
 
 void Function::Sorting(std::vector<std::vector<double>>& points){
 	std::cout << "Start Sorting!" << "\n";
-	std::sort(points.begin(), points.end(), compareZ);
+	std::sort(points.begin(), points.end(), compareZ);  // using std library function
 	/*
 	std::ofstream output2("order_skel_points.txt");
 	for(std::vector<std::vector<double>>::iterator it = points.begin(); it != points.end(); ++it)

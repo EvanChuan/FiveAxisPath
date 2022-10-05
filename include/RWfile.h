@@ -14,6 +14,7 @@ public:
     static void WritePolytoOFF(Polyhedron& poly,vector<Polyhedron> cut_res);
     static void Write_bin_stl(std::string filename, std::vector<Tri> triangles);
     static std::vector<std::vector<double>> splitString(const std::string& str);
+    static void Write_GCode(std::string filename, vector<Tri> triangles);
 
 };
 #endif

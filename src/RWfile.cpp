@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string.h>
 #include <algorithm>
 #include "Function.h"
 #include "RWfile.h"
@@ -28,9 +29,9 @@ void RWfile::WritePolytoOFF(Polyhedron& tmesh,vector<Polyhedron> cut_res){
     }
 }
 
-// write the binary stl file output
+// write the binary stl file output  // there are some poblems, need to check the code
 //typedef Function::tri Tri;   // declear define structure
-void RWfile::Write_bin_stl(std::string filename, std::vector<Tri> triangles){
+void RWfile::Write_bin_stl(std::string filename, vector<Tri> triangles){
 
     //binary file
     std::string header_info = "solid " + filename + "-output";
@@ -46,7 +47,7 @@ void RWfile::Write_bin_stl(std::string filename, std::vector<Tri> triangles){
     myfile.write((char*)&nTriLong,4);
 
     //write down every triangle
-    for (std::vector<Tri>::iterator it = triangles.begin(); it!=triangles.end(); it++){
+    for (std::vector<Tri>::iterator it = triangles.begin()+1; it!=triangles.end(); it++){
         //normal vector coordinates
         myfile.write((char*)&it->n_x, 4);
         myfile.write((char*)&it->n_y, 4);
@@ -75,7 +76,7 @@ void RWfile::Write_bin_stl(std::string filename, std::vector<Tri> triangles){
 
 // change the tmesh data to vector<string>
 // 針對生成的off資料做處理，先將整個文字流進行 行分割，在進行每行的空白分割
-std::vector<std::vector<double>> RWfile::splitString(const std::string& str)
+vector<vector<double>> RWfile::splitString(const std::string& str)
 {
     std::vector<std::vector<double>> new_poly_double;
     std::stringstream ss(str);
@@ -109,4 +110,21 @@ std::vector<std::vector<double>> RWfile::splitString(const std::string& str)
         tmp.clear();
     }
     return new_poly_double;
+}
+
+void RWfile::Write_GCode(std::string filename, vector<Tri> triangles){
+    ofstream myfile;
+    myfile.open((filename + ".gcode").c_str(), ios::out);
+    if(myfile.is_open()){
+        for (std::vector<Tri>::iterator it = triangles.begin()+1; it!=triangles.end(); it++){
+            //normal vector coordinates
+            //myfile << "G1 X"+to_string(*&it->n_x)+" Y"+ to_string(*&it->n_y)+" Z"+to_string(*&it->n_z) << endl;
+            //p1 coordinates
+            myfile << "G0 X"+to_string(*&it->P1_x)+" Y"+ to_string(*&it->P1_y)+" Z"+to_string(*&it->P1_z) << endl;
+            //p2 coordinates
+            myfile << "G0 X"+to_string(*&it->P2_x)+" Y"+ to_string(*&it->P2_y)+" Z"+to_string(*&it->P2_z) << endl;
+            //p3 coordinates
+            myfile << "G0 X"+to_string(*&it->P3_x)+" Y"+ to_string(*&it->P3_y)+" Z"+to_string(*&it->P3_z) << endl;
+        }
+    }
 }
