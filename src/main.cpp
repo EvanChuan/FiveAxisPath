@@ -33,13 +33,14 @@ int main(int argc, char* argv[])
     
     // Extract Skeleton Points
     Function FN;
-    std::vector<std::vector<double>> SKP = FN.ExtractSkelPoints(skeleton);
+    vector<vector<double>> SKP = FN.ExtractSkelPoints(skeleton);
     // Rearrange the skeleton points. But it needs general solution far.
     FN.Sorting(SKP);
 
-    // Find cutting plan, Get new bulding plan.
-    std::vector<std::vector<double>> plane;
-    plane = FN.cutting_plan(SKP);
+    // Find the cutting plan based on the skeleton points, Get new bulding plan.
+    vector<vector<double>> plane;
+    vector<Function::Skel_Points> plane_points;
+    plane = FN.cutting_plan(SKP,plane_points);   // The data of plane is [a,b,c,d] which are normal vector and parameter d.
     
     // run mesh cut divid. 
     vector<Polyhedron> cut_res;
@@ -55,25 +56,20 @@ int main(int argc, char* argv[])
     }
 
     // write the .off file and output
-    RWfile::WritePolytoOFF(tmesh,cut_res);
+    //RWfile::WritePolytoOFF(tmesh,cut_res);
     
     // change the data type result of .off data (string to double)
     vector< vector<Tri> > trianglemesh = FN.TransfertoTriMesh(tmesh,cut_res,plane);
-    
-    //std::vector<std::vector<double>> new_poly_double= RWfile::splitString(FN.get_poly(cut_res[1]));
     /*
-    // print for debug
-    for(int i=0; i<new_poly_double.size();i++){
-    //for(int i=0; i<new_poly_double[0][0]+2;i++){
-        if(new_poly_double[i].size()!=0){
-            std::cout << new_poly_double[i][0] << " " << new_poly_double[i][1] << " " << new_poly_double[i][2];
-            if(new_poly_double[i].size()==4){
-                std::cout <<  " " << new_poly_double[i][3];
-            }
-            std::cout << "\n";
-        }
+    for(int i=0;i<=trianglemesh.size()-1;i++){
+        std::cout << i << std::endl;
+        vector<Tri> current_tri = trianglemesh[i];
+        std::string filename = "output"+std::to_string(i);
+        RWfile::Write_GCode(filename,current_tri);
+        //RWfile::Write_bin_stl(filename, current_tri);
     }
     */
+    // *******************************************
     // polygon tranfer to triangle
     //vector<Tri> trianglemesh = FN.PolytoTri_for_Print(new_poly_double);
     /*
@@ -95,12 +91,14 @@ int main(int argc, char* argv[])
     }
     file.close();
     */
-    //RWfile::Write_bin_stl("output_1", trianglemesh);
+    
+    // *******************************************
 
     // The slicing process (input:trianglemesh  output:pregcode_data)
     double layerheight = 0.2;
     Slicer SL;
-    vector<vector<Slicer::slice>> pregcode_data = SL.subpart_slicing(trianglemesh,layerheight);
+    // The size of plane_points and trianglemesh differ by 1.
+    vector<vector<Slicer::slice>> pregcode_data = SL.subpart_slicing(trianglemesh,plane_points,layerheight);
 
     return 0;
 }
