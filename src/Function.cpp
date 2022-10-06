@@ -191,7 +191,9 @@ vector< vector<Tri> > Function::TransfertoTriMesh(Polyhedron& tmesh,vector<Polyh
     int ID = len - count; 
     std::vector<std::vector<double>> new_poly_double= RWfile::splitString(get_poly(cut_res[ID]));
     PolytoTri(new_poly_double,tri);
-    STLdata.push_back(tri);
+    if(tri.size()>=2){  // 過濾一些極端數據
+      STLdata.push_back(tri);
+    }
     count++;
     tri.clear();
   }

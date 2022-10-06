@@ -56,7 +56,7 @@ int main(int argc, char* argv[])
     }
 
     // write the .off file and output
-    //RWfile::WritePolytoOFF(tmesh,cut_res);
+    RWfile::WritePolytoOFF(tmesh,cut_res);
     
     // change the data type result of .off data (string to double)
     vector< vector<Tri> > trianglemesh = FN.TransfertoTriMesh(tmesh,cut_res,plane);
