@@ -37,10 +37,12 @@ public:
 
     pair<double,double> findBoundaries(vector<Tri>& triangles); // find each subpart slicing (bottomZ,topZ)
 
-    void calculate_rotateangle(vector<Tri>& triangles,double& arc_A,double& arc_C,double rotation[3][3],vector<double>& Previous_normal);
+    void calculate_rotateangle(vector<Tri>& triangles,double& arc_A,double& arc_C,double rotation[3][3]);
     double get_angle(double a, double b);
-    void deal_3by1Martix(double A[3][3], double B[3][1], double Re[3][1]);
-    void deal_3by3Martix(double A[3][3], double B[3][3], double Re[3][3]);
+    //double get_angle_withtwovector(vector<double>& PN,vector<double>& cutPlane_vector);
+    void deal_3by1Matrix(double A[3][3], double B[3][1], double Re[3][1]);
+    void deal_3by3Matrix(double A[3][3], double B[3][3], double Re[3][3]);
+    void update_Matrix(double A[3][3], double B[3][3]);
     void deal_translate_meshpoints(double A[3][3],vector<Tri>& current_tri,vector<Tri>& new_tri);
 
 };
