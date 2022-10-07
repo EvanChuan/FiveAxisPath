@@ -222,7 +222,7 @@ def separateSlices(triangles, layerThickness):
                     points_.remove(None)
                     break
             
-            for i in range(0,len(points_)):
+            for i in range(0,len(points_)):  # check if the same points
                 j = i+1
                 unique = True
                 while j < len(points_):

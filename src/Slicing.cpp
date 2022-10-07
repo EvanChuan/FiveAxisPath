@@ -13,12 +13,15 @@ vector<vector<Slicer::slice>> Slicer::subpart_slicing(vector<vector<Tri>>& trian
     double afterRotate_plane_point[3][1] = {0,0,0};
 
     // each subpart is processd separately and then stored in the pregcode_data vector
-    for(int i=0;i<trianglemesh.size();i++){
+// NEED!!!!    //for(int i=0;i<trianglemesh.size();i++){
+    for(int i=0;i<1;i++){
         vector<Tri> current_tri = trianglemesh[i];
+
+        // ******** Translate Part (Input:the divided subpart mesh,current_tri. Output:the translated subpart,tri_final_rotate) ********* //
         vector<Tri> tri_inPreviousFrame;
+        vector<Tri> tri_final_rotate;
         Slicer::plane pl;
         double arc_A = 0, arc_C = 0;
-
         if(i>0){      // for non-basic part process
             double rotationM_i[3][3] = {{0,0,0},{0,0,0},{0,0,0}};        // The rotation matrix is translate from i to i-1            
             if(i>1){  // for second-part and later
@@ -41,52 +44,73 @@ vector<vector<Slicer::slice>> Slicer::subpart_slicing(vector<vector<Tri>>& trian
             
             // Tranlate the trianglemesh to align the Z-axis positive direction
             // The rotation matrix used here is "rotationM_i" because the mesh was rotated once before in deal_translate_meshpoints
-            vector<Tri> tri_final_rotate;
             double plane_point[3][1] = {plane_points[i].X,plane_points[i].Y,plane_points[i].Z};
             deal_3by1Matrix(rotationM_i, plane_point, afterRotate_plane_point);
             deal_translate_meshpoints(rotationM_i,tri_inPreviousFrame,tri_final_rotate);
             
-            std::string filename = "output_tran"+std::to_string(i);
-            RWfile::Write_GCode(filename,tri_final_rotate);  // write the points after rotation
-            std::string filename1 = "output_org"+std::to_string(i);
-            RWfile::Write_GCode(filename1,current_tri);
+            //std::string filename = "output_tran"+std::to_string(i);
+            //RWfile::Write_GCode(filename,tri_final_rotate);  // write the points after rotation
+            //std::string filename1 = "output_org"+std::to_string(i);
+            //RWfile::Write_GCode(filename1,current_tri);
         }
         else if (i==0){
+            tri_final_rotate = current_tri;
             // The basic part do with nothing(no rotation).
-            std::string filename = "output_org"+std::to_string(i);
-            RWfile::Write_GCode(filename,current_tri);
+            //std::string filename = "output_org"+std::to_string(i);
+            //RWfile::Write_GCode(filename,tri_final_rotate);
         }
         rotated_angle.push_back(make_pair(arc_A,arc_C)); // The unit is radius need to translate and the angle is added to previous one
 
-        /*
-        pair<double,double> bounds = findBoundaries(process_tri);
+        // ******** Slicing Part ********* //
+        pair<double,double> bounds = findBoundaries(tri_final_rotate);  // bounds = (BottomZ,topZ)
         int layernum = round((bounds.second - bounds.first)/layerheight);
-        vector<double> slice_layer; // store each slicing layer height
+        vector<double> slice_layer_height; // store each slicing layer height
         for(int i=0;i<layernum;i++){
             if(i==0){
                 //std::cout << (layerheight/2) << std::endl;
-                slice_layer.push_back((layerheight/2));
+                slice_layer_height.push_back((layerheight/2));
             }
             else{
                 //std::cout << (layerheight/2)+layerheight*i << std::endl;
-                slice_layer.push_back((layerheight/2)+layerheight*i);
+                slice_layer_height.push_back((layerheight/2)+layerheight*i);
             }
         }
-        
+
+            // ********  Find Segment ********* //
+            // handles each layer according layer_height pre-step //
         vector<Slicer::slice> subpart_res;
-        for(int i=0; i<slice_layer.size(); i++){
+        for(int i=0; i<slice_layer_height.size(); i++){
             bool IsSurface = false;
             Slicer::slice sl;
-            sl.z_value = slice_layer[i];
-            for(int j=0;j<process_tri.size();j++){
-                // calculate intersect points of line and plan
-                //point1 = intersectPoint()
+
+            sl.z_value = slice_layer_height[i];
+            point P1,P2,P3;
+            vector<point> intersectPoint_set;   // a set of intersection points without ordered
+            for(int j=0;j<tri_final_rotate.size();j++){
+                // calculate intersect points of line and plan, the result of intersect points store in intersectPoint_set
+                line L1,L2,L3;
+                L1.P1 = {tri_final_rotate[j].P1_x,tri_final_rotate[j].P1_y,tri_final_rotate[j].P1_z} ;
+                L1.P2 = {tri_final_rotate[j].P2_x,tri_final_rotate[j].P2_y,tri_final_rotate[j].P2_z} ;
+                intersectPoint(L1,slice_layer_height[i],intersectPoint_set);
+                L2.P1 = {tri_final_rotate[j].P2_x,tri_final_rotate[j].P2_y,tri_final_rotate[j].P2_z} ;
+                L2.P2 = {tri_final_rotate[j].P3_x,tri_final_rotate[j].P3_y,tri_final_rotate[j].P3_z} ;
+                intersectPoint(L2,slice_layer_height[i],intersectPoint_set);
+                L3.P1 = {tri_final_rotate[j].P3_x,tri_final_rotate[j].P3_y,tri_final_rotate[j].P3_z} ;
+                L3.P2 = {tri_final_rotate[j].P1_x,tri_final_rotate[j].P1_y,tri_final_rotate[j].P1_z} ;
+                intersectPoint(L3,slice_layer_height[i],intersectPoint_set);
+
             }
-            
+            /* //for checking
+            std::string filename = "output_SP"+std::to_string(i);
+            RWfile::Write_GCode_pointtype(filename,intersectPoint_set);
+            */
+            intersectPoint_set.clear();
+
+            // decide counterclockwise or clockwise
         }
 
         pregcode_data.push_back(subpart_res);
-        */
+        
     }
     
     return pregcode_data;
@@ -96,7 +120,6 @@ pair<double,double> Slicer::findBoundaries(vector<Tri>& triangles){
     pair<double,double> bounds;
     double bottomZ = 500;
     double topZ = -500;
-    //std::cout << "START Compare!" << std::endl;
     for(int i = 1; i < triangles.size(); i++){
         double maximum = max({triangles[i].P1_z, triangles[i].P2_z, triangles[i].P3_z});
         double minimum = min({triangles[i].P1_z, triangles[i].P2_z, triangles[i].P3_z});
@@ -104,8 +127,6 @@ pair<double,double> Slicer::findBoundaries(vector<Tri>& triangles){
         if(maximum > topZ){topZ = maximum;}
         if(minimum < bottomZ){bottomZ = minimum;}
     }
-    //std::cout << "maximum = " << topZ << std::endl;
-    //std::cout << "minimum = " << bottomZ << std::endl;
     bounds = make_pair(bottomZ,topZ);
     return bounds;
 } 
@@ -227,5 +248,34 @@ void Slicer::deal_translate_meshpoints(double A[3][3],vector<Tri>& current_tri,v
             } 
         }
         new_tri.push_back(triP);
+    }
+}
+
+void Slicer::intersectPoint(line& L, double& S,vector<point>& intersectPoint_set){
+    point preP;
+    if(L.P1[2]==L.P2[2] && L.P2[2]== S){
+        preP.x = L.P1[0];
+        preP.y = L.P1[1];
+        preP.z = L.P1[2];
+        intersectPoint_set.push_back(preP);
+    }
+    else if(L.P1[2]==L.P2[2]){
+        return;
+    }
+    else{
+        vector<double> slope={L.P2[0]-L.P1[0],L.P2[1]-L.P1[1],L.P2[2]-L.P1[2]};
+        double t = (S-L.P1[2])/(L.P2[2]-L.P1[2]) ;
+        if(t>=0 && t<=1){
+            double tmpZ = L.P1[2]+t*slope[2];
+            if (tmpZ <= max(L.P2[2],L.P1[2])&& tmpZ >= min(L.P2[2],L.P1[2])){
+                preP.x = L.P1[0]+t*slope[0];
+                preP.y = L.P1[1]+t*slope[1];
+                preP.z = L.P1[2]+t*slope[2];
+                intersectPoint_set.push_back(preP);
+                return;
+            }
+            else{ return; }
+        }
+        else{ return; }
     }
 }
