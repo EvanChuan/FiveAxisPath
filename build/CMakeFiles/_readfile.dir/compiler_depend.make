@@ -6759,7 +6759,8 @@ CMakeFiles/_readfile.dir/src/Function.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAx
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/CustomisedPolyhedron.h \
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/PlaneCut.h \
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/FillHole.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/RWfile.h
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/RWfile.h \
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Slicing.h
 
 CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp \
   /usr/local/include/CGAL/Polyhedron_3.h \
@@ -16738,7 +16739,8 @@ CMakeFiles/_readfile.dir/src/RWfile.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAxis
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/CustomisedPolyhedron.h \
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/PlaneCut.h \
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/FillHole.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/RWfile.h
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/RWfile.h \
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Slicing.h
 
 CMakeFiles/_readfile.dir/src/Slicing.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Slicing.cpp \
   /Library/Developer/CommandLineTools/usr/include/c++/v1/numeric \

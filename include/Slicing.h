@@ -13,9 +13,9 @@ class Slicer
 {
 public:
     struct line{  // two end points and its vector
-        double n_x, n_y, n_z, n_d;
-        double P1_x,P1_y,P1_z;
-        double P2_x,P2_y,P2_z;
+        vector<double> N = {0, 0, 0, 0};    // {x,y,z,d}
+        vector<double> P1 = {0,0,0};        // {x,y,z}
+        vector<double> P2 = {0,0,0};        // {x,y,z}
     };
 
     struct point{
@@ -44,6 +44,7 @@ public:
     void deal_3by3Matrix(double A[3][3], double B[3][3], double Re[3][3]);
     void update_Matrix(double A[3][3], double B[3][3]);
     void deal_translate_meshpoints(double A[3][3],vector<Tri>& current_tri,vector<Tri>& new_tri);
+    void intersectPoint(line& L, double& S,vector<point>& intersectPoint_set);
 
 };
 #endif
