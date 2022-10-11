@@ -100,10 +100,10 @@ vector<vector<Slicer::slice>> Slicer::subpart_slicing(vector<vector<Tri>>& trian
                 intersectPoint(L3,slice_layer_height[i],intersectPoint_set);
 
             }
-            /* //for checking
+             //for checking
             std::string filename = "output_SP"+std::to_string(i);
             RWfile::Write_GCode_pointtype(filename,intersectPoint_set);
-            */
+            
             intersectPoint_set.clear();
 
             // decide counterclockwise or clockwise
