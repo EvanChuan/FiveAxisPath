@@ -79,12 +79,12 @@ vector<vector<Slicer::slice>> Slicer::subpart_slicing(vector<vector<Tri>>& trian
             // ********  Find Segment ********* //
             // handles each layer according layer_height pre-step //
         vector<Slicer::slice> subpart_res;
+        vector<vector<point>> tmp_res;
         for(int i=0; i<slice_layer_height.size(); i++){
             bool IsSurface = false;
             Slicer::slice sl;
 
             sl.z_value = slice_layer_height[i];
-            point P1,P2,P3;
             vector<point> intersectPoint_set;   // a set of intersection points without ordered
             for(int j=0;j<tri_final_rotate.size();j++){
                 // calculate intersect points of line and plan, the result of intersect points store in intersectPoint_set
@@ -100,15 +100,24 @@ vector<vector<Slicer::slice>> Slicer::subpart_slicing(vector<vector<Tri>>& trian
                 intersectPoint(L3,slice_layer_height[i],intersectPoint_set);
 
             }
-             //for checking
+            /* //for checking
             std::string filename = "output_SP"+std::to_string(i);
             RWfile::Write_GCode_pointtype(filename,intersectPoint_set);
-            
+            */
+            // decide counterclockwise or clockwise to order the countor
+            vector<point> order_intersectPoint_set;
+            convex_hull(intersectPoint_set,order_intersectPoint_set);
             intersectPoint_set.clear();
-
-            // decide counterclockwise or clockwise
+            /* //for checking
+            std::string filename = "output_SP"+std::to_string(i);
+            RWfile::Write_GCode_pointtype(filename,order_intersectPoint_set);
+            */
+            // infill parten amd wall
+            tmp_res.push_back(order_intersectPoint_set);
+            order_intersectPoint_set.clear();
         }
-
+        std::string filename = "output_check";
+        RWfile::Write_Gcode_indoubleVec(filename,tmp_res);
         pregcode_data.push_back(subpart_res);
         
     }
@@ -278,4 +287,38 @@ void Slicer::intersectPoint(line& L, double& S,vector<point>& intersectPoint_set
         }
         else{ return; }
     }
+}
+
+void Slicer::convex_hull(vector<point>& P,vector<point>& re_P){
+	size_t n = P.size(), k = 0;
+	if (n <= 3){
+        sort(P.begin(), P.end());
+        re_P = P;
+        return;
+    }
+	vector<point> H(2*n);
+
+	// Sort points lexicographically
+	sort(P.begin(), P.end());
+
+	// Build lower hull
+	for (size_t i = 0; i < n; i++) {
+		while (k >= 2 && cross(H[k-2], H[k-1], P[i]) <= 0) k--;
+		H[k++] = P[i];
+	}
+
+	// Build upper hull
+	for (size_t i = n-1, t = k+1; i > 0; --i) {
+		while (k >= t && cross(H[k-2], H[k-1], P[i-1]) <= 0) k--;
+		H[k++] = P[i-1];
+	}
+
+	H.resize(k-1);  // Because the last point in the returned list is the same as the first one.
+	re_P = H;
+    return;
+}
+
+double Slicer::cross(const point &O, const point &A, const point &B)
+{
+	return (A.x - O.x) * (B.y - O.y) - (A.y - O.y) * (B.x - O.x);
 }

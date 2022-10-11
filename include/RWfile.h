@@ -17,6 +17,7 @@ public:
     static std::vector<std::vector<double>> splitString(const std::string& str);
     static void Write_GCode(std::string filename, vector<Tri> triangles);
     static void Write_GCode_pointtype(std::string filename, vector<Slicer::point> triangles);
+    static void Write_Gcode_indoubleVec(std::string filename, vector<vector<Slicer::point>> triangles);
 
 };
 #endif
