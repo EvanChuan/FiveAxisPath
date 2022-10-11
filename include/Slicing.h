@@ -20,6 +20,10 @@ public:
 
     struct point{
         double x,y,z,a,c;
+
+        bool operator <(const point &p) const {
+		return x < p.x || (x == p.x && y < p.y);
+	    }
     };
 
     struct slice{
@@ -45,6 +49,14 @@ public:
     void update_Matrix(double A[3][3], double B[3][3]);
     void deal_translate_meshpoints(double A[3][3],vector<Tri>& current_tri,vector<Tri>& new_tri);
     void intersectPoint(line& L, double& S,vector<point>& intersectPoint_set);
+    
+    // Returns a list of points on the convex hull in counter-clockwise order.
+    // Note: the last point in the returned list is the same as the first one.
+    void convex_hull(vector<point>& P,vector<point>& re_P);
+    // 3D cross product of OA and OB vectors, (i.e z-component of their "2D" cross product, but remember that it is not defined in "2D").
+    // Returns a positive value, if OAB makes a counter-clockwise turn,
+    // negative for clockwise turn, and zero if the points are collinear.
+    double cross(const point &O, const point &A, const point &B);
 
 };
 #endif
