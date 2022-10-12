@@ -3277,8 +3277,15 @@ CMakeFiles/readfile.dir/src/main.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAxisPat
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/PlaneCut.h \
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/FillHole.h \
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/RWfile.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Slicing.h
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Slicing.h \
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/BSpline.h \
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Curve.h \
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Vector.h
 
+
+/Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Vector.h:
+
+/Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Curve.h:
 
 /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/FillHole.h:
 
@@ -8833,6 +8840,8 @@ CMakeFiles/readfile.dir/src/main.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAxisPat
 /usr/local/include/boost/graph/detail/adjacency_list.hpp:
 
 /usr/local/include/CGAL/Hilbert_sort_median_3.h:
+
+/Users/evanchuan/Desktop/3DP/FiveAxisPath/include/BSpline.h:
 
 /usr/local/include/boost/type_traits/intrinsics.hpp:
 

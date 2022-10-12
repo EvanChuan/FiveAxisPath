@@ -79,7 +79,7 @@ vector<vector<Slicer::slice>> Slicer::subpart_slicing(vector<vector<Tri>>& trian
             // ********  Find Segment ********* //
             // handles each layer according layer_height pre-step //
         vector<Slicer::slice> subpart_res;
-        vector<vector<point>> tmp_res;
+        vector<vector<point>> tmp_res; // for checking temporary result
         for(int i=0; i<slice_layer_height.size(); i++){
             bool IsSurface = false;
             Slicer::slice sl;
@@ -106,18 +106,25 @@ vector<vector<Slicer::slice>> Slicer::subpart_slicing(vector<vector<Tri>>& trian
             */
             // decide counterclockwise or clockwise to order the countor
             vector<point> order_intersectPoint_set;
+            vector<point> spline_intersectPoint_set;
             convex_hull(intersectPoint_set,order_intersectPoint_set);
+            bspline(order_intersectPoint_set,spline_intersectPoint_set);
             intersectPoint_set.clear();
-            /* //for checking
-            std::string filename = "output_SP"+std::to_string(i);
-            RWfile::Write_GCode_pointtype(filename,order_intersectPoint_set);
-            */
+             //for checking
+            //std::string filename_con = "output_con"+std::to_string(i);
+            //RWfile::Write_GCode_pointtype(filename_con,order_intersectPoint_set);
+            std::string filename_SP = "output_SP"+std::to_string(i);
+            RWfile::Write_GCode_pointtype(filename_SP,spline_intersectPoint_set);
+            
             // infill parten amd wall
-            tmp_res.push_back(order_intersectPoint_set);
+
+            //tmp_res.push_back(order_intersectPoint_set);
+            tmp_res.push_back(spline_intersectPoint_set);
             order_intersectPoint_set.clear();
+            spline_intersectPoint_set.clear();
         }
-        std::string filename = "output_check";
-        RWfile::Write_Gcode_indoubleVec(filename,tmp_res);
+        //std::string filename = "output_check";
+        //RWfile::Write_Gcode_indoubleVec(filename,tmp_res);
         pregcode_data.push_back(subpart_res);
         
     }
@@ -318,7 +325,22 @@ void Slicer::convex_hull(vector<point>& P,vector<point>& re_P){
     return;
 }
 
-double Slicer::cross(const point &O, const point &A, const point &B)
-{
+double Slicer::cross(const point &O, const point &A, const point &B){
 	return (A.x - O.x) * (B.y - O.y) - (A.y - O.y) * (B.x - O.x);
+}
+
+void Slicer::bspline(vector<point>& P,vector<point>& re_P) {
+	Curve* curve = new BSpline();
+	curve->set_steps(10); // generate 100 interpolate points between the last 4 way points
+	for(int i=0; i<P.size(); i++){
+        curve->add_way_point(Vector(P[i].x, P[i].y, P[i].z));
+    }
+	for (int i = 0; i < curve->node_count(); ++i) {
+		point SP;
+        SP.x = curve->node(i).x;
+        SP.y = curve->node(i).y;
+        SP.z = curve->node(i).z;
+        re_P.push_back(SP);
+	}
+	delete curve;
 }

@@ -167,6 +167,48 @@ CMakeFiles/_readfile.dir/src/Slicing.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Slicing.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Slicing.cpp -o CMakeFiles/_readfile.dir/src/Slicing.cpp.s
 
+CMakeFiles/_readfile.dir/src/BSpline.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/BSpline.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/BSpline.cpp
+CMakeFiles/_readfile.dir/src/BSpline.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/_readfile.dir/src/BSpline.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/BSpline.cpp.o -MF CMakeFiles/_readfile.dir/src/BSpline.cpp.o.d -o CMakeFiles/_readfile.dir/src/BSpline.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/BSpline.cpp
+
+CMakeFiles/_readfile.dir/src/BSpline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/BSpline.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/BSpline.cpp > CMakeFiles/_readfile.dir/src/BSpline.cpp.i
+
+CMakeFiles/_readfile.dir/src/BSpline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/BSpline.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/BSpline.cpp -o CMakeFiles/_readfile.dir/src/BSpline.cpp.s
+
+CMakeFiles/_readfile.dir/src/Curve.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Curve.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Curve.cpp
+CMakeFiles/_readfile.dir/src/Curve.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/_readfile.dir/src/Curve.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Curve.cpp.o -MF CMakeFiles/_readfile.dir/src/Curve.cpp.o.d -o CMakeFiles/_readfile.dir/src/Curve.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Curve.cpp
+
+CMakeFiles/_readfile.dir/src/Curve.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Curve.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Curve.cpp > CMakeFiles/_readfile.dir/src/Curve.cpp.i
+
+CMakeFiles/_readfile.dir/src/Curve.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Curve.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Curve.cpp -o CMakeFiles/_readfile.dir/src/Curve.cpp.s
+
+CMakeFiles/_readfile.dir/src/Vector.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Vector.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Vector.cpp
+CMakeFiles/_readfile.dir/src/Vector.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/_readfile.dir/src/Vector.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Vector.cpp.o -MF CMakeFiles/_readfile.dir/src/Vector.cpp.o.d -o CMakeFiles/_readfile.dir/src/Vector.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Vector.cpp
+
+CMakeFiles/_readfile.dir/src/Vector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Vector.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Vector.cpp > CMakeFiles/_readfile.dir/src/Vector.cpp.i
+
+CMakeFiles/_readfile.dir/src/Vector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Vector.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Vector.cpp -o CMakeFiles/_readfile.dir/src/Vector.cpp.s
+
 # Object files for target _readfile
 _readfile_OBJECTS = \
 "CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o" \
@@ -175,7 +217,10 @@ _readfile_OBJECTS = \
 "CMakeFiles/_readfile.dir/src/FillHole.cpp.o" \
 "CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o" \
 "CMakeFiles/_readfile.dir/src/RWfile.cpp.o" \
-"CMakeFiles/_readfile.dir/src/Slicing.cpp.o"
+"CMakeFiles/_readfile.dir/src/Slicing.cpp.o" \
+"CMakeFiles/_readfile.dir/src/BSpline.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Curve.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Vector.cpp.o"
 
 # External object files for target _readfile
 _readfile_EXTERNAL_OBJECTS =
@@ -187,9 +232,12 @@ lib_readfile.a: CMakeFiles/_readfile.dir/src/FillHole.cpp.o
 lib_readfile.a: CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o
 lib_readfile.a: CMakeFiles/_readfile.dir/src/RWfile.cpp.o
 lib_readfile.a: CMakeFiles/_readfile.dir/src/Slicing.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/BSpline.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Curve.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Vector.cpp.o
 lib_readfile.a: CMakeFiles/_readfile.dir/build.make
 lib_readfile.a: CMakeFiles/_readfile.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library lib_readfile.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library lib_readfile.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/_readfile.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_readfile.dir/link.txt --verbose=$(VERBOSE)
 

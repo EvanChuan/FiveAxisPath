@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/_readfile.dir/src/BSpline.cpp.o"
+  "CMakeFiles/_readfile.dir/src/BSpline.cpp.o.d"
+  "CMakeFiles/_readfile.dir/src/Curve.cpp.o"
+  "CMakeFiles/_readfile.dir/src/Curve.cpp.o.d"
   "CMakeFiles/_readfile.dir/src/FillHole.cpp.o"
   "CMakeFiles/_readfile.dir/src/FillHole.cpp.o.d"
   "CMakeFiles/_readfile.dir/src/Function.cpp.o"
@@ -11,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/_readfile.dir/src/RWfile.cpp.o.d"
   "CMakeFiles/_readfile.dir/src/Slicing.cpp.o"
   "CMakeFiles/_readfile.dir/src/Slicing.cpp.o.d"
+  "CMakeFiles/_readfile.dir/src/Vector.cpp.o"
+  "CMakeFiles/_readfile.dir/src/Vector.cpp.o.d"
   "CMakeFiles/_readfile.dir/src/sorting.cpp.o"
   "CMakeFiles/_readfile.dir/src/sorting.cpp.o.d"
   "lib_readfile.a"

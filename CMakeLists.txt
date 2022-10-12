@@ -40,6 +40,9 @@ set(SRCS
   src/PlaneCut.cpp
   src/RWfile.cpp
   src/Slicing.cpp
+  src/BSpline.cpp
+  src/Curve.cpp
+  src/Vector.cpp
 )
 
 add_library(_readfile STATIC ${SRCS})

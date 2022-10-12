@@ -8,12 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/BSpline.cpp" "CMakeFiles/_readfile.dir/src/BSpline.cpp.o" "gcc" "CMakeFiles/_readfile.dir/src/BSpline.cpp.o.d"
+  "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Curve.cpp" "CMakeFiles/_readfile.dir/src/Curve.cpp.o" "gcc" "CMakeFiles/_readfile.dir/src/Curve.cpp.o.d"
   "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/FillHole.cpp" "CMakeFiles/_readfile.dir/src/FillHole.cpp.o" "gcc" "CMakeFiles/_readfile.dir/src/FillHole.cpp.o.d"
   "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Function.cpp" "CMakeFiles/_readfile.dir/src/Function.cpp.o" "gcc" "CMakeFiles/_readfile.dir/src/Function.cpp.o.d"
   "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp" "CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o" "gcc" "CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o.d"
   "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp" "CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o" "gcc" "CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o.d"
   "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/RWfile.cpp" "CMakeFiles/_readfile.dir/src/RWfile.cpp.o" "gcc" "CMakeFiles/_readfile.dir/src/RWfile.cpp.o.d"
   "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Slicing.cpp" "CMakeFiles/_readfile.dir/src/Slicing.cpp.o" "gcc" "CMakeFiles/_readfile.dir/src/Slicing.cpp.o.d"
+  "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Vector.cpp" "CMakeFiles/_readfile.dir/src/Vector.cpp.o" "gcc" "CMakeFiles/_readfile.dir/src/Vector.cpp.o.d"
   "/Users/evanchuan/Desktop/3DP/FiveAxisPath/src/sorting.cpp" "CMakeFiles/_readfile.dir/src/sorting.cpp.o" "gcc" "CMakeFiles/_readfile.dir/src/sorting.cpp.o.d"
   )
 

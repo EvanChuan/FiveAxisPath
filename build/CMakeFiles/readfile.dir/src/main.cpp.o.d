@@ -3242,4 +3242,7 @@ CMakeFiles/readfile.dir/src/main.cpp.o: \
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/PlaneCut.h \
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/FillHole.h \
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/RWfile.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Slicing.h
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Slicing.h \
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/BSpline.h \
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Curve.h \
+  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Vector.h
