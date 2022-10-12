@@ -134,11 +134,6 @@ void RWfile::Write_GCode_pointtype(std::string filename, vector<Slicer::point> t
     myfile.open((filename + ".gcode").c_str(), ios::out);
     if(myfile.is_open()){
         for (vector<Slicer::point>::iterator it = triangles.begin(); it!=triangles.end(); it++){
-            //p1 coordinates
-            myfile << "G0 X"+to_string(*&it->x)+" Y"+ to_string(*&it->y)+" Z"+to_string(*&it->z) << endl;
-            //p2 coordinates
-            myfile << "G0 X"+to_string(*&it->x)+" Y"+ to_string(*&it->y)+" Z"+to_string(*&it->z) << endl;
-            //p3 coordinates
             myfile << "G0 X"+to_string(*&it->x)+" Y"+ to_string(*&it->y)+" Z"+to_string(*&it->z) << endl;
         }
     }
