@@ -3229,7 +3229,4 @@ CMakeFiles/_readfile.dir/src/Slicing.cpp.o: \
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/CustomisedPolyhedron.h \
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/PlaneCut.h \
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/FillHole.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/BSpline.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Curve.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Vector.h \
   /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/RWfile.h

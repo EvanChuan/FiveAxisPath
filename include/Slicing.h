@@ -6,7 +6,6 @@
 #include <algorithm>
 #include <fstream>
 #include "Function.h"
-#include "BSpline.h"
 
 using namespace std;
 
@@ -58,8 +57,7 @@ public:
     // Returns a positive value, if OAB makes a counter-clockwise turn,
     // negative for clockwise turn, and zero if the points are collinear.
     double cross(const point &O, const point &A, const point &B);
-
-    void bspline(vector<point>& P,vector<point>& re_P);
-
+    void interplote_points(vector<point>& P,vector<point>& re_P,double t);
+    int insert_numANDparmeters(point& p1,point& p2,double& a,double& b,double& t);
 };
 #endif
