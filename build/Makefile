@@ -142,54 +142,6 @@ readfile/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/build
 .PHONY : readfile/fast
 
-src/BSpline.o: src/BSpline.cpp.o
-.PHONY : src/BSpline.o
-
-# target to build an object file
-src/BSpline.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/BSpline.cpp.o
-.PHONY : src/BSpline.cpp.o
-
-src/BSpline.i: src/BSpline.cpp.i
-.PHONY : src/BSpline.i
-
-# target to preprocess a source file
-src/BSpline.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/BSpline.cpp.i
-.PHONY : src/BSpline.cpp.i
-
-src/BSpline.s: src/BSpline.cpp.s
-.PHONY : src/BSpline.s
-
-# target to generate assembly for a file
-src/BSpline.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/BSpline.cpp.s
-.PHONY : src/BSpline.cpp.s
-
-src/Curve.o: src/Curve.cpp.o
-.PHONY : src/Curve.o
-
-# target to build an object file
-src/Curve.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Curve.cpp.o
-.PHONY : src/Curve.cpp.o
-
-src/Curve.i: src/Curve.cpp.i
-.PHONY : src/Curve.i
-
-# target to preprocess a source file
-src/Curve.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Curve.cpp.i
-.PHONY : src/Curve.cpp.i
-
-src/Curve.s: src/Curve.cpp.s
-.PHONY : src/Curve.s
-
-# target to generate assembly for a file
-src/Curve.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Curve.cpp.s
-.PHONY : src/Curve.cpp.s
-
 src/FillHole.o: src/FillHole.cpp.o
 .PHONY : src/FillHole.o
 
@@ -334,30 +286,6 @@ src/Slicing.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Slicing.cpp.s
 .PHONY : src/Slicing.cpp.s
 
-src/Vector.o: src/Vector.cpp.o
-.PHONY : src/Vector.o
-
-# target to build an object file
-src/Vector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Vector.cpp.o
-.PHONY : src/Vector.cpp.o
-
-src/Vector.i: src/Vector.cpp.i
-.PHONY : src/Vector.i
-
-# target to preprocess a source file
-src/Vector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Vector.cpp.i
-.PHONY : src/Vector.cpp.i
-
-src/Vector.s: src/Vector.cpp.s
-.PHONY : src/Vector.s
-
-# target to generate assembly for a file
-src/Vector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Vector.cpp.s
-.PHONY : src/Vector.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -416,12 +344,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... _readfile"
 	@echo "... readfile"
-	@echo "... src/BSpline.o"
-	@echo "... src/BSpline.i"
-	@echo "... src/BSpline.s"
-	@echo "... src/Curve.o"
-	@echo "... src/Curve.i"
-	@echo "... src/Curve.s"
 	@echo "... src/FillHole.o"
 	@echo "... src/FillHole.i"
 	@echo "... src/FillHole.s"
@@ -440,9 +362,6 @@ help:
 	@echo "... src/Slicing.o"
 	@echo "... src/Slicing.i"
 	@echo "... src/Slicing.s"
-	@echo "... src/Vector.o"
-	@echo "... src/Vector.i"
-	@echo "... src/Vector.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

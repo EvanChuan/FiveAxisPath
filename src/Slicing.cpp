@@ -16,7 +16,6 @@ vector<vector<Slicer::slice>> Slicer::subpart_slicing(vector<vector<Tri>>& trian
 // NEED!!!!    //for(int i=0;i<trianglemesh.size();i++){
     for(int i=0;i<1;i++){
         vector<Tri> current_tri = trianglemesh[i];
-
         // ******** Translate Part (Input:the divided subpart mesh,current_tri. Output:the translated subpart,tri_final_rotate) ********* //
         vector<Tri> tri_inPreviousFrame;
         vector<Tri> tri_final_rotate;
@@ -106,27 +105,27 @@ vector<vector<Slicer::slice>> Slicer::subpart_slicing(vector<vector<Tri>>& trian
             */
             // decide counterclockwise or clockwise to order the countor
             vector<point> order_intersectPoint_set;
-            vector<point> spline_intersectPoint_set;
+            //vector<point> interplotePoint_set;
             convex_hull(intersectPoint_set,order_intersectPoint_set);
-            bspline(order_intersectPoint_set,spline_intersectPoint_set);
+            //interplote_points(order_intersectPoint_set,interplotePoint_set,0.1);
             intersectPoint_set.clear();
-             //for checking
-            //std::string filename_con = "output_con"+std::to_string(i);
-            //RWfile::Write_GCode_pointtype(filename_con,order_intersectPoint_set);
-            std::string filename_SP = "output_SP"+std::to_string(i);
-            RWfile::Write_GCode_pointtype(filename_SP,spline_intersectPoint_set);
-            
-            // infill parten amd wall
+            /* //for checking
+            std::string filename_con = "output_con"+std::to_string(i);
+            RWfile::Write_GCode_pointtype(filename_con,order_intersectPoint_set);
+            std::string filename_ins = "output_ins"+std::to_string(i);
+            RWfile::Write_GCode_pointtype(filename_ins,interplotePoint_set);
+            */
+            // infill parten and wall
 
-            //tmp_res.push_back(order_intersectPoint_set);
-            tmp_res.push_back(spline_intersectPoint_set);
-            order_intersectPoint_set.clear();
-            spline_intersectPoint_set.clear();
+
+            tmp_res.push_back(interplotePoint_set);
+            //order_intersectPoint_set.clear();
+            interplotePoint_set.clear();
         }
+
         //std::string filename = "output_check";
         //RWfile::Write_Gcode_indoubleVec(filename,tmp_res);
         pregcode_data.push_back(subpart_res);
-        
     }
     
     return pregcode_data;
@@ -329,18 +328,39 @@ double Slicer::cross(const point &O, const point &A, const point &B){
 	return (A.x - O.x) * (B.y - O.y) - (A.y - O.y) * (B.x - O.x);
 }
 
-void Slicer::bspline(vector<point>& P,vector<point>& re_P) {
-	Curve* curve = new BSpline();
-	curve->set_steps(10); // generate 100 interpolate points between the last 4 way points
-	for(int i=0; i<P.size(); i++){
-        curve->add_way_point(Vector(P[i].x, P[i].y, P[i].z));
+void Slicer::interplote_points(vector<point>& P,vector<point>& re_P,double t){
+    for(int i=0; i<P.size(); i++){
+        if(i!=P.size()-1){
+            point p1 = P[i], p2 = P[i+1];
+            double a,b;
+            int n = insert_numANDparmeters(p1,p2,a,b,t);
+            point insertP;
+            for(int j=0;j<n;j++){
+                insertP.x = p1.x+(a*j*t);
+                insertP.y = p1.y+(b*j*t);
+                insertP.z = p1.z;
+                re_P.push_back(insertP);
+            }
+        }
+        else{  // deal with the last point
+            point p1 = P[P.size()-1], p2 = P[0];
+            double a,b;
+            int n = insert_numANDparmeters(p1,p2,a,b,t);
+            point insertP;
+            for(int j=0;j<n;j++){
+                insertP.x = p1.x+(a*j*t);
+                insertP.y = p1.y+(b*j*t);
+                insertP.z = p1.z;
+                re_P.push_back(insertP);
+            }           
+        }
     }
-	for (int i = 0; i < curve->node_count(); ++i) {
-		point SP;
-        SP.x = curve->node(i).x;
-        SP.y = curve->node(i).y;
-        SP.z = curve->node(i).z;
-        re_P.push_back(SP);
-	}
-	delete curve;
+}
+
+int Slicer::insert_numANDparmeters(point& p1,point& p2,double& a,double& b,double& t){
+    a = p2.x-p1.x;
+    b = p2.y-p1.y;
+    double L = sqrt(pow(a,2)+pow(b,2));
+    int n = (int)(L/t);
+    return n;
 }
