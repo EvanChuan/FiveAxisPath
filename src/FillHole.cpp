@@ -102,7 +102,7 @@ public:
 			}
 		}
 	}
-
+	
 	void operator()(HDS& hds) {
 		CGAL::HalfedgeDS_decorator<HDS> decorator(hds);
 		typedef typename HDS::Halfedge Halfedge;
@@ -244,7 +244,7 @@ public:
 		printf("External faces = %d\n", external);
 		// test end
 		*/
-
+	
 		// ��ʼ�Զ�����������ǻ�( ѭ���������facet )
 		for (typename CDT::Finite_edges_iterator
 			eit = cdt.finite_edges_begin(),
@@ -311,6 +311,7 @@ public:
 			}
 		}
 	}
+	
 }; // end class Triangulate_modifier
 
 void FillHole::fill_hole(Polyhedron& poly, Vector3& nr, const double density) {

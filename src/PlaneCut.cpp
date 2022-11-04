@@ -5,13 +5,13 @@
 constexpr double eps = 1e-8;
 constexpr double eps10 = 1e-7;
 
-inline bool negative(Vector3& p, double C, Point3& a)
+inline bool negative(Vector3& p, double C, Point_3& a)
 {
 	Vector3 probe(a.x(), a.y(), a.z());
 	return probe * p + C > eps;
 }
 
-inline bool positive(Vector3& p, double C, Point3& a)
+inline bool positive(Vector3& p, double C, Point_3& a)
 {
 	Vector3 probe(a.x(), a.y(), a.z());
 	return probe * p + C < -eps;
@@ -57,7 +57,7 @@ bool PlaneCutter::cut(Polyhedron& poly_left, Polyhedron& poly_right, const Plane
 		if ((d0 >= 0 && d1 < 0) || (d0 < 0 && d1 >= 0))
 		{
 			Q = p1 + ((d0 / (d0 - d1)) * (p2 - p1));
-			Point3 newPnt(Q.x(), Q.y(), Q.z());
+			Point_3 newPnt(Q.x(), Q.y(), Q.z());
 			if (std::abs(d0) < eps10)
 			{
 				h->prev()->vertex()->point() = newPnt;

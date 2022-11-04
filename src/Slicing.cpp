@@ -8,13 +8,12 @@ Function FN;
 vector<vector<Slicer::slice>> Slicer::subpart_slicing(vector<vector<Tri>>& trianglemesh, vector<Function::Skel_Points>& plane_points, double layerheight)
 {
     vector<vector<Slicer::slice>> pregcode_data;        // Storing the result data of slicing and will be generated gcode
-    vector<std::pair<double,double>> rotated_angle;     // Storing the rotational anglele
+    vector<std::pair<double,double>> rotated_angle;     // Storing the rotational angle
     double rotationM[3][3] = {{1,0,0},{0,1,0},{0,0,1}}; // Storing the pre rotation
     double afterRotate_plane_point[3][1] = {0,0,0};
 
     // each subpart is processd separately and then stored in the pregcode_data vector
-// NEED!!!!    //for(int i=0;i<trianglemesh.size();i++){
-    for(int i=0;i<1;i++){
+    for(int i=0;i<trianglemesh.size();i++){
         vector<Tri> current_tri = trianglemesh[i];
         // ******** Translate Part (Input:the divided subpart mesh,current_tri. Output:the translated subpart,tri_final_rotate) ********* //
         vector<Tri> tri_inPreviousFrame;
@@ -118,9 +117,10 @@ vector<vector<Slicer::slice>> Slicer::subpart_slicing(vector<vector<Tri>>& trian
             // infill parten and wall
 
 
-            tmp_res.push_back(interplotePoint_set);
+            //tmp_res.push_back(interplotePoint_set);
+            tmp_res.push_back(order_intersectPoint_set);
             //order_intersectPoint_set.clear();
-            interplotePoint_set.clear();
+            //interplotePoint_set.clear();
         }
 
         //std::string filename = "output_check";

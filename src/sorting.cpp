@@ -16,14 +16,14 @@ bool Function::compareZ(std::vector<double> p1, std::vector<double> p2){
 void Function::Sorting(std::vector<std::vector<double>>& points){
 	std::cout << "Start Sorting!" << "\n";
 	std::sort(points.begin(), points.end(), compareZ);  // using std library function
-	/*
+	
 	std::ofstream output2("order_skel_points.txt");
 	for(std::vector<std::vector<double>>::iterator it = points.begin(); it != points.end(); ++it)
 	{
 		output2 << "X" << it[0][0] << " Y" << it[0][1] << " Z" << it[0][2] << "\n";
 	}
 	output2.close();
-	*/
+	
 	return;
 }
 
@@ -35,7 +35,7 @@ std::vector<std::vector<double>> Function::ExtractSkelPoints(Skeletonization::Sk
 	//std::ofstream output("skel_points.txt");
 	for(Skeleton_edge e : CGAL::make_range(edges(skeleton)))
 	{
-    	const Point3& s = skeleton[source(e, skeleton)].point;    // start point of edge  data type : CGAL::Point_3<CGAL::Simple_cartesian<double>>
+    	const Point_3& s = skeleton[source(e, skeleton)].point;    // start point of edge  data type : CGAL::Point_3<CGAL::Simple_cartesian<double>>
     	//std::cout << s[0] << "\n";
     	//const Point& t = skeleton[target(e, skeleton)].point;    // end point of edge
     	//output << s << "\n";

@@ -7,18 +7,22 @@
 #include "MCF_Skeleton.h"
 #include "Function.h"
 #include "RWfile.h"
-#include "Slicing.h"
+//#include "Slicing.h"
+#include "CuraSlicing.h"
+#include "Cura/Application.h"
 
 int main(int argc, char* argv[])
 {
     if(argc != 2)
     {   // it can only read .off file now
         std::cout << "usage: ./main <input_file>" << std::endl;
-        return 0;
+        return EXIT_FAILURE;
     }
-    std::ifstream input(argv[1]);
+
+    std::ifstream input(argv[1], std::ios_base::binary);
     Polyhedron tmesh;
     input >> tmesh;
+    std::cout << "Is closed? Ans:" << (CGAL::is_closed(tmesh)? "Yes" : "No") << std::endl;
     if (!CGAL::is_triangle_mesh(tmesh))
     {
         std::cout << "Input geometry is not triangulated." << std::endl;
@@ -34,8 +38,7 @@ int main(int argc, char* argv[])
     // Extract Skeleton Points
     Function FN;
     vector<vector<double>> SKP = FN.ExtractSkelPoints(skeleton);
-    // Rearrange the skeleton points. But it needs general solution far.
-    FN.Sorting(SKP);
+    FN.Sorting(SKP);    // Rearrange the skeleton points. But it needs general solution far.
 
     // Find the cutting plan based on the skeleton points, Get new bulding plan.
     vector<vector<double>> plane;
@@ -45,7 +48,6 @@ int main(int argc, char* argv[])
     // run mesh cut divid. 
     vector<Polyhedron> cut_res;
     try{
-        //std::cout << "Try Cut the Plan." << std::endl;
         FN.set_poly(tmesh);
         cut_res = FN.plane_cut(tmesh,plane);  // cut model is stored in cut_res vector
         // First cut plan is the build plan of last sub-part which store in first of cut_res
@@ -60,7 +62,8 @@ int main(int argc, char* argv[])
     
     // change the data type result of .off data (string to double)
     vector< vector<Tri> > trianglemesh = FN.TransfertoTriMesh(tmesh,cut_res,plane);
-    /*
+    
+    /* // convert the result in stl format
     for(int i=0;i<=trianglemesh.size()-1;i++){
         std::cout << i << std::endl;
         vector<Tri> current_tri = trianglemesh[i];
@@ -69,11 +72,11 @@ int main(int argc, char* argv[])
         //RWfile::Write_bin_stl(filename, current_tri);
     }
     */
-    // *******************************************
+    
     // polygon tranfer to triangle
     //vector<Tri> trianglemesh = FN.PolytoTri_for_Print(new_poly_double);
-    /*
-    // check trianglemesh
+    
+    /* // check trianglemesh
     ofstream file;
     file.open("checkoutput.txt");
     if (!file.is_open()) {
@@ -92,13 +95,15 @@ int main(int argc, char* argv[])
     file.close();
     */
     
-    // *******************************************
-
-    // The slicing process (input:trianglemesh  output:pregcode_data)
+    // **************** The slicing process (input:vector<vector<Tri>> trianglemesh  output:pregcode_data) ****************
     double layerheight = 0.2;
-    Slicer SL;
+    //Slicer SL;    // slicing by myself coding
     // The size of plane_points and trianglemesh differ by 1.
-    vector<vector<Slicer::slice>> pregcode_data = SL.subpart_slicing(trianglemesh,plane_points,layerheight);
-
+    //vector<vector<Slicer::slice>> pregcode_data = SL.subpart_slicing(trianglemesh,plane_points,layerheight);
+    
+    CuraSlicer CSL;  // use CuraEngine to slicing
+    cura::Application::getInstance().startThreadPool();
+    CSL.subpart_slicing(trianglemesh,plane_points,layerheight);
+    
     return 0;
 }

@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.24.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/evanchuan/Desktop/3DP/FiveAxisPath
+CMAKE_SOURCE_DIR = /Users/evanchuan/Desktop/FiveAxisPath
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/evanchuan/Desktop/3DP/FiveAxisPath/build
+CMAKE_BINARY_DIR = /Users/evanchuan/Desktop/FiveAxisPath/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/_readfile.dir/depend.make
@@ -69,127 +69,1759 @@ include CMakeFiles/_readfile.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/_readfile.dir/flags.make
 
-CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o: CMakeFiles/_readfile.dir/flags.make
-CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp
-CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o -MF CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o.d -o CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp
+CMakeFiles/_readfile.dir/src/clipper.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/clipper.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/clipper.cpp
+CMakeFiles/_readfile.dir/src/clipper.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/_readfile.dir/src/clipper.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/clipper.cpp.o -MF CMakeFiles/_readfile.dir/src/clipper.cpp.o.d -o CMakeFiles/_readfile.dir/src/clipper.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/clipper.cpp
 
-CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp > CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.i
+CMakeFiles/_readfile.dir/src/clipper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/clipper.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/clipper.cpp > CMakeFiles/_readfile.dir/src/clipper.cpp.i
 
-CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/MCF_Skeleton_example.cpp -o CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.s
+CMakeFiles/_readfile.dir/src/clipper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/clipper.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/clipper.cpp -o CMakeFiles/_readfile.dir/src/clipper.cpp.s
 
-CMakeFiles/_readfile.dir/src/sorting.cpp.o: CMakeFiles/_readfile.dir/flags.make
-CMakeFiles/_readfile.dir/src/sorting.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/sorting.cpp
-CMakeFiles/_readfile.dir/src/sorting.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/_readfile.dir/src/sorting.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/sorting.cpp.o -MF CMakeFiles/_readfile.dir/src/sorting.cpp.o.d -o CMakeFiles/_readfile.dir/src/sorting.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/sorting.cpp
+CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/CuraSlicing.cpp
+CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.o -MF CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.o.d -o CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/CuraSlicing.cpp
 
-CMakeFiles/_readfile.dir/src/sorting.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/sorting.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/sorting.cpp > CMakeFiles/_readfile.dir/src/sorting.cpp.i
+CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/CuraSlicing.cpp > CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.i
 
-CMakeFiles/_readfile.dir/src/sorting.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/sorting.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/sorting.cpp -o CMakeFiles/_readfile.dir/src/sorting.cpp.s
-
-CMakeFiles/_readfile.dir/src/Function.cpp.o: CMakeFiles/_readfile.dir/flags.make
-CMakeFiles/_readfile.dir/src/Function.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Function.cpp
-CMakeFiles/_readfile.dir/src/Function.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/_readfile.dir/src/Function.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Function.cpp.o -MF CMakeFiles/_readfile.dir/src/Function.cpp.o.d -o CMakeFiles/_readfile.dir/src/Function.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Function.cpp
-
-CMakeFiles/_readfile.dir/src/Function.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Function.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Function.cpp > CMakeFiles/_readfile.dir/src/Function.cpp.i
-
-CMakeFiles/_readfile.dir/src/Function.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Function.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Function.cpp -o CMakeFiles/_readfile.dir/src/Function.cpp.s
+CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/CuraSlicing.cpp -o CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.s
 
 CMakeFiles/_readfile.dir/src/FillHole.cpp.o: CMakeFiles/_readfile.dir/flags.make
-CMakeFiles/_readfile.dir/src/FillHole.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/FillHole.cpp
+CMakeFiles/_readfile.dir/src/FillHole.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/FillHole.cpp
 CMakeFiles/_readfile.dir/src/FillHole.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/_readfile.dir/src/FillHole.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/FillHole.cpp.o -MF CMakeFiles/_readfile.dir/src/FillHole.cpp.o.d -o CMakeFiles/_readfile.dir/src/FillHole.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/FillHole.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/_readfile.dir/src/FillHole.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/FillHole.cpp.o -MF CMakeFiles/_readfile.dir/src/FillHole.cpp.o.d -o CMakeFiles/_readfile.dir/src/FillHole.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/FillHole.cpp
 
 CMakeFiles/_readfile.dir/src/FillHole.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/FillHole.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/FillHole.cpp > CMakeFiles/_readfile.dir/src/FillHole.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/FillHole.cpp > CMakeFiles/_readfile.dir/src/FillHole.cpp.i
 
 CMakeFiles/_readfile.dir/src/FillHole.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/FillHole.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/FillHole.cpp -o CMakeFiles/_readfile.dir/src/FillHole.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/FillHole.cpp -o CMakeFiles/_readfile.dir/src/FillHole.cpp.s
+
+CMakeFiles/_readfile.dir/src/Function.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Function.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Function.cpp
+CMakeFiles/_readfile.dir/src/Function.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/_readfile.dir/src/Function.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Function.cpp.o -MF CMakeFiles/_readfile.dir/src/Function.cpp.o.d -o CMakeFiles/_readfile.dir/src/Function.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Function.cpp
+
+CMakeFiles/_readfile.dir/src/Function.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Function.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Function.cpp > CMakeFiles/_readfile.dir/src/Function.cpp.i
+
+CMakeFiles/_readfile.dir/src/Function.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Function.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Function.cpp -o CMakeFiles/_readfile.dir/src/Function.cpp.s
+
+CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/MCF_Skeleton_example.cpp
+CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o -MF CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o.d -o CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/MCF_Skeleton_example.cpp
+
+CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/MCF_Skeleton_example.cpp > CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.i
+
+CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/MCF_Skeleton_example.cpp -o CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.s
 
 CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o: CMakeFiles/_readfile.dir/flags.make
-CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp
+CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/PlaneCut.cpp
 CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o -MF CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o.d -o CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o -MF CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o.d -o CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/PlaneCut.cpp
 
 CMakeFiles/_readfile.dir/src/PlaneCut.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/PlaneCut.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp > CMakeFiles/_readfile.dir/src/PlaneCut.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/PlaneCut.cpp > CMakeFiles/_readfile.dir/src/PlaneCut.cpp.i
 
 CMakeFiles/_readfile.dir/src/PlaneCut.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/PlaneCut.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/PlaneCut.cpp -o CMakeFiles/_readfile.dir/src/PlaneCut.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/PlaneCut.cpp -o CMakeFiles/_readfile.dir/src/PlaneCut.cpp.s
 
 CMakeFiles/_readfile.dir/src/RWfile.cpp.o: CMakeFiles/_readfile.dir/flags.make
-CMakeFiles/_readfile.dir/src/RWfile.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/RWfile.cpp
+CMakeFiles/_readfile.dir/src/RWfile.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/RWfile.cpp
 CMakeFiles/_readfile.dir/src/RWfile.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/_readfile.dir/src/RWfile.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/RWfile.cpp.o -MF CMakeFiles/_readfile.dir/src/RWfile.cpp.o.d -o CMakeFiles/_readfile.dir/src/RWfile.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/RWfile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/_readfile.dir/src/RWfile.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/RWfile.cpp.o -MF CMakeFiles/_readfile.dir/src/RWfile.cpp.o.d -o CMakeFiles/_readfile.dir/src/RWfile.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/RWfile.cpp
 
 CMakeFiles/_readfile.dir/src/RWfile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/RWfile.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/RWfile.cpp > CMakeFiles/_readfile.dir/src/RWfile.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/RWfile.cpp > CMakeFiles/_readfile.dir/src/RWfile.cpp.i
 
 CMakeFiles/_readfile.dir/src/RWfile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/RWfile.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/RWfile.cpp -o CMakeFiles/_readfile.dir/src/RWfile.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/RWfile.cpp -o CMakeFiles/_readfile.dir/src/RWfile.cpp.s
 
-CMakeFiles/_readfile.dir/src/Slicing.cpp.o: CMakeFiles/_readfile.dir/flags.make
-CMakeFiles/_readfile.dir/src/Slicing.cpp.o: /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Slicing.cpp
-CMakeFiles/_readfile.dir/src/Slicing.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/_readfile.dir/src/Slicing.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Slicing.cpp.o -MF CMakeFiles/_readfile.dir/src/Slicing.cpp.o.d -o CMakeFiles/_readfile.dir/src/Slicing.cpp.o -c /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Slicing.cpp
+CMakeFiles/_readfile.dir/src/sorting.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/sorting.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/sorting.cpp
+CMakeFiles/_readfile.dir/src/sorting.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/_readfile.dir/src/sorting.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/sorting.cpp.o -MF CMakeFiles/_readfile.dir/src/sorting.cpp.o.d -o CMakeFiles/_readfile.dir/src/sorting.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/sorting.cpp
 
-CMakeFiles/_readfile.dir/src/Slicing.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Slicing.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Slicing.cpp > CMakeFiles/_readfile.dir/src/Slicing.cpp.i
+CMakeFiles/_readfile.dir/src/sorting.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/sorting.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/sorting.cpp > CMakeFiles/_readfile.dir/src/sorting.cpp.i
 
-CMakeFiles/_readfile.dir/src/Slicing.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Slicing.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/Slicing.cpp -o CMakeFiles/_readfile.dir/src/Slicing.cpp.s
+CMakeFiles/_readfile.dir/src/sorting.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/sorting.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/sorting.cpp -o CMakeFiles/_readfile.dir/src/sorting.cpp.s
+
+CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/TransformCalcu.cpp
+CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.o -MF CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.o.d -o CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/TransformCalcu.cpp
+
+CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/TransformCalcu.cpp > CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.i
+
+CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/TransformCalcu.cpp -o CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/Application.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/Application.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Application.cpp
+CMakeFiles/_readfile.dir/src/Cura/Application.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/Application.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/Application.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/Application.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/Application.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Application.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/Application.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/Application.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Application.cpp > CMakeFiles/_readfile.dir/src/Cura/Application.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/Application.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/Application.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Application.cpp -o CMakeFiles/_readfile.dir/src/Cura/Application.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/bridge.cpp
+CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/bridge.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/bridge.cpp > CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/bridge.cpp -o CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/ConicalOverhang.cpp
+CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/ConicalOverhang.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/ConicalOverhang.cpp > CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/ConicalOverhang.cpp -o CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/ExtruderTrain.cpp
+CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/ExtruderTrain.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/ExtruderTrain.cpp > CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/ExtruderTrain.cpp -o CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/FffGcodeWriter.cpp
+CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/FffGcodeWriter.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/FffGcodeWriter.cpp > CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/FffGcodeWriter.cpp -o CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/FffPolygonGenerator.cpp
+CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/FffPolygonGenerator.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/FffPolygonGenerator.cpp > CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/FffPolygonGenerator.cpp -o CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/FffProcessor.cpp
+CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/FffProcessor.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/FffProcessor.cpp > CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/FffProcessor.cpp -o CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/gcodeExport.cpp
+CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/gcodeExport.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/gcodeExport.cpp > CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/gcodeExport.cpp -o CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/GCodePathConfig.cpp
+CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/GCodePathConfig.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/GCodePathConfig.cpp > CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/GCodePathConfig.cpp -o CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/infill.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/infill.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill.cpp
+CMakeFiles/_readfile.dir/src/Cura/infill.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/infill.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/infill.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/infill.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/infill.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/infill.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/infill.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill.cpp > CMakeFiles/_readfile.dir/src/Cura/infill.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/infill.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/infill.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill.cpp -o CMakeFiles/_readfile.dir/src/Cura/infill.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/InsetOrderOptimizer.cpp
+CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/InsetOrderOptimizer.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/InsetOrderOptimizer.cpp > CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/InsetOrderOptimizer.cpp -o CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/layerPart.cpp
+CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/layerPart.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/layerPart.cpp > CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/layerPart.cpp -o CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/LayerPlan.cpp
+CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/LayerPlan.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/LayerPlan.cpp > CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/LayerPlan.cpp -o CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/LayerPlanBuffer.cpp
+CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/LayerPlanBuffer.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/LayerPlanBuffer.cpp > CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/LayerPlanBuffer.cpp -o CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/mesh.cpp
+CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/mesh.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/mesh.cpp > CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/mesh.cpp -o CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/MeshGroup.cpp
+CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/MeshGroup.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/MeshGroup.cpp > CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/MeshGroup.cpp -o CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Mold.cpp
+CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Mold.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Mold.cpp > CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Mold.cpp -o CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/multiVolumes.cpp
+CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/multiVolumes.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/multiVolumes.cpp > CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/multiVolumes.cpp -o CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/PathOrderPath.cpp
+CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/PathOrderPath.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/PathOrderPath.cpp > CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/PathOrderPath.cpp -o CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Preheat.cpp
+CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Preheat.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Preheat.cpp > CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Preheat.cpp -o CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/PrimeTower.cpp
+CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/PrimeTower.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/PrimeTower.cpp > CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/PrimeTower.cpp -o CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/raft.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/raft.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/raft.cpp
+CMakeFiles/_readfile.dir/src/Cura/raft.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/raft.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/raft.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/raft.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/raft.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/raft.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/raft.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/raft.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/raft.cpp > CMakeFiles/_readfile.dir/src/Cura/raft.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/raft.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/raft.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/raft.cpp -o CMakeFiles/_readfile.dir/src/Cura/raft.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Scene.cpp
+CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Scene.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Scene.cpp > CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Scene.cpp -o CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/SkeletalTrapezoidation.cpp
+CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/SkeletalTrapezoidation.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/SkeletalTrapezoidation.cpp > CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/SkeletalTrapezoidation.cpp -o CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/SkeletalTrapezoidationGraph.cpp
+CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/SkeletalTrapezoidationGraph.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/SkeletalTrapezoidationGraph.cpp > CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/SkeletalTrapezoidationGraph.cpp -o CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/skin.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/skin.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/skin.cpp
+CMakeFiles/_readfile.dir/src/Cura/skin.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/skin.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/skin.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/skin.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/skin.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/skin.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/skin.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/skin.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/skin.cpp > CMakeFiles/_readfile.dir/src/Cura/skin.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/skin.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/skin.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/skin.cpp -o CMakeFiles/_readfile.dir/src/Cura/skin.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/SkirtBrim.cpp
+CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/SkirtBrim.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/SkirtBrim.cpp > CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/SkirtBrim.cpp -o CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/SupportInfillPart.cpp
+CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/SupportInfillPart.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/SupportInfillPart.cpp > CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/SupportInfillPart.cpp -o CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Slice.cpp
+CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Slice.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Slice.cpp > CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Slice.cpp -o CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/sliceDataStorage.cpp
+CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/sliceDataStorage.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/sliceDataStorage.cpp > CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/sliceDataStorage.cpp -o CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/slicer.cpp
+CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/slicer.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/slicer.cpp > CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/slicer.cpp -o CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/support.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/support.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/support.cpp
+CMakeFiles/_readfile.dir/src/Cura/support.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/support.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/support.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/support.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/support.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/support.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/support.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/support.cpp > CMakeFiles/_readfile.dir/src/Cura/support.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/support.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/support.cpp -o CMakeFiles/_readfile.dir/src/Cura/support.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/timeEstimate.cpp
+CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/timeEstimate.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/timeEstimate.cpp > CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/timeEstimate.cpp -o CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/TopSurface.cpp
+CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/TopSurface.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/TopSurface.cpp > CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/TopSurface.cpp -o CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/TreeModelVolumes.cpp
+CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/TreeModelVolumes.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/TreeModelVolumes.cpp > CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/TreeModelVolumes.cpp -o CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/TreeSupport.cpp
+CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/TreeSupport.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/TreeSupport.cpp > CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/TreeSupport.cpp -o CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/WallsComputation.cpp
+CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/WallsComputation.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/WallsComputation.cpp > CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/WallsComputation.cpp -o CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Weaver.cpp
+CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Weaver.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Weaver.cpp > CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Weaver.cpp -o CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Wireframe2gcode.cpp
+CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Wireframe2gcode.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Wireframe2gcode.cpp > CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/Wireframe2gcode.cpp -o CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/WallToolPaths.cpp
+CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/WallToolPaths.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/WallToolPaths.cpp > CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/WallToolPaths.cpp -o CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/BeadingStrategy.cpp
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/BeadingStrategy.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/BeadingStrategy.cpp > CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/BeadingStrategy.cpp -o CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp > CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp -o CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp > CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp -o CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp > CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp -o CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp > CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp -o CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp > CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp -o CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp > CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp -o CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/communication/ArcusCommunication.cpp
+CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/communication/ArcusCommunication.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/communication/ArcusCommunication.cpp > CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/communication/ArcusCommunication.cpp -o CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/communication/ArcusCommunicationPrivate.cpp
+CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/communication/ArcusCommunicationPrivate.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/communication/ArcusCommunicationPrivate.cpp > CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/communication/ArcusCommunicationPrivate.cpp -o CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/communication/CommandLine.cpp
+CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/communication/CommandLine.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/communication/CommandLine.cpp > CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/communication/CommandLine.cpp -o CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/communication/Listener.cpp
+CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/communication/Listener.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/communication/Listener.cpp > CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/communication/Listener.cpp -o CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/ImageBasedDensityProvider.cpp
+CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/ImageBasedDensityProvider.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/ImageBasedDensityProvider.cpp > CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/ImageBasedDensityProvider.cpp -o CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/NoZigZagConnectorProcessor.cpp
+CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/NoZigZagConnectorProcessor.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/NoZigZagConnectorProcessor.cpp > CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/NoZigZagConnectorProcessor.cpp -o CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/ZigzagConnectorProcessor.cpp
+CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/ZigzagConnectorProcessor.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/ZigzagConnectorProcessor.cpp > CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/ZigzagConnectorProcessor.cpp -o CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/LightningDistanceField.cpp
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/LightningDistanceField.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/LightningDistanceField.cpp > CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/LightningDistanceField.cpp -o CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/LightningGenerator.cpp
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/LightningGenerator.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/LightningGenerator.cpp > CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/LightningGenerator.cpp -o CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/LightningLayer.cpp
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/LightningLayer.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/LightningLayer.cpp > CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/LightningLayer.cpp -o CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/LightningTreeNode.cpp
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/LightningTreeNode.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/LightningTreeNode.cpp > CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/LightningTreeNode.cpp -o CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/SierpinskiFill.cpp
+CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/SierpinskiFill.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/SierpinskiFill.cpp > CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/SierpinskiFill.cpp -o CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/SierpinskiFillProvider.cpp
+CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/SierpinskiFillProvider.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/SierpinskiFillProvider.cpp > CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/SierpinskiFillProvider.cpp -o CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/SubDivCube.cpp
+CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/SubDivCube.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/SubDivCube.cpp > CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/SubDivCube.cpp -o CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/GyroidInfill.cpp
+CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/GyroidInfill.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/GyroidInfill.cpp > CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/infill/GyroidInfill.cpp -o CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/Comb.cpp
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/Comb.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/Comb.cpp > CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/Comb.cpp -o CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/GCodePath.cpp
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/GCodePath.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/GCodePath.cpp > CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/GCodePath.cpp -o CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/LinePolygonsCrossings.cpp
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/LinePolygonsCrossings.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/LinePolygonsCrossings.cpp > CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/LinePolygonsCrossings.cpp -o CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/NozzleTempInsert.cpp
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/NozzleTempInsert.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/NozzleTempInsert.cpp > CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/NozzleTempInsert.cpp -o CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/TimeMaterialEstimates.cpp
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/TimeMaterialEstimates.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/TimeMaterialEstimates.cpp > CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/pathPlanning/TimeMaterialEstimates.cpp -o CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/progress/Progress.cpp
+CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/progress/Progress.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/progress/Progress.cpp > CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/progress/Progress.cpp -o CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/progress/ProgressStageEstimator.cpp
+CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/progress/ProgressStageEstimator.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/progress/ProgressStageEstimator.cpp > CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/progress/ProgressStageEstimator.cpp -o CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/AdaptiveLayerHeights.cpp
+CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/AdaptiveLayerHeights.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/AdaptiveLayerHeights.cpp > CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/AdaptiveLayerHeights.cpp -o CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/FlowTempGraph.cpp
+CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/FlowTempGraph.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/FlowTempGraph.cpp > CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/FlowTempGraph.cpp -o CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/PathConfigStorage.cpp
+CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/PathConfigStorage.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/PathConfigStorage.cpp > CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/PathConfigStorage.cpp -o CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/Settings.cpp
+CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/Settings.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/Settings.cpp > CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/Settings.cpp -o CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/ZSeamConfig.cpp
+CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/ZSeamConfig.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/ZSeamConfig.cpp > CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/settings/ZSeamConfig.cpp -o CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/AABB.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/AABB.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/AABB.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/AABB.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/AABB3D.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/AABB3D.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/AABB3D.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/AABB3D.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/Date.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/Date.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/Date.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/Date.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ExtrusionJunction.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ExtrusionJunction.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ExtrusionJunction.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ExtrusionJunction.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ExtrusionLine.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ExtrusionLine.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ExtrusionLine.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ExtrusionLine.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ExtrusionSegment.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ExtrusionSegment.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ExtrusionSegment.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ExtrusionSegment.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/FMatrix4x3.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/FMatrix4x3.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/FMatrix4x3.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/FMatrix4x3.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/gettime.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/gettime.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/gettime.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/gettime.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/LinearAlg2D.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/LinearAlg2D.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/LinearAlg2D.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/LinearAlg2D.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ListPolyIt.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ListPolyIt.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ListPolyIt.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ListPolyIt.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/MinimumSpanningTree.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/MinimumSpanningTree.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/MinimumSpanningTree.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/MinimumSpanningTree.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/Point3.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/Point3.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/Point3.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/Point3.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/PolygonConnector.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/PolygonConnector.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/PolygonConnector.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/PolygonConnector.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/PolygonsPointIndex.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/PolygonsPointIndex.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/PolygonsPointIndex.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/PolygonsPointIndex.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/PolygonsSegmentIndex.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/PolygonsSegmentIndex.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/PolygonsSegmentIndex.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/PolygonsSegmentIndex.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/polygonUtils.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/polygonUtils.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/polygonUtils.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/polygonUtils.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/polygon.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/polygon.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/polygon.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/polygon.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/PolylineStitcher.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/PolylineStitcher.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/PolylineStitcher.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/PolylineStitcher.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ProximityPointLink.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ProximityPointLink.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ProximityPointLink.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ProximityPointLink.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/Simplify.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/Simplify.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/Simplify.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/Simplify.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/SVG.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/SVG.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/SVG.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/SVG.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/socket.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/socket.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/socket.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/socket.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/SquareGrid.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/SquareGrid.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/SquareGrid.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/SquareGrid.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ThreadPool.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ThreadPool.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ThreadPool.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ThreadPool.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ToolpathVisualizer.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ToolpathVisualizer.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ToolpathVisualizer.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/ToolpathVisualizer.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.s
+
+CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.o: CMakeFiles/_readfile.dir/flags.make
+CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.o: /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/VoronoiUtils.cpp
+CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.o: CMakeFiles/_readfile.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building CXX object CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.o -MF CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.o.d -o CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.o -c /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/VoronoiUtils.cpp
+
+CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/VoronoiUtils.cpp > CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.i
+
+CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/evanchuan/Desktop/FiveAxisPath/src/Cura/utils/VoronoiUtils.cpp -o CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.s
 
 # Object files for target _readfile
 _readfile_OBJECTS = \
-"CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o" \
-"CMakeFiles/_readfile.dir/src/sorting.cpp.o" \
-"CMakeFiles/_readfile.dir/src/Function.cpp.o" \
+"CMakeFiles/_readfile.dir/src/clipper.cpp.o" \
+"CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.o" \
 "CMakeFiles/_readfile.dir/src/FillHole.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Function.cpp.o" \
+"CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o" \
 "CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o" \
 "CMakeFiles/_readfile.dir/src/RWfile.cpp.o" \
-"CMakeFiles/_readfile.dir/src/Slicing.cpp.o"
+"CMakeFiles/_readfile.dir/src/sorting.cpp.o" \
+"CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/Application.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/infill.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/raft.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/skin.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/support.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.o" \
+"CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.o"
 
 # External object files for target _readfile
 _readfile_EXTERNAL_OBJECTS =
 
-lib_readfile.a: CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o
-lib_readfile.a: CMakeFiles/_readfile.dir/src/sorting.cpp.o
-lib_readfile.a: CMakeFiles/_readfile.dir/src/Function.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/clipper.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.o
 lib_readfile.a: CMakeFiles/_readfile.dir/src/FillHole.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Function.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/MCF_Skeleton_example.cpp.o
 lib_readfile.a: CMakeFiles/_readfile.dir/src/PlaneCut.cpp.o
 lib_readfile.a: CMakeFiles/_readfile.dir/src/RWfile.cpp.o
-lib_readfile.a: CMakeFiles/_readfile.dir/src/Slicing.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/sorting.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/Application.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/infill.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/raft.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/skin.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/support.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.o
+lib_readfile.a: CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.o
 lib_readfile.a: CMakeFiles/_readfile.dir/build.make
 lib_readfile.a: CMakeFiles/_readfile.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library lib_readfile.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Linking CXX static library lib_readfile.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/_readfile.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_readfile.dir/link.txt --verbose=$(VERBOSE)
 
@@ -202,6 +1834,6 @@ CMakeFiles/_readfile.dir/clean:
 .PHONY : CMakeFiles/_readfile.dir/clean
 
 CMakeFiles/_readfile.dir/depend:
-	cd /Users/evanchuan/Desktop/3DP/FiveAxisPath/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/evanchuan/Desktop/3DP/FiveAxisPath /Users/evanchuan/Desktop/3DP/FiveAxisPath /Users/evanchuan/Desktop/3DP/FiveAxisPath/build /Users/evanchuan/Desktop/3DP/FiveAxisPath/build /Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles/_readfile.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/evanchuan/Desktop/FiveAxisPath/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/evanchuan/Desktop/FiveAxisPath /Users/evanchuan/Desktop/FiveAxisPath /Users/evanchuan/Desktop/FiveAxisPath/build /Users/evanchuan/Desktop/FiveAxisPath/build /Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles/_readfile.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/_readfile.dir/depend
 

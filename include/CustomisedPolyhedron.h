@@ -2,6 +2,7 @@
 #define CUSTOMISED_POLYHEDRON_H
 
 #include <fstream>
+#include <vector>
 #include <CGAL/Polyhedron_3.h>
 #include <CGAL/Simple_cartesian.h>
 #include <CGAL/Surface_mesh.h>
@@ -231,23 +232,25 @@ public:
 	};
 };
 
-typedef CGAL::Exact_predicates_inexact_constructions_kernel    Kernel;
+typedef CGAL::Exact_predicates_inexact_constructions_kernel    	Kernel;
 //typedef CGAL::Simple_cartesian<double>                        Kernel;
-typedef Kernel::Point_3                                        Point3;
-typedef Kernel::Plane_3										   Plane3;
-typedef Kernel::Vector_3 									   Vector3;
-typedef CGAL::Surface_mesh<Point3>                             Triangle_mesh;
-typedef CGAL::Polyhedron_3<Kernel, Polyhedron_demo_items<int>> Polyhedron;
+typedef Kernel::FT 												FT;
+typedef Kernel::Point_3                                        	Point_3;
+typedef Kernel::Plane_3										   	Plane3;
+typedef Kernel::Vector_3 									   	Vector3;
+typedef Kernel::Sphere_3 										Sphere_3;
+typedef CGAL::Surface_mesh<Point_3>                             Triangle_mesh;
+typedef CGAL::Polyhedron_3<Kernel, Polyhedron_demo_items<int>> 	Polyhedron;
 //typedef CGAL::Polyhedron_3<Kernel>                            Polyhedron;
-typedef Polyhedron::Halfedge_handle                   		   Halfedge_handle;
-typedef Polyhedron::Edge_iterator 							   Edge_iterator;
-typedef Polyhedron::Facet_handle 							   Facet_handle;
-typedef Polyhedron::Facet_iterator         					   Facet_iterator;
+typedef Polyhedron::Halfedge_handle                   		   	Halfedge_handle;
+typedef Polyhedron::Edge_iterator 							   	Edge_iterator;
+typedef Polyhedron::Facet_handle 							   	Facet_handle;
+typedef Polyhedron::Facet_iterator         					   	Facet_iterator;
 
-typedef boost::graph_traits<Polyhedron>::vertex_descriptor     vertex_descriptor;
-typedef CGAL::Mean_curvature_flow_skeletonization<Polyhedron>  Skeletonization;
-typedef Skeletonization::Skeleton                              Skeleton;
-typedef Skeleton::vertex_descriptor                            Skeleton_vertex;
-typedef Skeleton::edge_descriptor                              Skeleton_edge;
+typedef boost::graph_traits<Polyhedron>::vertex_descriptor     	vertex_descriptor;
+typedef CGAL::Mean_curvature_flow_skeletonization<Polyhedron>  	Skeletonization;
+typedef Skeletonization::Skeleton                              	Skeleton;
+typedef Skeleton::vertex_descriptor                            	Skeleton_vertex;
+typedef Skeleton::edge_descriptor                              	Skeleton_edge;
 
 #endif

@@ -1,5 +1,5 @@
 CMakeFiles/readfile.dir/src/main.cpp.o: \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/src/main.cpp \
+  /Users/evanchuan/Desktop/FiveAxisPath/src/main.cpp \
   /usr/local/include/CGAL/Point_set_3.h \
   /usr/local/include/CGAL/license/Point_set_3.h \
   /usr/local/include/CGAL/config.h /usr/local/include/boost/config.hpp \
@@ -76,6 +76,13 @@ CMakeFiles/readfile.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/gethostuuid.h \
   /usr/local/include/boost/config/detail/suffix.hpp \
   /usr/local/include/boost/config/helper_macros.hpp \
+  /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/optional \
+  /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string_view \
+  /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/variant \
+  /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/any \
+  /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/charconv \
+  /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/execution \
+  /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/filesystem \
   /usr/local/include/boost/config/detail/cxx_composite.hpp \
   /usr/local/include/boost/version.hpp /usr/local/include/CGAL/version.h \
   /usr/local/include/CGAL/version_macros.h \
@@ -319,7 +326,6 @@ CMakeFiles/readfile.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__hash_table \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/cmath \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__node_handle \
-  /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/optional \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/unordered_map \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/thread \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/system_error \
@@ -329,7 +335,6 @@ CMakeFiles/readfile.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/errno.h \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string \
-  /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string_view \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__string \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/cstdio \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/cwchar \
@@ -410,7 +415,6 @@ CMakeFiles/readfile.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/bitset \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__bit_reference \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/istream \
-  /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/stack \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/deque \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__split_buffer \
@@ -1429,7 +1433,7 @@ CMakeFiles/readfile.dir/src/main.cpp.o: \
   /usr/local/include/CGAL/IO/read_xyz_points.h \
   /usr/local/include/CGAL/IO/write_xyz_points.h \
   /usr/local/include/CGAL/demangle.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/MCF_Skeleton.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/MCF_Skeleton.h \
   /usr/local/include/CGAL/Polyhedron_3.h \
   /usr/local/include/CGAL/license/Polyhedron.h \
   /usr/local/include/CGAL/Polyhedron_3_fwd.h \
@@ -3237,9 +3241,23 @@ CMakeFiles/readfile.dir/src/main.cpp.o: \
   /usr/local/include/eigen3/Eigen/src/Eigenvalues/./RealQZ.h \
   /usr/local/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/local/include/CGAL/Eigen_vector.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/CustomisedPolyhedron.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Function.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/PlaneCut.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/FillHole.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/RWfile.h \
-  /Users/evanchuan/Desktop/3DP/FiveAxisPath/include/Slicing.h
+  /Users/evanchuan/Desktop/FiveAxisPath/include/CustomisedPolyhedron.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/Function.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/PlaneCut.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/FillHole.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/RWfile.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/Slicing.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/CuraSlicing.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/Cura/MeshGroup.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/Cura/mesh.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/Cura/settings/Settings.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/Cura/utils/AABB3D.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/Cura/utils/IntPoint.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/clipper.hpp \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/Cura/utils/Point3.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/Cura/utils/Coord_t.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/Cura/utils/math.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/Cura/utils/floatpoint.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/Cura/utils/FMatrix4x3.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/Cura/utils/NoCopy.h \
+  /Users/evanchuan/Desktop/FiveAxisPath/include/Cura/Application.h

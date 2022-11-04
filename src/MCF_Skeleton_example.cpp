@@ -11,20 +11,15 @@ void MCF_Skeleton::MCF_Skeleton_Fun(Skeletonization::Skeleton& skeleton,
   std::cout << "Start Skeletonize!" << "\n";
   // 1. Contract the mesh by mean curvature flow.
   mcs.contract_geometry();
-
   // 2. Collapse short edges and split bad triangles.
   mcs.collapse_edges();
   mcs.split_faces();
-
   // 3. Fix degenerate vertices.
   mcs.detect_degeneracies();
-
   // Perform the above three steps in one iteration.
   mcs.contract();
-
   // Iteratively apply step 1 to 3 until convergence.
   mcs.contract_until_convergence();
-
   // Convert the contracted mesh into a curve skeleton and
   // get the correspondent surface points
   mcs.convert_to_skeleton(skeleton);
@@ -50,7 +45,6 @@ void MCF_Skeleton::MCF_Skeleton_Fun(Skeletonization::Skeleton& skeleton,
       output << "2 " << skeleton[v].point << "  " << get(CGAL::vertex_point, tmesh, vd)  << "\n";
   */
 
-  //std::cout << "Done Skeletonize!" << "\n";
   return;
 }
 

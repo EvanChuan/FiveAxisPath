@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.24.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/evanchuan/Desktop/3DP/FiveAxisPath
+CMAKE_SOURCE_DIR = /Users/evanchuan/Desktop/FiveAxisPath
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/evanchuan/Desktop/3DP/FiveAxisPath/build
+CMAKE_BINARY_DIR = /Users/evanchuan/Desktop/FiveAxisPath/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles /Users/evanchuan/Desktop/3DP/FiveAxisPath/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles /Users/evanchuan/Desktop/FiveAxisPath/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/evanchuan/Desktop/3DP/FiveAxisPath/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/evanchuan/Desktop/FiveAxisPath/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -141,6 +141,2430 @@ readfile: cmake_check_build_system
 readfile/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/readfile.dir/build.make CMakeFiles/readfile.dir/build
 .PHONY : readfile/fast
+
+src/Cura/Application.o: src/Cura/Application.cpp.o
+.PHONY : src/Cura/Application.o
+
+# target to build an object file
+src/Cura/Application.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Application.cpp.o
+.PHONY : src/Cura/Application.cpp.o
+
+src/Cura/Application.i: src/Cura/Application.cpp.i
+.PHONY : src/Cura/Application.i
+
+# target to preprocess a source file
+src/Cura/Application.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Application.cpp.i
+.PHONY : src/Cura/Application.cpp.i
+
+src/Cura/Application.s: src/Cura/Application.cpp.s
+.PHONY : src/Cura/Application.s
+
+# target to generate assembly for a file
+src/Cura/Application.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Application.cpp.s
+.PHONY : src/Cura/Application.cpp.s
+
+src/Cura/BeadingStrategy/BeadingStrategy.o: src/Cura/BeadingStrategy/BeadingStrategy.cpp.o
+.PHONY : src/Cura/BeadingStrategy/BeadingStrategy.o
+
+# target to build an object file
+src/Cura/BeadingStrategy/BeadingStrategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.o
+.PHONY : src/Cura/BeadingStrategy/BeadingStrategy.cpp.o
+
+src/Cura/BeadingStrategy/BeadingStrategy.i: src/Cura/BeadingStrategy/BeadingStrategy.cpp.i
+.PHONY : src/Cura/BeadingStrategy/BeadingStrategy.i
+
+# target to preprocess a source file
+src/Cura/BeadingStrategy/BeadingStrategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.i
+.PHONY : src/Cura/BeadingStrategy/BeadingStrategy.cpp.i
+
+src/Cura/BeadingStrategy/BeadingStrategy.s: src/Cura/BeadingStrategy/BeadingStrategy.cpp.s
+.PHONY : src/Cura/BeadingStrategy/BeadingStrategy.s
+
+# target to generate assembly for a file
+src/Cura/BeadingStrategy/BeadingStrategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategy.cpp.s
+.PHONY : src/Cura/BeadingStrategy/BeadingStrategy.cpp.s
+
+src/Cura/BeadingStrategy/BeadingStrategyFactory.o: src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.o
+.PHONY : src/Cura/BeadingStrategy/BeadingStrategyFactory.o
+
+# target to build an object file
+src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.o
+.PHONY : src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.o
+
+src/Cura/BeadingStrategy/BeadingStrategyFactory.i: src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.i
+.PHONY : src/Cura/BeadingStrategy/BeadingStrategyFactory.i
+
+# target to preprocess a source file
+src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.i
+.PHONY : src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.i
+
+src/Cura/BeadingStrategy/BeadingStrategyFactory.s: src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.s
+.PHONY : src/Cura/BeadingStrategy/BeadingStrategyFactory.s
+
+# target to generate assembly for a file
+src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.s
+.PHONY : src/Cura/BeadingStrategy/BeadingStrategyFactory.cpp.s
+
+src/Cura/BeadingStrategy/DistributedBeadingStrategy.o: src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.o
+.PHONY : src/Cura/BeadingStrategy/DistributedBeadingStrategy.o
+
+# target to build an object file
+src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.o
+.PHONY : src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.o
+
+src/Cura/BeadingStrategy/DistributedBeadingStrategy.i: src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.i
+.PHONY : src/Cura/BeadingStrategy/DistributedBeadingStrategy.i
+
+# target to preprocess a source file
+src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.i
+.PHONY : src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.i
+
+src/Cura/BeadingStrategy/DistributedBeadingStrategy.s: src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.s
+.PHONY : src/Cura/BeadingStrategy/DistributedBeadingStrategy.s
+
+# target to generate assembly for a file
+src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.s
+.PHONY : src/Cura/BeadingStrategy/DistributedBeadingStrategy.cpp.s
+
+src/Cura/BeadingStrategy/LimitedBeadingStrategy.o: src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.o
+.PHONY : src/Cura/BeadingStrategy/LimitedBeadingStrategy.o
+
+# target to build an object file
+src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.o
+.PHONY : src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.o
+
+src/Cura/BeadingStrategy/LimitedBeadingStrategy.i: src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.i
+.PHONY : src/Cura/BeadingStrategy/LimitedBeadingStrategy.i
+
+# target to preprocess a source file
+src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.i
+.PHONY : src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.i
+
+src/Cura/BeadingStrategy/LimitedBeadingStrategy.s: src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.s
+.PHONY : src/Cura/BeadingStrategy/LimitedBeadingStrategy.s
+
+# target to generate assembly for a file
+src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.s
+.PHONY : src/Cura/BeadingStrategy/LimitedBeadingStrategy.cpp.s
+
+src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.o: src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.o
+.PHONY : src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.o
+
+# target to build an object file
+src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.o
+.PHONY : src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.o
+
+src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.i: src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.i
+.PHONY : src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.i
+
+# target to preprocess a source file
+src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.i
+.PHONY : src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.i
+
+src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.s: src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.s
+.PHONY : src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.s
+
+# target to generate assembly for a file
+src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.s
+.PHONY : src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.cpp.s
+
+src/Cura/BeadingStrategy/RedistributeBeadingStrategy.o: src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.o
+.PHONY : src/Cura/BeadingStrategy/RedistributeBeadingStrategy.o
+
+# target to build an object file
+src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.o
+.PHONY : src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.o
+
+src/Cura/BeadingStrategy/RedistributeBeadingStrategy.i: src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.i
+.PHONY : src/Cura/BeadingStrategy/RedistributeBeadingStrategy.i
+
+# target to preprocess a source file
+src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.i
+.PHONY : src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.i
+
+src/Cura/BeadingStrategy/RedistributeBeadingStrategy.s: src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.s
+.PHONY : src/Cura/BeadingStrategy/RedistributeBeadingStrategy.s
+
+# target to generate assembly for a file
+src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.s
+.PHONY : src/Cura/BeadingStrategy/RedistributeBeadingStrategy.cpp.s
+
+src/Cura/BeadingStrategy/WideningBeadingStrategy.o: src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.o
+.PHONY : src/Cura/BeadingStrategy/WideningBeadingStrategy.o
+
+# target to build an object file
+src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.o
+.PHONY : src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.o
+
+src/Cura/BeadingStrategy/WideningBeadingStrategy.i: src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.i
+.PHONY : src/Cura/BeadingStrategy/WideningBeadingStrategy.i
+
+# target to preprocess a source file
+src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.i
+.PHONY : src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.i
+
+src/Cura/BeadingStrategy/WideningBeadingStrategy.s: src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.s
+.PHONY : src/Cura/BeadingStrategy/WideningBeadingStrategy.s
+
+# target to generate assembly for a file
+src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.s
+.PHONY : src/Cura/BeadingStrategy/WideningBeadingStrategy.cpp.s
+
+src/Cura/ConicalOverhang.o: src/Cura/ConicalOverhang.cpp.o
+.PHONY : src/Cura/ConicalOverhang.o
+
+# target to build an object file
+src/Cura/ConicalOverhang.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.o
+.PHONY : src/Cura/ConicalOverhang.cpp.o
+
+src/Cura/ConicalOverhang.i: src/Cura/ConicalOverhang.cpp.i
+.PHONY : src/Cura/ConicalOverhang.i
+
+# target to preprocess a source file
+src/Cura/ConicalOverhang.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.i
+.PHONY : src/Cura/ConicalOverhang.cpp.i
+
+src/Cura/ConicalOverhang.s: src/Cura/ConicalOverhang.cpp.s
+.PHONY : src/Cura/ConicalOverhang.s
+
+# target to generate assembly for a file
+src/Cura/ConicalOverhang.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/ConicalOverhang.cpp.s
+.PHONY : src/Cura/ConicalOverhang.cpp.s
+
+src/Cura/ExtruderTrain.o: src/Cura/ExtruderTrain.cpp.o
+.PHONY : src/Cura/ExtruderTrain.o
+
+# target to build an object file
+src/Cura/ExtruderTrain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.o
+.PHONY : src/Cura/ExtruderTrain.cpp.o
+
+src/Cura/ExtruderTrain.i: src/Cura/ExtruderTrain.cpp.i
+.PHONY : src/Cura/ExtruderTrain.i
+
+# target to preprocess a source file
+src/Cura/ExtruderTrain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.i
+.PHONY : src/Cura/ExtruderTrain.cpp.i
+
+src/Cura/ExtruderTrain.s: src/Cura/ExtruderTrain.cpp.s
+.PHONY : src/Cura/ExtruderTrain.s
+
+# target to generate assembly for a file
+src/Cura/ExtruderTrain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/ExtruderTrain.cpp.s
+.PHONY : src/Cura/ExtruderTrain.cpp.s
+
+src/Cura/FffGcodeWriter.o: src/Cura/FffGcodeWriter.cpp.o
+.PHONY : src/Cura/FffGcodeWriter.o
+
+# target to build an object file
+src/Cura/FffGcodeWriter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.o
+.PHONY : src/Cura/FffGcodeWriter.cpp.o
+
+src/Cura/FffGcodeWriter.i: src/Cura/FffGcodeWriter.cpp.i
+.PHONY : src/Cura/FffGcodeWriter.i
+
+# target to preprocess a source file
+src/Cura/FffGcodeWriter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.i
+.PHONY : src/Cura/FffGcodeWriter.cpp.i
+
+src/Cura/FffGcodeWriter.s: src/Cura/FffGcodeWriter.cpp.s
+.PHONY : src/Cura/FffGcodeWriter.s
+
+# target to generate assembly for a file
+src/Cura/FffGcodeWriter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/FffGcodeWriter.cpp.s
+.PHONY : src/Cura/FffGcodeWriter.cpp.s
+
+src/Cura/FffPolygonGenerator.o: src/Cura/FffPolygonGenerator.cpp.o
+.PHONY : src/Cura/FffPolygonGenerator.o
+
+# target to build an object file
+src/Cura/FffPolygonGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.o
+.PHONY : src/Cura/FffPolygonGenerator.cpp.o
+
+src/Cura/FffPolygonGenerator.i: src/Cura/FffPolygonGenerator.cpp.i
+.PHONY : src/Cura/FffPolygonGenerator.i
+
+# target to preprocess a source file
+src/Cura/FffPolygonGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.i
+.PHONY : src/Cura/FffPolygonGenerator.cpp.i
+
+src/Cura/FffPolygonGenerator.s: src/Cura/FffPolygonGenerator.cpp.s
+.PHONY : src/Cura/FffPolygonGenerator.s
+
+# target to generate assembly for a file
+src/Cura/FffPolygonGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/FffPolygonGenerator.cpp.s
+.PHONY : src/Cura/FffPolygonGenerator.cpp.s
+
+src/Cura/FffProcessor.o: src/Cura/FffProcessor.cpp.o
+.PHONY : src/Cura/FffProcessor.o
+
+# target to build an object file
+src/Cura/FffProcessor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.o
+.PHONY : src/Cura/FffProcessor.cpp.o
+
+src/Cura/FffProcessor.i: src/Cura/FffProcessor.cpp.i
+.PHONY : src/Cura/FffProcessor.i
+
+# target to preprocess a source file
+src/Cura/FffProcessor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.i
+.PHONY : src/Cura/FffProcessor.cpp.i
+
+src/Cura/FffProcessor.s: src/Cura/FffProcessor.cpp.s
+.PHONY : src/Cura/FffProcessor.s
+
+# target to generate assembly for a file
+src/Cura/FffProcessor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/FffProcessor.cpp.s
+.PHONY : src/Cura/FffProcessor.cpp.s
+
+src/Cura/GCodePathConfig.o: src/Cura/GCodePathConfig.cpp.o
+.PHONY : src/Cura/GCodePathConfig.o
+
+# target to build an object file
+src/Cura/GCodePathConfig.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.o
+.PHONY : src/Cura/GCodePathConfig.cpp.o
+
+src/Cura/GCodePathConfig.i: src/Cura/GCodePathConfig.cpp.i
+.PHONY : src/Cura/GCodePathConfig.i
+
+# target to preprocess a source file
+src/Cura/GCodePathConfig.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.i
+.PHONY : src/Cura/GCodePathConfig.cpp.i
+
+src/Cura/GCodePathConfig.s: src/Cura/GCodePathConfig.cpp.s
+.PHONY : src/Cura/GCodePathConfig.s
+
+# target to generate assembly for a file
+src/Cura/GCodePathConfig.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/GCodePathConfig.cpp.s
+.PHONY : src/Cura/GCodePathConfig.cpp.s
+
+src/Cura/InsetOrderOptimizer.o: src/Cura/InsetOrderOptimizer.cpp.o
+.PHONY : src/Cura/InsetOrderOptimizer.o
+
+# target to build an object file
+src/Cura/InsetOrderOptimizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.o
+.PHONY : src/Cura/InsetOrderOptimizer.cpp.o
+
+src/Cura/InsetOrderOptimizer.i: src/Cura/InsetOrderOptimizer.cpp.i
+.PHONY : src/Cura/InsetOrderOptimizer.i
+
+# target to preprocess a source file
+src/Cura/InsetOrderOptimizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.i
+.PHONY : src/Cura/InsetOrderOptimizer.cpp.i
+
+src/Cura/InsetOrderOptimizer.s: src/Cura/InsetOrderOptimizer.cpp.s
+.PHONY : src/Cura/InsetOrderOptimizer.s
+
+# target to generate assembly for a file
+src/Cura/InsetOrderOptimizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/InsetOrderOptimizer.cpp.s
+.PHONY : src/Cura/InsetOrderOptimizer.cpp.s
+
+src/Cura/LayerPlan.o: src/Cura/LayerPlan.cpp.o
+.PHONY : src/Cura/LayerPlan.o
+
+# target to build an object file
+src/Cura/LayerPlan.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.o
+.PHONY : src/Cura/LayerPlan.cpp.o
+
+src/Cura/LayerPlan.i: src/Cura/LayerPlan.cpp.i
+.PHONY : src/Cura/LayerPlan.i
+
+# target to preprocess a source file
+src/Cura/LayerPlan.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.i
+.PHONY : src/Cura/LayerPlan.cpp.i
+
+src/Cura/LayerPlan.s: src/Cura/LayerPlan.cpp.s
+.PHONY : src/Cura/LayerPlan.s
+
+# target to generate assembly for a file
+src/Cura/LayerPlan.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/LayerPlan.cpp.s
+.PHONY : src/Cura/LayerPlan.cpp.s
+
+src/Cura/LayerPlanBuffer.o: src/Cura/LayerPlanBuffer.cpp.o
+.PHONY : src/Cura/LayerPlanBuffer.o
+
+# target to build an object file
+src/Cura/LayerPlanBuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.o
+.PHONY : src/Cura/LayerPlanBuffer.cpp.o
+
+src/Cura/LayerPlanBuffer.i: src/Cura/LayerPlanBuffer.cpp.i
+.PHONY : src/Cura/LayerPlanBuffer.i
+
+# target to preprocess a source file
+src/Cura/LayerPlanBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.i
+.PHONY : src/Cura/LayerPlanBuffer.cpp.i
+
+src/Cura/LayerPlanBuffer.s: src/Cura/LayerPlanBuffer.cpp.s
+.PHONY : src/Cura/LayerPlanBuffer.s
+
+# target to generate assembly for a file
+src/Cura/LayerPlanBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/LayerPlanBuffer.cpp.s
+.PHONY : src/Cura/LayerPlanBuffer.cpp.s
+
+src/Cura/MeshGroup.o: src/Cura/MeshGroup.cpp.o
+.PHONY : src/Cura/MeshGroup.o
+
+# target to build an object file
+src/Cura/MeshGroup.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.o
+.PHONY : src/Cura/MeshGroup.cpp.o
+
+src/Cura/MeshGroup.i: src/Cura/MeshGroup.cpp.i
+.PHONY : src/Cura/MeshGroup.i
+
+# target to preprocess a source file
+src/Cura/MeshGroup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.i
+.PHONY : src/Cura/MeshGroup.cpp.i
+
+src/Cura/MeshGroup.s: src/Cura/MeshGroup.cpp.s
+.PHONY : src/Cura/MeshGroup.s
+
+# target to generate assembly for a file
+src/Cura/MeshGroup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/MeshGroup.cpp.s
+.PHONY : src/Cura/MeshGroup.cpp.s
+
+src/Cura/Mold.o: src/Cura/Mold.cpp.o
+.PHONY : src/Cura/Mold.o
+
+# target to build an object file
+src/Cura/Mold.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.o
+.PHONY : src/Cura/Mold.cpp.o
+
+src/Cura/Mold.i: src/Cura/Mold.cpp.i
+.PHONY : src/Cura/Mold.i
+
+# target to preprocess a source file
+src/Cura/Mold.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.i
+.PHONY : src/Cura/Mold.cpp.i
+
+src/Cura/Mold.s: src/Cura/Mold.cpp.s
+.PHONY : src/Cura/Mold.s
+
+# target to generate assembly for a file
+src/Cura/Mold.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Mold.cpp.s
+.PHONY : src/Cura/Mold.cpp.s
+
+src/Cura/PathOrderPath.o: src/Cura/PathOrderPath.cpp.o
+.PHONY : src/Cura/PathOrderPath.o
+
+# target to build an object file
+src/Cura/PathOrderPath.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.o
+.PHONY : src/Cura/PathOrderPath.cpp.o
+
+src/Cura/PathOrderPath.i: src/Cura/PathOrderPath.cpp.i
+.PHONY : src/Cura/PathOrderPath.i
+
+# target to preprocess a source file
+src/Cura/PathOrderPath.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.i
+.PHONY : src/Cura/PathOrderPath.cpp.i
+
+src/Cura/PathOrderPath.s: src/Cura/PathOrderPath.cpp.s
+.PHONY : src/Cura/PathOrderPath.s
+
+# target to generate assembly for a file
+src/Cura/PathOrderPath.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/PathOrderPath.cpp.s
+.PHONY : src/Cura/PathOrderPath.cpp.s
+
+src/Cura/Preheat.o: src/Cura/Preheat.cpp.o
+.PHONY : src/Cura/Preheat.o
+
+# target to build an object file
+src/Cura/Preheat.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.o
+.PHONY : src/Cura/Preheat.cpp.o
+
+src/Cura/Preheat.i: src/Cura/Preheat.cpp.i
+.PHONY : src/Cura/Preheat.i
+
+# target to preprocess a source file
+src/Cura/Preheat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.i
+.PHONY : src/Cura/Preheat.cpp.i
+
+src/Cura/Preheat.s: src/Cura/Preheat.cpp.s
+.PHONY : src/Cura/Preheat.s
+
+# target to generate assembly for a file
+src/Cura/Preheat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Preheat.cpp.s
+.PHONY : src/Cura/Preheat.cpp.s
+
+src/Cura/PrimeTower.o: src/Cura/PrimeTower.cpp.o
+.PHONY : src/Cura/PrimeTower.o
+
+# target to build an object file
+src/Cura/PrimeTower.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.o
+.PHONY : src/Cura/PrimeTower.cpp.o
+
+src/Cura/PrimeTower.i: src/Cura/PrimeTower.cpp.i
+.PHONY : src/Cura/PrimeTower.i
+
+# target to preprocess a source file
+src/Cura/PrimeTower.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.i
+.PHONY : src/Cura/PrimeTower.cpp.i
+
+src/Cura/PrimeTower.s: src/Cura/PrimeTower.cpp.s
+.PHONY : src/Cura/PrimeTower.s
+
+# target to generate assembly for a file
+src/Cura/PrimeTower.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/PrimeTower.cpp.s
+.PHONY : src/Cura/PrimeTower.cpp.s
+
+src/Cura/Scene.o: src/Cura/Scene.cpp.o
+.PHONY : src/Cura/Scene.o
+
+# target to build an object file
+src/Cura/Scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.o
+.PHONY : src/Cura/Scene.cpp.o
+
+src/Cura/Scene.i: src/Cura/Scene.cpp.i
+.PHONY : src/Cura/Scene.i
+
+# target to preprocess a source file
+src/Cura/Scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.i
+.PHONY : src/Cura/Scene.cpp.i
+
+src/Cura/Scene.s: src/Cura/Scene.cpp.s
+.PHONY : src/Cura/Scene.s
+
+# target to generate assembly for a file
+src/Cura/Scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Scene.cpp.s
+.PHONY : src/Cura/Scene.cpp.s
+
+src/Cura/SkeletalTrapezoidation.o: src/Cura/SkeletalTrapezoidation.cpp.o
+.PHONY : src/Cura/SkeletalTrapezoidation.o
+
+# target to build an object file
+src/Cura/SkeletalTrapezoidation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.o
+.PHONY : src/Cura/SkeletalTrapezoidation.cpp.o
+
+src/Cura/SkeletalTrapezoidation.i: src/Cura/SkeletalTrapezoidation.cpp.i
+.PHONY : src/Cura/SkeletalTrapezoidation.i
+
+# target to preprocess a source file
+src/Cura/SkeletalTrapezoidation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.i
+.PHONY : src/Cura/SkeletalTrapezoidation.cpp.i
+
+src/Cura/SkeletalTrapezoidation.s: src/Cura/SkeletalTrapezoidation.cpp.s
+.PHONY : src/Cura/SkeletalTrapezoidation.s
+
+# target to generate assembly for a file
+src/Cura/SkeletalTrapezoidation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidation.cpp.s
+.PHONY : src/Cura/SkeletalTrapezoidation.cpp.s
+
+src/Cura/SkeletalTrapezoidationGraph.o: src/Cura/SkeletalTrapezoidationGraph.cpp.o
+.PHONY : src/Cura/SkeletalTrapezoidationGraph.o
+
+# target to build an object file
+src/Cura/SkeletalTrapezoidationGraph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.o
+.PHONY : src/Cura/SkeletalTrapezoidationGraph.cpp.o
+
+src/Cura/SkeletalTrapezoidationGraph.i: src/Cura/SkeletalTrapezoidationGraph.cpp.i
+.PHONY : src/Cura/SkeletalTrapezoidationGraph.i
+
+# target to preprocess a source file
+src/Cura/SkeletalTrapezoidationGraph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.i
+.PHONY : src/Cura/SkeletalTrapezoidationGraph.cpp.i
+
+src/Cura/SkeletalTrapezoidationGraph.s: src/Cura/SkeletalTrapezoidationGraph.cpp.s
+.PHONY : src/Cura/SkeletalTrapezoidationGraph.s
+
+# target to generate assembly for a file
+src/Cura/SkeletalTrapezoidationGraph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/SkeletalTrapezoidationGraph.cpp.s
+.PHONY : src/Cura/SkeletalTrapezoidationGraph.cpp.s
+
+src/Cura/SkirtBrim.o: src/Cura/SkirtBrim.cpp.o
+.PHONY : src/Cura/SkirtBrim.o
+
+# target to build an object file
+src/Cura/SkirtBrim.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.o
+.PHONY : src/Cura/SkirtBrim.cpp.o
+
+src/Cura/SkirtBrim.i: src/Cura/SkirtBrim.cpp.i
+.PHONY : src/Cura/SkirtBrim.i
+
+# target to preprocess a source file
+src/Cura/SkirtBrim.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.i
+.PHONY : src/Cura/SkirtBrim.cpp.i
+
+src/Cura/SkirtBrim.s: src/Cura/SkirtBrim.cpp.s
+.PHONY : src/Cura/SkirtBrim.s
+
+# target to generate assembly for a file
+src/Cura/SkirtBrim.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/SkirtBrim.cpp.s
+.PHONY : src/Cura/SkirtBrim.cpp.s
+
+src/Cura/Slice.o: src/Cura/Slice.cpp.o
+.PHONY : src/Cura/Slice.o
+
+# target to build an object file
+src/Cura/Slice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.o
+.PHONY : src/Cura/Slice.cpp.o
+
+src/Cura/Slice.i: src/Cura/Slice.cpp.i
+.PHONY : src/Cura/Slice.i
+
+# target to preprocess a source file
+src/Cura/Slice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.i
+.PHONY : src/Cura/Slice.cpp.i
+
+src/Cura/Slice.s: src/Cura/Slice.cpp.s
+.PHONY : src/Cura/Slice.s
+
+# target to generate assembly for a file
+src/Cura/Slice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Slice.cpp.s
+.PHONY : src/Cura/Slice.cpp.s
+
+src/Cura/SupportInfillPart.o: src/Cura/SupportInfillPart.cpp.o
+.PHONY : src/Cura/SupportInfillPart.o
+
+# target to build an object file
+src/Cura/SupportInfillPart.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.o
+.PHONY : src/Cura/SupportInfillPart.cpp.o
+
+src/Cura/SupportInfillPart.i: src/Cura/SupportInfillPart.cpp.i
+.PHONY : src/Cura/SupportInfillPart.i
+
+# target to preprocess a source file
+src/Cura/SupportInfillPart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.i
+.PHONY : src/Cura/SupportInfillPart.cpp.i
+
+src/Cura/SupportInfillPart.s: src/Cura/SupportInfillPart.cpp.s
+.PHONY : src/Cura/SupportInfillPart.s
+
+# target to generate assembly for a file
+src/Cura/SupportInfillPart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/SupportInfillPart.cpp.s
+.PHONY : src/Cura/SupportInfillPart.cpp.s
+
+src/Cura/TopSurface.o: src/Cura/TopSurface.cpp.o
+.PHONY : src/Cura/TopSurface.o
+
+# target to build an object file
+src/Cura/TopSurface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.o
+.PHONY : src/Cura/TopSurface.cpp.o
+
+src/Cura/TopSurface.i: src/Cura/TopSurface.cpp.i
+.PHONY : src/Cura/TopSurface.i
+
+# target to preprocess a source file
+src/Cura/TopSurface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.i
+.PHONY : src/Cura/TopSurface.cpp.i
+
+src/Cura/TopSurface.s: src/Cura/TopSurface.cpp.s
+.PHONY : src/Cura/TopSurface.s
+
+# target to generate assembly for a file
+src/Cura/TopSurface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/TopSurface.cpp.s
+.PHONY : src/Cura/TopSurface.cpp.s
+
+src/Cura/TreeModelVolumes.o: src/Cura/TreeModelVolumes.cpp.o
+.PHONY : src/Cura/TreeModelVolumes.o
+
+# target to build an object file
+src/Cura/TreeModelVolumes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.o
+.PHONY : src/Cura/TreeModelVolumes.cpp.o
+
+src/Cura/TreeModelVolumes.i: src/Cura/TreeModelVolumes.cpp.i
+.PHONY : src/Cura/TreeModelVolumes.i
+
+# target to preprocess a source file
+src/Cura/TreeModelVolumes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.i
+.PHONY : src/Cura/TreeModelVolumes.cpp.i
+
+src/Cura/TreeModelVolumes.s: src/Cura/TreeModelVolumes.cpp.s
+.PHONY : src/Cura/TreeModelVolumes.s
+
+# target to generate assembly for a file
+src/Cura/TreeModelVolumes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/TreeModelVolumes.cpp.s
+.PHONY : src/Cura/TreeModelVolumes.cpp.s
+
+src/Cura/TreeSupport.o: src/Cura/TreeSupport.cpp.o
+.PHONY : src/Cura/TreeSupport.o
+
+# target to build an object file
+src/Cura/TreeSupport.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.o
+.PHONY : src/Cura/TreeSupport.cpp.o
+
+src/Cura/TreeSupport.i: src/Cura/TreeSupport.cpp.i
+.PHONY : src/Cura/TreeSupport.i
+
+# target to preprocess a source file
+src/Cura/TreeSupport.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.i
+.PHONY : src/Cura/TreeSupport.cpp.i
+
+src/Cura/TreeSupport.s: src/Cura/TreeSupport.cpp.s
+.PHONY : src/Cura/TreeSupport.s
+
+# target to generate assembly for a file
+src/Cura/TreeSupport.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/TreeSupport.cpp.s
+.PHONY : src/Cura/TreeSupport.cpp.s
+
+src/Cura/WallToolPaths.o: src/Cura/WallToolPaths.cpp.o
+.PHONY : src/Cura/WallToolPaths.o
+
+# target to build an object file
+src/Cura/WallToolPaths.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.o
+.PHONY : src/Cura/WallToolPaths.cpp.o
+
+src/Cura/WallToolPaths.i: src/Cura/WallToolPaths.cpp.i
+.PHONY : src/Cura/WallToolPaths.i
+
+# target to preprocess a source file
+src/Cura/WallToolPaths.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.i
+.PHONY : src/Cura/WallToolPaths.cpp.i
+
+src/Cura/WallToolPaths.s: src/Cura/WallToolPaths.cpp.s
+.PHONY : src/Cura/WallToolPaths.s
+
+# target to generate assembly for a file
+src/Cura/WallToolPaths.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/WallToolPaths.cpp.s
+.PHONY : src/Cura/WallToolPaths.cpp.s
+
+src/Cura/WallsComputation.o: src/Cura/WallsComputation.cpp.o
+.PHONY : src/Cura/WallsComputation.o
+
+# target to build an object file
+src/Cura/WallsComputation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.o
+.PHONY : src/Cura/WallsComputation.cpp.o
+
+src/Cura/WallsComputation.i: src/Cura/WallsComputation.cpp.i
+.PHONY : src/Cura/WallsComputation.i
+
+# target to preprocess a source file
+src/Cura/WallsComputation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.i
+.PHONY : src/Cura/WallsComputation.cpp.i
+
+src/Cura/WallsComputation.s: src/Cura/WallsComputation.cpp.s
+.PHONY : src/Cura/WallsComputation.s
+
+# target to generate assembly for a file
+src/Cura/WallsComputation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/WallsComputation.cpp.s
+.PHONY : src/Cura/WallsComputation.cpp.s
+
+src/Cura/Weaver.o: src/Cura/Weaver.cpp.o
+.PHONY : src/Cura/Weaver.o
+
+# target to build an object file
+src/Cura/Weaver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.o
+.PHONY : src/Cura/Weaver.cpp.o
+
+src/Cura/Weaver.i: src/Cura/Weaver.cpp.i
+.PHONY : src/Cura/Weaver.i
+
+# target to preprocess a source file
+src/Cura/Weaver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.i
+.PHONY : src/Cura/Weaver.cpp.i
+
+src/Cura/Weaver.s: src/Cura/Weaver.cpp.s
+.PHONY : src/Cura/Weaver.s
+
+# target to generate assembly for a file
+src/Cura/Weaver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Weaver.cpp.s
+.PHONY : src/Cura/Weaver.cpp.s
+
+src/Cura/Wireframe2gcode.o: src/Cura/Wireframe2gcode.cpp.o
+.PHONY : src/Cura/Wireframe2gcode.o
+
+# target to build an object file
+src/Cura/Wireframe2gcode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.o
+.PHONY : src/Cura/Wireframe2gcode.cpp.o
+
+src/Cura/Wireframe2gcode.i: src/Cura/Wireframe2gcode.cpp.i
+.PHONY : src/Cura/Wireframe2gcode.i
+
+# target to preprocess a source file
+src/Cura/Wireframe2gcode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.i
+.PHONY : src/Cura/Wireframe2gcode.cpp.i
+
+src/Cura/Wireframe2gcode.s: src/Cura/Wireframe2gcode.cpp.s
+.PHONY : src/Cura/Wireframe2gcode.s
+
+# target to generate assembly for a file
+src/Cura/Wireframe2gcode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/Wireframe2gcode.cpp.s
+.PHONY : src/Cura/Wireframe2gcode.cpp.s
+
+src/Cura/bridge.o: src/Cura/bridge.cpp.o
+.PHONY : src/Cura/bridge.o
+
+# target to build an object file
+src/Cura/bridge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.o
+.PHONY : src/Cura/bridge.cpp.o
+
+src/Cura/bridge.i: src/Cura/bridge.cpp.i
+.PHONY : src/Cura/bridge.i
+
+# target to preprocess a source file
+src/Cura/bridge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.i
+.PHONY : src/Cura/bridge.cpp.i
+
+src/Cura/bridge.s: src/Cura/bridge.cpp.s
+.PHONY : src/Cura/bridge.s
+
+# target to generate assembly for a file
+src/Cura/bridge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/bridge.cpp.s
+.PHONY : src/Cura/bridge.cpp.s
+
+src/Cura/communication/ArcusCommunication.o: src/Cura/communication/ArcusCommunication.cpp.o
+.PHONY : src/Cura/communication/ArcusCommunication.o
+
+# target to build an object file
+src/Cura/communication/ArcusCommunication.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.o
+.PHONY : src/Cura/communication/ArcusCommunication.cpp.o
+
+src/Cura/communication/ArcusCommunication.i: src/Cura/communication/ArcusCommunication.cpp.i
+.PHONY : src/Cura/communication/ArcusCommunication.i
+
+# target to preprocess a source file
+src/Cura/communication/ArcusCommunication.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.i
+.PHONY : src/Cura/communication/ArcusCommunication.cpp.i
+
+src/Cura/communication/ArcusCommunication.s: src/Cura/communication/ArcusCommunication.cpp.s
+.PHONY : src/Cura/communication/ArcusCommunication.s
+
+# target to generate assembly for a file
+src/Cura/communication/ArcusCommunication.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunication.cpp.s
+.PHONY : src/Cura/communication/ArcusCommunication.cpp.s
+
+src/Cura/communication/ArcusCommunicationPrivate.o: src/Cura/communication/ArcusCommunicationPrivate.cpp.o
+.PHONY : src/Cura/communication/ArcusCommunicationPrivate.o
+
+# target to build an object file
+src/Cura/communication/ArcusCommunicationPrivate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.o
+.PHONY : src/Cura/communication/ArcusCommunicationPrivate.cpp.o
+
+src/Cura/communication/ArcusCommunicationPrivate.i: src/Cura/communication/ArcusCommunicationPrivate.cpp.i
+.PHONY : src/Cura/communication/ArcusCommunicationPrivate.i
+
+# target to preprocess a source file
+src/Cura/communication/ArcusCommunicationPrivate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.i
+.PHONY : src/Cura/communication/ArcusCommunicationPrivate.cpp.i
+
+src/Cura/communication/ArcusCommunicationPrivate.s: src/Cura/communication/ArcusCommunicationPrivate.cpp.s
+.PHONY : src/Cura/communication/ArcusCommunicationPrivate.s
+
+# target to generate assembly for a file
+src/Cura/communication/ArcusCommunicationPrivate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/communication/ArcusCommunicationPrivate.cpp.s
+.PHONY : src/Cura/communication/ArcusCommunicationPrivate.cpp.s
+
+src/Cura/communication/CommandLine.o: src/Cura/communication/CommandLine.cpp.o
+.PHONY : src/Cura/communication/CommandLine.o
+
+# target to build an object file
+src/Cura/communication/CommandLine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.o
+.PHONY : src/Cura/communication/CommandLine.cpp.o
+
+src/Cura/communication/CommandLine.i: src/Cura/communication/CommandLine.cpp.i
+.PHONY : src/Cura/communication/CommandLine.i
+
+# target to preprocess a source file
+src/Cura/communication/CommandLine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.i
+.PHONY : src/Cura/communication/CommandLine.cpp.i
+
+src/Cura/communication/CommandLine.s: src/Cura/communication/CommandLine.cpp.s
+.PHONY : src/Cura/communication/CommandLine.s
+
+# target to generate assembly for a file
+src/Cura/communication/CommandLine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/communication/CommandLine.cpp.s
+.PHONY : src/Cura/communication/CommandLine.cpp.s
+
+src/Cura/communication/Listener.o: src/Cura/communication/Listener.cpp.o
+.PHONY : src/Cura/communication/Listener.o
+
+# target to build an object file
+src/Cura/communication/Listener.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.o
+.PHONY : src/Cura/communication/Listener.cpp.o
+
+src/Cura/communication/Listener.i: src/Cura/communication/Listener.cpp.i
+.PHONY : src/Cura/communication/Listener.i
+
+# target to preprocess a source file
+src/Cura/communication/Listener.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.i
+.PHONY : src/Cura/communication/Listener.cpp.i
+
+src/Cura/communication/Listener.s: src/Cura/communication/Listener.cpp.s
+.PHONY : src/Cura/communication/Listener.s
+
+# target to generate assembly for a file
+src/Cura/communication/Listener.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/communication/Listener.cpp.s
+.PHONY : src/Cura/communication/Listener.cpp.s
+
+src/Cura/gcodeExport.o: src/Cura/gcodeExport.cpp.o
+.PHONY : src/Cura/gcodeExport.o
+
+# target to build an object file
+src/Cura/gcodeExport.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.o
+.PHONY : src/Cura/gcodeExport.cpp.o
+
+src/Cura/gcodeExport.i: src/Cura/gcodeExport.cpp.i
+.PHONY : src/Cura/gcodeExport.i
+
+# target to preprocess a source file
+src/Cura/gcodeExport.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.i
+.PHONY : src/Cura/gcodeExport.cpp.i
+
+src/Cura/gcodeExport.s: src/Cura/gcodeExport.cpp.s
+.PHONY : src/Cura/gcodeExport.s
+
+# target to generate assembly for a file
+src/Cura/gcodeExport.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/gcodeExport.cpp.s
+.PHONY : src/Cura/gcodeExport.cpp.s
+
+src/Cura/infill.o: src/Cura/infill.cpp.o
+.PHONY : src/Cura/infill.o
+
+# target to build an object file
+src/Cura/infill.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill.cpp.o
+.PHONY : src/Cura/infill.cpp.o
+
+src/Cura/infill.i: src/Cura/infill.cpp.i
+.PHONY : src/Cura/infill.i
+
+# target to preprocess a source file
+src/Cura/infill.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill.cpp.i
+.PHONY : src/Cura/infill.cpp.i
+
+src/Cura/infill.s: src/Cura/infill.cpp.s
+.PHONY : src/Cura/infill.s
+
+# target to generate assembly for a file
+src/Cura/infill.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill.cpp.s
+.PHONY : src/Cura/infill.cpp.s
+
+src/Cura/infill/GyroidInfill.o: src/Cura/infill/GyroidInfill.cpp.o
+.PHONY : src/Cura/infill/GyroidInfill.o
+
+# target to build an object file
+src/Cura/infill/GyroidInfill.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.o
+.PHONY : src/Cura/infill/GyroidInfill.cpp.o
+
+src/Cura/infill/GyroidInfill.i: src/Cura/infill/GyroidInfill.cpp.i
+.PHONY : src/Cura/infill/GyroidInfill.i
+
+# target to preprocess a source file
+src/Cura/infill/GyroidInfill.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.i
+.PHONY : src/Cura/infill/GyroidInfill.cpp.i
+
+src/Cura/infill/GyroidInfill.s: src/Cura/infill/GyroidInfill.cpp.s
+.PHONY : src/Cura/infill/GyroidInfill.s
+
+# target to generate assembly for a file
+src/Cura/infill/GyroidInfill.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/GyroidInfill.cpp.s
+.PHONY : src/Cura/infill/GyroidInfill.cpp.s
+
+src/Cura/infill/ImageBasedDensityProvider.o: src/Cura/infill/ImageBasedDensityProvider.cpp.o
+.PHONY : src/Cura/infill/ImageBasedDensityProvider.o
+
+# target to build an object file
+src/Cura/infill/ImageBasedDensityProvider.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.o
+.PHONY : src/Cura/infill/ImageBasedDensityProvider.cpp.o
+
+src/Cura/infill/ImageBasedDensityProvider.i: src/Cura/infill/ImageBasedDensityProvider.cpp.i
+.PHONY : src/Cura/infill/ImageBasedDensityProvider.i
+
+# target to preprocess a source file
+src/Cura/infill/ImageBasedDensityProvider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.i
+.PHONY : src/Cura/infill/ImageBasedDensityProvider.cpp.i
+
+src/Cura/infill/ImageBasedDensityProvider.s: src/Cura/infill/ImageBasedDensityProvider.cpp.s
+.PHONY : src/Cura/infill/ImageBasedDensityProvider.s
+
+# target to generate assembly for a file
+src/Cura/infill/ImageBasedDensityProvider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/ImageBasedDensityProvider.cpp.s
+.PHONY : src/Cura/infill/ImageBasedDensityProvider.cpp.s
+
+src/Cura/infill/LightningDistanceField.o: src/Cura/infill/LightningDistanceField.cpp.o
+.PHONY : src/Cura/infill/LightningDistanceField.o
+
+# target to build an object file
+src/Cura/infill/LightningDistanceField.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.o
+.PHONY : src/Cura/infill/LightningDistanceField.cpp.o
+
+src/Cura/infill/LightningDistanceField.i: src/Cura/infill/LightningDistanceField.cpp.i
+.PHONY : src/Cura/infill/LightningDistanceField.i
+
+# target to preprocess a source file
+src/Cura/infill/LightningDistanceField.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.i
+.PHONY : src/Cura/infill/LightningDistanceField.cpp.i
+
+src/Cura/infill/LightningDistanceField.s: src/Cura/infill/LightningDistanceField.cpp.s
+.PHONY : src/Cura/infill/LightningDistanceField.s
+
+# target to generate assembly for a file
+src/Cura/infill/LightningDistanceField.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/LightningDistanceField.cpp.s
+.PHONY : src/Cura/infill/LightningDistanceField.cpp.s
+
+src/Cura/infill/LightningGenerator.o: src/Cura/infill/LightningGenerator.cpp.o
+.PHONY : src/Cura/infill/LightningGenerator.o
+
+# target to build an object file
+src/Cura/infill/LightningGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.o
+.PHONY : src/Cura/infill/LightningGenerator.cpp.o
+
+src/Cura/infill/LightningGenerator.i: src/Cura/infill/LightningGenerator.cpp.i
+.PHONY : src/Cura/infill/LightningGenerator.i
+
+# target to preprocess a source file
+src/Cura/infill/LightningGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.i
+.PHONY : src/Cura/infill/LightningGenerator.cpp.i
+
+src/Cura/infill/LightningGenerator.s: src/Cura/infill/LightningGenerator.cpp.s
+.PHONY : src/Cura/infill/LightningGenerator.s
+
+# target to generate assembly for a file
+src/Cura/infill/LightningGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/LightningGenerator.cpp.s
+.PHONY : src/Cura/infill/LightningGenerator.cpp.s
+
+src/Cura/infill/LightningLayer.o: src/Cura/infill/LightningLayer.cpp.o
+.PHONY : src/Cura/infill/LightningLayer.o
+
+# target to build an object file
+src/Cura/infill/LightningLayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.o
+.PHONY : src/Cura/infill/LightningLayer.cpp.o
+
+src/Cura/infill/LightningLayer.i: src/Cura/infill/LightningLayer.cpp.i
+.PHONY : src/Cura/infill/LightningLayer.i
+
+# target to preprocess a source file
+src/Cura/infill/LightningLayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.i
+.PHONY : src/Cura/infill/LightningLayer.cpp.i
+
+src/Cura/infill/LightningLayer.s: src/Cura/infill/LightningLayer.cpp.s
+.PHONY : src/Cura/infill/LightningLayer.s
+
+# target to generate assembly for a file
+src/Cura/infill/LightningLayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/LightningLayer.cpp.s
+.PHONY : src/Cura/infill/LightningLayer.cpp.s
+
+src/Cura/infill/LightningTreeNode.o: src/Cura/infill/LightningTreeNode.cpp.o
+.PHONY : src/Cura/infill/LightningTreeNode.o
+
+# target to build an object file
+src/Cura/infill/LightningTreeNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.o
+.PHONY : src/Cura/infill/LightningTreeNode.cpp.o
+
+src/Cura/infill/LightningTreeNode.i: src/Cura/infill/LightningTreeNode.cpp.i
+.PHONY : src/Cura/infill/LightningTreeNode.i
+
+# target to preprocess a source file
+src/Cura/infill/LightningTreeNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.i
+.PHONY : src/Cura/infill/LightningTreeNode.cpp.i
+
+src/Cura/infill/LightningTreeNode.s: src/Cura/infill/LightningTreeNode.cpp.s
+.PHONY : src/Cura/infill/LightningTreeNode.s
+
+# target to generate assembly for a file
+src/Cura/infill/LightningTreeNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/LightningTreeNode.cpp.s
+.PHONY : src/Cura/infill/LightningTreeNode.cpp.s
+
+src/Cura/infill/NoZigZagConnectorProcessor.o: src/Cura/infill/NoZigZagConnectorProcessor.cpp.o
+.PHONY : src/Cura/infill/NoZigZagConnectorProcessor.o
+
+# target to build an object file
+src/Cura/infill/NoZigZagConnectorProcessor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.o
+.PHONY : src/Cura/infill/NoZigZagConnectorProcessor.cpp.o
+
+src/Cura/infill/NoZigZagConnectorProcessor.i: src/Cura/infill/NoZigZagConnectorProcessor.cpp.i
+.PHONY : src/Cura/infill/NoZigZagConnectorProcessor.i
+
+# target to preprocess a source file
+src/Cura/infill/NoZigZagConnectorProcessor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.i
+.PHONY : src/Cura/infill/NoZigZagConnectorProcessor.cpp.i
+
+src/Cura/infill/NoZigZagConnectorProcessor.s: src/Cura/infill/NoZigZagConnectorProcessor.cpp.s
+.PHONY : src/Cura/infill/NoZigZagConnectorProcessor.s
+
+# target to generate assembly for a file
+src/Cura/infill/NoZigZagConnectorProcessor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/NoZigZagConnectorProcessor.cpp.s
+.PHONY : src/Cura/infill/NoZigZagConnectorProcessor.cpp.s
+
+src/Cura/infill/SierpinskiFill.o: src/Cura/infill/SierpinskiFill.cpp.o
+.PHONY : src/Cura/infill/SierpinskiFill.o
+
+# target to build an object file
+src/Cura/infill/SierpinskiFill.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.o
+.PHONY : src/Cura/infill/SierpinskiFill.cpp.o
+
+src/Cura/infill/SierpinskiFill.i: src/Cura/infill/SierpinskiFill.cpp.i
+.PHONY : src/Cura/infill/SierpinskiFill.i
+
+# target to preprocess a source file
+src/Cura/infill/SierpinskiFill.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.i
+.PHONY : src/Cura/infill/SierpinskiFill.cpp.i
+
+src/Cura/infill/SierpinskiFill.s: src/Cura/infill/SierpinskiFill.cpp.s
+.PHONY : src/Cura/infill/SierpinskiFill.s
+
+# target to generate assembly for a file
+src/Cura/infill/SierpinskiFill.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFill.cpp.s
+.PHONY : src/Cura/infill/SierpinskiFill.cpp.s
+
+src/Cura/infill/SierpinskiFillProvider.o: src/Cura/infill/SierpinskiFillProvider.cpp.o
+.PHONY : src/Cura/infill/SierpinskiFillProvider.o
+
+# target to build an object file
+src/Cura/infill/SierpinskiFillProvider.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.o
+.PHONY : src/Cura/infill/SierpinskiFillProvider.cpp.o
+
+src/Cura/infill/SierpinskiFillProvider.i: src/Cura/infill/SierpinskiFillProvider.cpp.i
+.PHONY : src/Cura/infill/SierpinskiFillProvider.i
+
+# target to preprocess a source file
+src/Cura/infill/SierpinskiFillProvider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.i
+.PHONY : src/Cura/infill/SierpinskiFillProvider.cpp.i
+
+src/Cura/infill/SierpinskiFillProvider.s: src/Cura/infill/SierpinskiFillProvider.cpp.s
+.PHONY : src/Cura/infill/SierpinskiFillProvider.s
+
+# target to generate assembly for a file
+src/Cura/infill/SierpinskiFillProvider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/SierpinskiFillProvider.cpp.s
+.PHONY : src/Cura/infill/SierpinskiFillProvider.cpp.s
+
+src/Cura/infill/SubDivCube.o: src/Cura/infill/SubDivCube.cpp.o
+.PHONY : src/Cura/infill/SubDivCube.o
+
+# target to build an object file
+src/Cura/infill/SubDivCube.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.o
+.PHONY : src/Cura/infill/SubDivCube.cpp.o
+
+src/Cura/infill/SubDivCube.i: src/Cura/infill/SubDivCube.cpp.i
+.PHONY : src/Cura/infill/SubDivCube.i
+
+# target to preprocess a source file
+src/Cura/infill/SubDivCube.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.i
+.PHONY : src/Cura/infill/SubDivCube.cpp.i
+
+src/Cura/infill/SubDivCube.s: src/Cura/infill/SubDivCube.cpp.s
+.PHONY : src/Cura/infill/SubDivCube.s
+
+# target to generate assembly for a file
+src/Cura/infill/SubDivCube.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/SubDivCube.cpp.s
+.PHONY : src/Cura/infill/SubDivCube.cpp.s
+
+src/Cura/infill/ZigzagConnectorProcessor.o: src/Cura/infill/ZigzagConnectorProcessor.cpp.o
+.PHONY : src/Cura/infill/ZigzagConnectorProcessor.o
+
+# target to build an object file
+src/Cura/infill/ZigzagConnectorProcessor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.o
+.PHONY : src/Cura/infill/ZigzagConnectorProcessor.cpp.o
+
+src/Cura/infill/ZigzagConnectorProcessor.i: src/Cura/infill/ZigzagConnectorProcessor.cpp.i
+.PHONY : src/Cura/infill/ZigzagConnectorProcessor.i
+
+# target to preprocess a source file
+src/Cura/infill/ZigzagConnectorProcessor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.i
+.PHONY : src/Cura/infill/ZigzagConnectorProcessor.cpp.i
+
+src/Cura/infill/ZigzagConnectorProcessor.s: src/Cura/infill/ZigzagConnectorProcessor.cpp.s
+.PHONY : src/Cura/infill/ZigzagConnectorProcessor.s
+
+# target to generate assembly for a file
+src/Cura/infill/ZigzagConnectorProcessor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/infill/ZigzagConnectorProcessor.cpp.s
+.PHONY : src/Cura/infill/ZigzagConnectorProcessor.cpp.s
+
+src/Cura/layerPart.o: src/Cura/layerPart.cpp.o
+.PHONY : src/Cura/layerPart.o
+
+# target to build an object file
+src/Cura/layerPart.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.o
+.PHONY : src/Cura/layerPart.cpp.o
+
+src/Cura/layerPart.i: src/Cura/layerPart.cpp.i
+.PHONY : src/Cura/layerPart.i
+
+# target to preprocess a source file
+src/Cura/layerPart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.i
+.PHONY : src/Cura/layerPart.cpp.i
+
+src/Cura/layerPart.s: src/Cura/layerPart.cpp.s
+.PHONY : src/Cura/layerPart.s
+
+# target to generate assembly for a file
+src/Cura/layerPart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/layerPart.cpp.s
+.PHONY : src/Cura/layerPart.cpp.s
+
+src/Cura/mesh.o: src/Cura/mesh.cpp.o
+.PHONY : src/Cura/mesh.o
+
+# target to build an object file
+src/Cura/mesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.o
+.PHONY : src/Cura/mesh.cpp.o
+
+src/Cura/mesh.i: src/Cura/mesh.cpp.i
+.PHONY : src/Cura/mesh.i
+
+# target to preprocess a source file
+src/Cura/mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.i
+.PHONY : src/Cura/mesh.cpp.i
+
+src/Cura/mesh.s: src/Cura/mesh.cpp.s
+.PHONY : src/Cura/mesh.s
+
+# target to generate assembly for a file
+src/Cura/mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/mesh.cpp.s
+.PHONY : src/Cura/mesh.cpp.s
+
+src/Cura/multiVolumes.o: src/Cura/multiVolumes.cpp.o
+.PHONY : src/Cura/multiVolumes.o
+
+# target to build an object file
+src/Cura/multiVolumes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.o
+.PHONY : src/Cura/multiVolumes.cpp.o
+
+src/Cura/multiVolumes.i: src/Cura/multiVolumes.cpp.i
+.PHONY : src/Cura/multiVolumes.i
+
+# target to preprocess a source file
+src/Cura/multiVolumes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.i
+.PHONY : src/Cura/multiVolumes.cpp.i
+
+src/Cura/multiVolumes.s: src/Cura/multiVolumes.cpp.s
+.PHONY : src/Cura/multiVolumes.s
+
+# target to generate assembly for a file
+src/Cura/multiVolumes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/multiVolumes.cpp.s
+.PHONY : src/Cura/multiVolumes.cpp.s
+
+src/Cura/pathPlanning/Comb.o: src/Cura/pathPlanning/Comb.cpp.o
+.PHONY : src/Cura/pathPlanning/Comb.o
+
+# target to build an object file
+src/Cura/pathPlanning/Comb.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.o
+.PHONY : src/Cura/pathPlanning/Comb.cpp.o
+
+src/Cura/pathPlanning/Comb.i: src/Cura/pathPlanning/Comb.cpp.i
+.PHONY : src/Cura/pathPlanning/Comb.i
+
+# target to preprocess a source file
+src/Cura/pathPlanning/Comb.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.i
+.PHONY : src/Cura/pathPlanning/Comb.cpp.i
+
+src/Cura/pathPlanning/Comb.s: src/Cura/pathPlanning/Comb.cpp.s
+.PHONY : src/Cura/pathPlanning/Comb.s
+
+# target to generate assembly for a file
+src/Cura/pathPlanning/Comb.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/pathPlanning/Comb.cpp.s
+.PHONY : src/Cura/pathPlanning/Comb.cpp.s
+
+src/Cura/pathPlanning/GCodePath.o: src/Cura/pathPlanning/GCodePath.cpp.o
+.PHONY : src/Cura/pathPlanning/GCodePath.o
+
+# target to build an object file
+src/Cura/pathPlanning/GCodePath.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.o
+.PHONY : src/Cura/pathPlanning/GCodePath.cpp.o
+
+src/Cura/pathPlanning/GCodePath.i: src/Cura/pathPlanning/GCodePath.cpp.i
+.PHONY : src/Cura/pathPlanning/GCodePath.i
+
+# target to preprocess a source file
+src/Cura/pathPlanning/GCodePath.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.i
+.PHONY : src/Cura/pathPlanning/GCodePath.cpp.i
+
+src/Cura/pathPlanning/GCodePath.s: src/Cura/pathPlanning/GCodePath.cpp.s
+.PHONY : src/Cura/pathPlanning/GCodePath.s
+
+# target to generate assembly for a file
+src/Cura/pathPlanning/GCodePath.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/pathPlanning/GCodePath.cpp.s
+.PHONY : src/Cura/pathPlanning/GCodePath.cpp.s
+
+src/Cura/pathPlanning/LinePolygonsCrossings.o: src/Cura/pathPlanning/LinePolygonsCrossings.cpp.o
+.PHONY : src/Cura/pathPlanning/LinePolygonsCrossings.o
+
+# target to build an object file
+src/Cura/pathPlanning/LinePolygonsCrossings.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.o
+.PHONY : src/Cura/pathPlanning/LinePolygonsCrossings.cpp.o
+
+src/Cura/pathPlanning/LinePolygonsCrossings.i: src/Cura/pathPlanning/LinePolygonsCrossings.cpp.i
+.PHONY : src/Cura/pathPlanning/LinePolygonsCrossings.i
+
+# target to preprocess a source file
+src/Cura/pathPlanning/LinePolygonsCrossings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.i
+.PHONY : src/Cura/pathPlanning/LinePolygonsCrossings.cpp.i
+
+src/Cura/pathPlanning/LinePolygonsCrossings.s: src/Cura/pathPlanning/LinePolygonsCrossings.cpp.s
+.PHONY : src/Cura/pathPlanning/LinePolygonsCrossings.s
+
+# target to generate assembly for a file
+src/Cura/pathPlanning/LinePolygonsCrossings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/pathPlanning/LinePolygonsCrossings.cpp.s
+.PHONY : src/Cura/pathPlanning/LinePolygonsCrossings.cpp.s
+
+src/Cura/pathPlanning/NozzleTempInsert.o: src/Cura/pathPlanning/NozzleTempInsert.cpp.o
+.PHONY : src/Cura/pathPlanning/NozzleTempInsert.o
+
+# target to build an object file
+src/Cura/pathPlanning/NozzleTempInsert.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.o
+.PHONY : src/Cura/pathPlanning/NozzleTempInsert.cpp.o
+
+src/Cura/pathPlanning/NozzleTempInsert.i: src/Cura/pathPlanning/NozzleTempInsert.cpp.i
+.PHONY : src/Cura/pathPlanning/NozzleTempInsert.i
+
+# target to preprocess a source file
+src/Cura/pathPlanning/NozzleTempInsert.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.i
+.PHONY : src/Cura/pathPlanning/NozzleTempInsert.cpp.i
+
+src/Cura/pathPlanning/NozzleTempInsert.s: src/Cura/pathPlanning/NozzleTempInsert.cpp.s
+.PHONY : src/Cura/pathPlanning/NozzleTempInsert.s
+
+# target to generate assembly for a file
+src/Cura/pathPlanning/NozzleTempInsert.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/pathPlanning/NozzleTempInsert.cpp.s
+.PHONY : src/Cura/pathPlanning/NozzleTempInsert.cpp.s
+
+src/Cura/pathPlanning/TimeMaterialEstimates.o: src/Cura/pathPlanning/TimeMaterialEstimates.cpp.o
+.PHONY : src/Cura/pathPlanning/TimeMaterialEstimates.o
+
+# target to build an object file
+src/Cura/pathPlanning/TimeMaterialEstimates.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.o
+.PHONY : src/Cura/pathPlanning/TimeMaterialEstimates.cpp.o
+
+src/Cura/pathPlanning/TimeMaterialEstimates.i: src/Cura/pathPlanning/TimeMaterialEstimates.cpp.i
+.PHONY : src/Cura/pathPlanning/TimeMaterialEstimates.i
+
+# target to preprocess a source file
+src/Cura/pathPlanning/TimeMaterialEstimates.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.i
+.PHONY : src/Cura/pathPlanning/TimeMaterialEstimates.cpp.i
+
+src/Cura/pathPlanning/TimeMaterialEstimates.s: src/Cura/pathPlanning/TimeMaterialEstimates.cpp.s
+.PHONY : src/Cura/pathPlanning/TimeMaterialEstimates.s
+
+# target to generate assembly for a file
+src/Cura/pathPlanning/TimeMaterialEstimates.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/pathPlanning/TimeMaterialEstimates.cpp.s
+.PHONY : src/Cura/pathPlanning/TimeMaterialEstimates.cpp.s
+
+src/Cura/progress/Progress.o: src/Cura/progress/Progress.cpp.o
+.PHONY : src/Cura/progress/Progress.o
+
+# target to build an object file
+src/Cura/progress/Progress.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.o
+.PHONY : src/Cura/progress/Progress.cpp.o
+
+src/Cura/progress/Progress.i: src/Cura/progress/Progress.cpp.i
+.PHONY : src/Cura/progress/Progress.i
+
+# target to preprocess a source file
+src/Cura/progress/Progress.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.i
+.PHONY : src/Cura/progress/Progress.cpp.i
+
+src/Cura/progress/Progress.s: src/Cura/progress/Progress.cpp.s
+.PHONY : src/Cura/progress/Progress.s
+
+# target to generate assembly for a file
+src/Cura/progress/Progress.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/progress/Progress.cpp.s
+.PHONY : src/Cura/progress/Progress.cpp.s
+
+src/Cura/progress/ProgressStageEstimator.o: src/Cura/progress/ProgressStageEstimator.cpp.o
+.PHONY : src/Cura/progress/ProgressStageEstimator.o
+
+# target to build an object file
+src/Cura/progress/ProgressStageEstimator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.o
+.PHONY : src/Cura/progress/ProgressStageEstimator.cpp.o
+
+src/Cura/progress/ProgressStageEstimator.i: src/Cura/progress/ProgressStageEstimator.cpp.i
+.PHONY : src/Cura/progress/ProgressStageEstimator.i
+
+# target to preprocess a source file
+src/Cura/progress/ProgressStageEstimator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.i
+.PHONY : src/Cura/progress/ProgressStageEstimator.cpp.i
+
+src/Cura/progress/ProgressStageEstimator.s: src/Cura/progress/ProgressStageEstimator.cpp.s
+.PHONY : src/Cura/progress/ProgressStageEstimator.s
+
+# target to generate assembly for a file
+src/Cura/progress/ProgressStageEstimator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/progress/ProgressStageEstimator.cpp.s
+.PHONY : src/Cura/progress/ProgressStageEstimator.cpp.s
+
+src/Cura/raft.o: src/Cura/raft.cpp.o
+.PHONY : src/Cura/raft.o
+
+# target to build an object file
+src/Cura/raft.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/raft.cpp.o
+.PHONY : src/Cura/raft.cpp.o
+
+src/Cura/raft.i: src/Cura/raft.cpp.i
+.PHONY : src/Cura/raft.i
+
+# target to preprocess a source file
+src/Cura/raft.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/raft.cpp.i
+.PHONY : src/Cura/raft.cpp.i
+
+src/Cura/raft.s: src/Cura/raft.cpp.s
+.PHONY : src/Cura/raft.s
+
+# target to generate assembly for a file
+src/Cura/raft.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/raft.cpp.s
+.PHONY : src/Cura/raft.cpp.s
+
+src/Cura/settings/AdaptiveLayerHeights.o: src/Cura/settings/AdaptiveLayerHeights.cpp.o
+.PHONY : src/Cura/settings/AdaptiveLayerHeights.o
+
+# target to build an object file
+src/Cura/settings/AdaptiveLayerHeights.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.o
+.PHONY : src/Cura/settings/AdaptiveLayerHeights.cpp.o
+
+src/Cura/settings/AdaptiveLayerHeights.i: src/Cura/settings/AdaptiveLayerHeights.cpp.i
+.PHONY : src/Cura/settings/AdaptiveLayerHeights.i
+
+# target to preprocess a source file
+src/Cura/settings/AdaptiveLayerHeights.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.i
+.PHONY : src/Cura/settings/AdaptiveLayerHeights.cpp.i
+
+src/Cura/settings/AdaptiveLayerHeights.s: src/Cura/settings/AdaptiveLayerHeights.cpp.s
+.PHONY : src/Cura/settings/AdaptiveLayerHeights.s
+
+# target to generate assembly for a file
+src/Cura/settings/AdaptiveLayerHeights.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/settings/AdaptiveLayerHeights.cpp.s
+.PHONY : src/Cura/settings/AdaptiveLayerHeights.cpp.s
+
+src/Cura/settings/FlowTempGraph.o: src/Cura/settings/FlowTempGraph.cpp.o
+.PHONY : src/Cura/settings/FlowTempGraph.o
+
+# target to build an object file
+src/Cura/settings/FlowTempGraph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.o
+.PHONY : src/Cura/settings/FlowTempGraph.cpp.o
+
+src/Cura/settings/FlowTempGraph.i: src/Cura/settings/FlowTempGraph.cpp.i
+.PHONY : src/Cura/settings/FlowTempGraph.i
+
+# target to preprocess a source file
+src/Cura/settings/FlowTempGraph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.i
+.PHONY : src/Cura/settings/FlowTempGraph.cpp.i
+
+src/Cura/settings/FlowTempGraph.s: src/Cura/settings/FlowTempGraph.cpp.s
+.PHONY : src/Cura/settings/FlowTempGraph.s
+
+# target to generate assembly for a file
+src/Cura/settings/FlowTempGraph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/settings/FlowTempGraph.cpp.s
+.PHONY : src/Cura/settings/FlowTempGraph.cpp.s
+
+src/Cura/settings/PathConfigStorage.o: src/Cura/settings/PathConfigStorage.cpp.o
+.PHONY : src/Cura/settings/PathConfigStorage.o
+
+# target to build an object file
+src/Cura/settings/PathConfigStorage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.o
+.PHONY : src/Cura/settings/PathConfigStorage.cpp.o
+
+src/Cura/settings/PathConfigStorage.i: src/Cura/settings/PathConfigStorage.cpp.i
+.PHONY : src/Cura/settings/PathConfigStorage.i
+
+# target to preprocess a source file
+src/Cura/settings/PathConfigStorage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.i
+.PHONY : src/Cura/settings/PathConfigStorage.cpp.i
+
+src/Cura/settings/PathConfigStorage.s: src/Cura/settings/PathConfigStorage.cpp.s
+.PHONY : src/Cura/settings/PathConfigStorage.s
+
+# target to generate assembly for a file
+src/Cura/settings/PathConfigStorage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/settings/PathConfigStorage.cpp.s
+.PHONY : src/Cura/settings/PathConfigStorage.cpp.s
+
+src/Cura/settings/Settings.o: src/Cura/settings/Settings.cpp.o
+.PHONY : src/Cura/settings/Settings.o
+
+# target to build an object file
+src/Cura/settings/Settings.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.o
+.PHONY : src/Cura/settings/Settings.cpp.o
+
+src/Cura/settings/Settings.i: src/Cura/settings/Settings.cpp.i
+.PHONY : src/Cura/settings/Settings.i
+
+# target to preprocess a source file
+src/Cura/settings/Settings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.i
+.PHONY : src/Cura/settings/Settings.cpp.i
+
+src/Cura/settings/Settings.s: src/Cura/settings/Settings.cpp.s
+.PHONY : src/Cura/settings/Settings.s
+
+# target to generate assembly for a file
+src/Cura/settings/Settings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/settings/Settings.cpp.s
+.PHONY : src/Cura/settings/Settings.cpp.s
+
+src/Cura/settings/ZSeamConfig.o: src/Cura/settings/ZSeamConfig.cpp.o
+.PHONY : src/Cura/settings/ZSeamConfig.o
+
+# target to build an object file
+src/Cura/settings/ZSeamConfig.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.o
+.PHONY : src/Cura/settings/ZSeamConfig.cpp.o
+
+src/Cura/settings/ZSeamConfig.i: src/Cura/settings/ZSeamConfig.cpp.i
+.PHONY : src/Cura/settings/ZSeamConfig.i
+
+# target to preprocess a source file
+src/Cura/settings/ZSeamConfig.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.i
+.PHONY : src/Cura/settings/ZSeamConfig.cpp.i
+
+src/Cura/settings/ZSeamConfig.s: src/Cura/settings/ZSeamConfig.cpp.s
+.PHONY : src/Cura/settings/ZSeamConfig.s
+
+# target to generate assembly for a file
+src/Cura/settings/ZSeamConfig.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/settings/ZSeamConfig.cpp.s
+.PHONY : src/Cura/settings/ZSeamConfig.cpp.s
+
+src/Cura/skin.o: src/Cura/skin.cpp.o
+.PHONY : src/Cura/skin.o
+
+# target to build an object file
+src/Cura/skin.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/skin.cpp.o
+.PHONY : src/Cura/skin.cpp.o
+
+src/Cura/skin.i: src/Cura/skin.cpp.i
+.PHONY : src/Cura/skin.i
+
+# target to preprocess a source file
+src/Cura/skin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/skin.cpp.i
+.PHONY : src/Cura/skin.cpp.i
+
+src/Cura/skin.s: src/Cura/skin.cpp.s
+.PHONY : src/Cura/skin.s
+
+# target to generate assembly for a file
+src/Cura/skin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/skin.cpp.s
+.PHONY : src/Cura/skin.cpp.s
+
+src/Cura/sliceDataStorage.o: src/Cura/sliceDataStorage.cpp.o
+.PHONY : src/Cura/sliceDataStorage.o
+
+# target to build an object file
+src/Cura/sliceDataStorage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.o
+.PHONY : src/Cura/sliceDataStorage.cpp.o
+
+src/Cura/sliceDataStorage.i: src/Cura/sliceDataStorage.cpp.i
+.PHONY : src/Cura/sliceDataStorage.i
+
+# target to preprocess a source file
+src/Cura/sliceDataStorage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.i
+.PHONY : src/Cura/sliceDataStorage.cpp.i
+
+src/Cura/sliceDataStorage.s: src/Cura/sliceDataStorage.cpp.s
+.PHONY : src/Cura/sliceDataStorage.s
+
+# target to generate assembly for a file
+src/Cura/sliceDataStorage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/sliceDataStorage.cpp.s
+.PHONY : src/Cura/sliceDataStorage.cpp.s
+
+src/Cura/slicer.o: src/Cura/slicer.cpp.o
+.PHONY : src/Cura/slicer.o
+
+# target to build an object file
+src/Cura/slicer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.o
+.PHONY : src/Cura/slicer.cpp.o
+
+src/Cura/slicer.i: src/Cura/slicer.cpp.i
+.PHONY : src/Cura/slicer.i
+
+# target to preprocess a source file
+src/Cura/slicer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.i
+.PHONY : src/Cura/slicer.cpp.i
+
+src/Cura/slicer.s: src/Cura/slicer.cpp.s
+.PHONY : src/Cura/slicer.s
+
+# target to generate assembly for a file
+src/Cura/slicer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/slicer.cpp.s
+.PHONY : src/Cura/slicer.cpp.s
+
+src/Cura/support.o: src/Cura/support.cpp.o
+.PHONY : src/Cura/support.o
+
+# target to build an object file
+src/Cura/support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/support.cpp.o
+.PHONY : src/Cura/support.cpp.o
+
+src/Cura/support.i: src/Cura/support.cpp.i
+.PHONY : src/Cura/support.i
+
+# target to preprocess a source file
+src/Cura/support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/support.cpp.i
+.PHONY : src/Cura/support.cpp.i
+
+src/Cura/support.s: src/Cura/support.cpp.s
+.PHONY : src/Cura/support.s
+
+# target to generate assembly for a file
+src/Cura/support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/support.cpp.s
+.PHONY : src/Cura/support.cpp.s
+
+src/Cura/timeEstimate.o: src/Cura/timeEstimate.cpp.o
+.PHONY : src/Cura/timeEstimate.o
+
+# target to build an object file
+src/Cura/timeEstimate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.o
+.PHONY : src/Cura/timeEstimate.cpp.o
+
+src/Cura/timeEstimate.i: src/Cura/timeEstimate.cpp.i
+.PHONY : src/Cura/timeEstimate.i
+
+# target to preprocess a source file
+src/Cura/timeEstimate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.i
+.PHONY : src/Cura/timeEstimate.cpp.i
+
+src/Cura/timeEstimate.s: src/Cura/timeEstimate.cpp.s
+.PHONY : src/Cura/timeEstimate.s
+
+# target to generate assembly for a file
+src/Cura/timeEstimate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/timeEstimate.cpp.s
+.PHONY : src/Cura/timeEstimate.cpp.s
+
+src/Cura/utils/AABB.o: src/Cura/utils/AABB.cpp.o
+.PHONY : src/Cura/utils/AABB.o
+
+# target to build an object file
+src/Cura/utils/AABB.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.o
+.PHONY : src/Cura/utils/AABB.cpp.o
+
+src/Cura/utils/AABB.i: src/Cura/utils/AABB.cpp.i
+.PHONY : src/Cura/utils/AABB.i
+
+# target to preprocess a source file
+src/Cura/utils/AABB.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.i
+.PHONY : src/Cura/utils/AABB.cpp.i
+
+src/Cura/utils/AABB.s: src/Cura/utils/AABB.cpp.s
+.PHONY : src/Cura/utils/AABB.s
+
+# target to generate assembly for a file
+src/Cura/utils/AABB.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/AABB.cpp.s
+.PHONY : src/Cura/utils/AABB.cpp.s
+
+src/Cura/utils/AABB3D.o: src/Cura/utils/AABB3D.cpp.o
+.PHONY : src/Cura/utils/AABB3D.o
+
+# target to build an object file
+src/Cura/utils/AABB3D.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.o
+.PHONY : src/Cura/utils/AABB3D.cpp.o
+
+src/Cura/utils/AABB3D.i: src/Cura/utils/AABB3D.cpp.i
+.PHONY : src/Cura/utils/AABB3D.i
+
+# target to preprocess a source file
+src/Cura/utils/AABB3D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.i
+.PHONY : src/Cura/utils/AABB3D.cpp.i
+
+src/Cura/utils/AABB3D.s: src/Cura/utils/AABB3D.cpp.s
+.PHONY : src/Cura/utils/AABB3D.s
+
+# target to generate assembly for a file
+src/Cura/utils/AABB3D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/AABB3D.cpp.s
+.PHONY : src/Cura/utils/AABB3D.cpp.s
+
+src/Cura/utils/Date.o: src/Cura/utils/Date.cpp.o
+.PHONY : src/Cura/utils/Date.o
+
+# target to build an object file
+src/Cura/utils/Date.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.o
+.PHONY : src/Cura/utils/Date.cpp.o
+
+src/Cura/utils/Date.i: src/Cura/utils/Date.cpp.i
+.PHONY : src/Cura/utils/Date.i
+
+# target to preprocess a source file
+src/Cura/utils/Date.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.i
+.PHONY : src/Cura/utils/Date.cpp.i
+
+src/Cura/utils/Date.s: src/Cura/utils/Date.cpp.s
+.PHONY : src/Cura/utils/Date.s
+
+# target to generate assembly for a file
+src/Cura/utils/Date.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/Date.cpp.s
+.PHONY : src/Cura/utils/Date.cpp.s
+
+src/Cura/utils/ExtrusionJunction.o: src/Cura/utils/ExtrusionJunction.cpp.o
+.PHONY : src/Cura/utils/ExtrusionJunction.o
+
+# target to build an object file
+src/Cura/utils/ExtrusionJunction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.o
+.PHONY : src/Cura/utils/ExtrusionJunction.cpp.o
+
+src/Cura/utils/ExtrusionJunction.i: src/Cura/utils/ExtrusionJunction.cpp.i
+.PHONY : src/Cura/utils/ExtrusionJunction.i
+
+# target to preprocess a source file
+src/Cura/utils/ExtrusionJunction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.i
+.PHONY : src/Cura/utils/ExtrusionJunction.cpp.i
+
+src/Cura/utils/ExtrusionJunction.s: src/Cura/utils/ExtrusionJunction.cpp.s
+.PHONY : src/Cura/utils/ExtrusionJunction.s
+
+# target to generate assembly for a file
+src/Cura/utils/ExtrusionJunction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionJunction.cpp.s
+.PHONY : src/Cura/utils/ExtrusionJunction.cpp.s
+
+src/Cura/utils/ExtrusionLine.o: src/Cura/utils/ExtrusionLine.cpp.o
+.PHONY : src/Cura/utils/ExtrusionLine.o
+
+# target to build an object file
+src/Cura/utils/ExtrusionLine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.o
+.PHONY : src/Cura/utils/ExtrusionLine.cpp.o
+
+src/Cura/utils/ExtrusionLine.i: src/Cura/utils/ExtrusionLine.cpp.i
+.PHONY : src/Cura/utils/ExtrusionLine.i
+
+# target to preprocess a source file
+src/Cura/utils/ExtrusionLine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.i
+.PHONY : src/Cura/utils/ExtrusionLine.cpp.i
+
+src/Cura/utils/ExtrusionLine.s: src/Cura/utils/ExtrusionLine.cpp.s
+.PHONY : src/Cura/utils/ExtrusionLine.s
+
+# target to generate assembly for a file
+src/Cura/utils/ExtrusionLine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionLine.cpp.s
+.PHONY : src/Cura/utils/ExtrusionLine.cpp.s
+
+src/Cura/utils/ExtrusionSegment.o: src/Cura/utils/ExtrusionSegment.cpp.o
+.PHONY : src/Cura/utils/ExtrusionSegment.o
+
+# target to build an object file
+src/Cura/utils/ExtrusionSegment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.o
+.PHONY : src/Cura/utils/ExtrusionSegment.cpp.o
+
+src/Cura/utils/ExtrusionSegment.i: src/Cura/utils/ExtrusionSegment.cpp.i
+.PHONY : src/Cura/utils/ExtrusionSegment.i
+
+# target to preprocess a source file
+src/Cura/utils/ExtrusionSegment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.i
+.PHONY : src/Cura/utils/ExtrusionSegment.cpp.i
+
+src/Cura/utils/ExtrusionSegment.s: src/Cura/utils/ExtrusionSegment.cpp.s
+.PHONY : src/Cura/utils/ExtrusionSegment.s
+
+# target to generate assembly for a file
+src/Cura/utils/ExtrusionSegment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ExtrusionSegment.cpp.s
+.PHONY : src/Cura/utils/ExtrusionSegment.cpp.s
+
+src/Cura/utils/FMatrix4x3.o: src/Cura/utils/FMatrix4x3.cpp.o
+.PHONY : src/Cura/utils/FMatrix4x3.o
+
+# target to build an object file
+src/Cura/utils/FMatrix4x3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.o
+.PHONY : src/Cura/utils/FMatrix4x3.cpp.o
+
+src/Cura/utils/FMatrix4x3.i: src/Cura/utils/FMatrix4x3.cpp.i
+.PHONY : src/Cura/utils/FMatrix4x3.i
+
+# target to preprocess a source file
+src/Cura/utils/FMatrix4x3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.i
+.PHONY : src/Cura/utils/FMatrix4x3.cpp.i
+
+src/Cura/utils/FMatrix4x3.s: src/Cura/utils/FMatrix4x3.cpp.s
+.PHONY : src/Cura/utils/FMatrix4x3.s
+
+# target to generate assembly for a file
+src/Cura/utils/FMatrix4x3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/FMatrix4x3.cpp.s
+.PHONY : src/Cura/utils/FMatrix4x3.cpp.s
+
+src/Cura/utils/LinearAlg2D.o: src/Cura/utils/LinearAlg2D.cpp.o
+.PHONY : src/Cura/utils/LinearAlg2D.o
+
+# target to build an object file
+src/Cura/utils/LinearAlg2D.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.o
+.PHONY : src/Cura/utils/LinearAlg2D.cpp.o
+
+src/Cura/utils/LinearAlg2D.i: src/Cura/utils/LinearAlg2D.cpp.i
+.PHONY : src/Cura/utils/LinearAlg2D.i
+
+# target to preprocess a source file
+src/Cura/utils/LinearAlg2D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.i
+.PHONY : src/Cura/utils/LinearAlg2D.cpp.i
+
+src/Cura/utils/LinearAlg2D.s: src/Cura/utils/LinearAlg2D.cpp.s
+.PHONY : src/Cura/utils/LinearAlg2D.s
+
+# target to generate assembly for a file
+src/Cura/utils/LinearAlg2D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/LinearAlg2D.cpp.s
+.PHONY : src/Cura/utils/LinearAlg2D.cpp.s
+
+src/Cura/utils/ListPolyIt.o: src/Cura/utils/ListPolyIt.cpp.o
+.PHONY : src/Cura/utils/ListPolyIt.o
+
+# target to build an object file
+src/Cura/utils/ListPolyIt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.o
+.PHONY : src/Cura/utils/ListPolyIt.cpp.o
+
+src/Cura/utils/ListPolyIt.i: src/Cura/utils/ListPolyIt.cpp.i
+.PHONY : src/Cura/utils/ListPolyIt.i
+
+# target to preprocess a source file
+src/Cura/utils/ListPolyIt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.i
+.PHONY : src/Cura/utils/ListPolyIt.cpp.i
+
+src/Cura/utils/ListPolyIt.s: src/Cura/utils/ListPolyIt.cpp.s
+.PHONY : src/Cura/utils/ListPolyIt.s
+
+# target to generate assembly for a file
+src/Cura/utils/ListPolyIt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ListPolyIt.cpp.s
+.PHONY : src/Cura/utils/ListPolyIt.cpp.s
+
+src/Cura/utils/MinimumSpanningTree.o: src/Cura/utils/MinimumSpanningTree.cpp.o
+.PHONY : src/Cura/utils/MinimumSpanningTree.o
+
+# target to build an object file
+src/Cura/utils/MinimumSpanningTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.o
+.PHONY : src/Cura/utils/MinimumSpanningTree.cpp.o
+
+src/Cura/utils/MinimumSpanningTree.i: src/Cura/utils/MinimumSpanningTree.cpp.i
+.PHONY : src/Cura/utils/MinimumSpanningTree.i
+
+# target to preprocess a source file
+src/Cura/utils/MinimumSpanningTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.i
+.PHONY : src/Cura/utils/MinimumSpanningTree.cpp.i
+
+src/Cura/utils/MinimumSpanningTree.s: src/Cura/utils/MinimumSpanningTree.cpp.s
+.PHONY : src/Cura/utils/MinimumSpanningTree.s
+
+# target to generate assembly for a file
+src/Cura/utils/MinimumSpanningTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/MinimumSpanningTree.cpp.s
+.PHONY : src/Cura/utils/MinimumSpanningTree.cpp.s
+
+src/Cura/utils/Point3.o: src/Cura/utils/Point3.cpp.o
+.PHONY : src/Cura/utils/Point3.o
+
+# target to build an object file
+src/Cura/utils/Point3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.o
+.PHONY : src/Cura/utils/Point3.cpp.o
+
+src/Cura/utils/Point3.i: src/Cura/utils/Point3.cpp.i
+.PHONY : src/Cura/utils/Point3.i
+
+# target to preprocess a source file
+src/Cura/utils/Point3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.i
+.PHONY : src/Cura/utils/Point3.cpp.i
+
+src/Cura/utils/Point3.s: src/Cura/utils/Point3.cpp.s
+.PHONY : src/Cura/utils/Point3.s
+
+# target to generate assembly for a file
+src/Cura/utils/Point3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/Point3.cpp.s
+.PHONY : src/Cura/utils/Point3.cpp.s
+
+src/Cura/utils/PolygonConnector.o: src/Cura/utils/PolygonConnector.cpp.o
+.PHONY : src/Cura/utils/PolygonConnector.o
+
+# target to build an object file
+src/Cura/utils/PolygonConnector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.o
+.PHONY : src/Cura/utils/PolygonConnector.cpp.o
+
+src/Cura/utils/PolygonConnector.i: src/Cura/utils/PolygonConnector.cpp.i
+.PHONY : src/Cura/utils/PolygonConnector.i
+
+# target to preprocess a source file
+src/Cura/utils/PolygonConnector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.i
+.PHONY : src/Cura/utils/PolygonConnector.cpp.i
+
+src/Cura/utils/PolygonConnector.s: src/Cura/utils/PolygonConnector.cpp.s
+.PHONY : src/Cura/utils/PolygonConnector.s
+
+# target to generate assembly for a file
+src/Cura/utils/PolygonConnector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/PolygonConnector.cpp.s
+.PHONY : src/Cura/utils/PolygonConnector.cpp.s
+
+src/Cura/utils/PolygonsPointIndex.o: src/Cura/utils/PolygonsPointIndex.cpp.o
+.PHONY : src/Cura/utils/PolygonsPointIndex.o
+
+# target to build an object file
+src/Cura/utils/PolygonsPointIndex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.o
+.PHONY : src/Cura/utils/PolygonsPointIndex.cpp.o
+
+src/Cura/utils/PolygonsPointIndex.i: src/Cura/utils/PolygonsPointIndex.cpp.i
+.PHONY : src/Cura/utils/PolygonsPointIndex.i
+
+# target to preprocess a source file
+src/Cura/utils/PolygonsPointIndex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.i
+.PHONY : src/Cura/utils/PolygonsPointIndex.cpp.i
+
+src/Cura/utils/PolygonsPointIndex.s: src/Cura/utils/PolygonsPointIndex.cpp.s
+.PHONY : src/Cura/utils/PolygonsPointIndex.s
+
+# target to generate assembly for a file
+src/Cura/utils/PolygonsPointIndex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsPointIndex.cpp.s
+.PHONY : src/Cura/utils/PolygonsPointIndex.cpp.s
+
+src/Cura/utils/PolygonsSegmentIndex.o: src/Cura/utils/PolygonsSegmentIndex.cpp.o
+.PHONY : src/Cura/utils/PolygonsSegmentIndex.o
+
+# target to build an object file
+src/Cura/utils/PolygonsSegmentIndex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.o
+.PHONY : src/Cura/utils/PolygonsSegmentIndex.cpp.o
+
+src/Cura/utils/PolygonsSegmentIndex.i: src/Cura/utils/PolygonsSegmentIndex.cpp.i
+.PHONY : src/Cura/utils/PolygonsSegmentIndex.i
+
+# target to preprocess a source file
+src/Cura/utils/PolygonsSegmentIndex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.i
+.PHONY : src/Cura/utils/PolygonsSegmentIndex.cpp.i
+
+src/Cura/utils/PolygonsSegmentIndex.s: src/Cura/utils/PolygonsSegmentIndex.cpp.s
+.PHONY : src/Cura/utils/PolygonsSegmentIndex.s
+
+# target to generate assembly for a file
+src/Cura/utils/PolygonsSegmentIndex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/PolygonsSegmentIndex.cpp.s
+.PHONY : src/Cura/utils/PolygonsSegmentIndex.cpp.s
+
+src/Cura/utils/PolylineStitcher.o: src/Cura/utils/PolylineStitcher.cpp.o
+.PHONY : src/Cura/utils/PolylineStitcher.o
+
+# target to build an object file
+src/Cura/utils/PolylineStitcher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.o
+.PHONY : src/Cura/utils/PolylineStitcher.cpp.o
+
+src/Cura/utils/PolylineStitcher.i: src/Cura/utils/PolylineStitcher.cpp.i
+.PHONY : src/Cura/utils/PolylineStitcher.i
+
+# target to preprocess a source file
+src/Cura/utils/PolylineStitcher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.i
+.PHONY : src/Cura/utils/PolylineStitcher.cpp.i
+
+src/Cura/utils/PolylineStitcher.s: src/Cura/utils/PolylineStitcher.cpp.s
+.PHONY : src/Cura/utils/PolylineStitcher.s
+
+# target to generate assembly for a file
+src/Cura/utils/PolylineStitcher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/PolylineStitcher.cpp.s
+.PHONY : src/Cura/utils/PolylineStitcher.cpp.s
+
+src/Cura/utils/ProximityPointLink.o: src/Cura/utils/ProximityPointLink.cpp.o
+.PHONY : src/Cura/utils/ProximityPointLink.o
+
+# target to build an object file
+src/Cura/utils/ProximityPointLink.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.o
+.PHONY : src/Cura/utils/ProximityPointLink.cpp.o
+
+src/Cura/utils/ProximityPointLink.i: src/Cura/utils/ProximityPointLink.cpp.i
+.PHONY : src/Cura/utils/ProximityPointLink.i
+
+# target to preprocess a source file
+src/Cura/utils/ProximityPointLink.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.i
+.PHONY : src/Cura/utils/ProximityPointLink.cpp.i
+
+src/Cura/utils/ProximityPointLink.s: src/Cura/utils/ProximityPointLink.cpp.s
+.PHONY : src/Cura/utils/ProximityPointLink.s
+
+# target to generate assembly for a file
+src/Cura/utils/ProximityPointLink.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ProximityPointLink.cpp.s
+.PHONY : src/Cura/utils/ProximityPointLink.cpp.s
+
+src/Cura/utils/SVG.o: src/Cura/utils/SVG.cpp.o
+.PHONY : src/Cura/utils/SVG.o
+
+# target to build an object file
+src/Cura/utils/SVG.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.o
+.PHONY : src/Cura/utils/SVG.cpp.o
+
+src/Cura/utils/SVG.i: src/Cura/utils/SVG.cpp.i
+.PHONY : src/Cura/utils/SVG.i
+
+# target to preprocess a source file
+src/Cura/utils/SVG.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.i
+.PHONY : src/Cura/utils/SVG.cpp.i
+
+src/Cura/utils/SVG.s: src/Cura/utils/SVG.cpp.s
+.PHONY : src/Cura/utils/SVG.s
+
+# target to generate assembly for a file
+src/Cura/utils/SVG.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/SVG.cpp.s
+.PHONY : src/Cura/utils/SVG.cpp.s
+
+src/Cura/utils/Simplify.o: src/Cura/utils/Simplify.cpp.o
+.PHONY : src/Cura/utils/Simplify.o
+
+# target to build an object file
+src/Cura/utils/Simplify.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.o
+.PHONY : src/Cura/utils/Simplify.cpp.o
+
+src/Cura/utils/Simplify.i: src/Cura/utils/Simplify.cpp.i
+.PHONY : src/Cura/utils/Simplify.i
+
+# target to preprocess a source file
+src/Cura/utils/Simplify.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.i
+.PHONY : src/Cura/utils/Simplify.cpp.i
+
+src/Cura/utils/Simplify.s: src/Cura/utils/Simplify.cpp.s
+.PHONY : src/Cura/utils/Simplify.s
+
+# target to generate assembly for a file
+src/Cura/utils/Simplify.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/Simplify.cpp.s
+.PHONY : src/Cura/utils/Simplify.cpp.s
+
+src/Cura/utils/SquareGrid.o: src/Cura/utils/SquareGrid.cpp.o
+.PHONY : src/Cura/utils/SquareGrid.o
+
+# target to build an object file
+src/Cura/utils/SquareGrid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.o
+.PHONY : src/Cura/utils/SquareGrid.cpp.o
+
+src/Cura/utils/SquareGrid.i: src/Cura/utils/SquareGrid.cpp.i
+.PHONY : src/Cura/utils/SquareGrid.i
+
+# target to preprocess a source file
+src/Cura/utils/SquareGrid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.i
+.PHONY : src/Cura/utils/SquareGrid.cpp.i
+
+src/Cura/utils/SquareGrid.s: src/Cura/utils/SquareGrid.cpp.s
+.PHONY : src/Cura/utils/SquareGrid.s
+
+# target to generate assembly for a file
+src/Cura/utils/SquareGrid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/SquareGrid.cpp.s
+.PHONY : src/Cura/utils/SquareGrid.cpp.s
+
+src/Cura/utils/ThreadPool.o: src/Cura/utils/ThreadPool.cpp.o
+.PHONY : src/Cura/utils/ThreadPool.o
+
+# target to build an object file
+src/Cura/utils/ThreadPool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.o
+.PHONY : src/Cura/utils/ThreadPool.cpp.o
+
+src/Cura/utils/ThreadPool.i: src/Cura/utils/ThreadPool.cpp.i
+.PHONY : src/Cura/utils/ThreadPool.i
+
+# target to preprocess a source file
+src/Cura/utils/ThreadPool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.i
+.PHONY : src/Cura/utils/ThreadPool.cpp.i
+
+src/Cura/utils/ThreadPool.s: src/Cura/utils/ThreadPool.cpp.s
+.PHONY : src/Cura/utils/ThreadPool.s
+
+# target to generate assembly for a file
+src/Cura/utils/ThreadPool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ThreadPool.cpp.s
+.PHONY : src/Cura/utils/ThreadPool.cpp.s
+
+src/Cura/utils/ToolpathVisualizer.o: src/Cura/utils/ToolpathVisualizer.cpp.o
+.PHONY : src/Cura/utils/ToolpathVisualizer.o
+
+# target to build an object file
+src/Cura/utils/ToolpathVisualizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.o
+.PHONY : src/Cura/utils/ToolpathVisualizer.cpp.o
+
+src/Cura/utils/ToolpathVisualizer.i: src/Cura/utils/ToolpathVisualizer.cpp.i
+.PHONY : src/Cura/utils/ToolpathVisualizer.i
+
+# target to preprocess a source file
+src/Cura/utils/ToolpathVisualizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.i
+.PHONY : src/Cura/utils/ToolpathVisualizer.cpp.i
+
+src/Cura/utils/ToolpathVisualizer.s: src/Cura/utils/ToolpathVisualizer.cpp.s
+.PHONY : src/Cura/utils/ToolpathVisualizer.s
+
+# target to generate assembly for a file
+src/Cura/utils/ToolpathVisualizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/ToolpathVisualizer.cpp.s
+.PHONY : src/Cura/utils/ToolpathVisualizer.cpp.s
+
+src/Cura/utils/VoronoiUtils.o: src/Cura/utils/VoronoiUtils.cpp.o
+.PHONY : src/Cura/utils/VoronoiUtils.o
+
+# target to build an object file
+src/Cura/utils/VoronoiUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.o
+.PHONY : src/Cura/utils/VoronoiUtils.cpp.o
+
+src/Cura/utils/VoronoiUtils.i: src/Cura/utils/VoronoiUtils.cpp.i
+.PHONY : src/Cura/utils/VoronoiUtils.i
+
+# target to preprocess a source file
+src/Cura/utils/VoronoiUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.i
+.PHONY : src/Cura/utils/VoronoiUtils.cpp.i
+
+src/Cura/utils/VoronoiUtils.s: src/Cura/utils/VoronoiUtils.cpp.s
+.PHONY : src/Cura/utils/VoronoiUtils.s
+
+# target to generate assembly for a file
+src/Cura/utils/VoronoiUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/VoronoiUtils.cpp.s
+.PHONY : src/Cura/utils/VoronoiUtils.cpp.s
+
+src/Cura/utils/gettime.o: src/Cura/utils/gettime.cpp.o
+.PHONY : src/Cura/utils/gettime.o
+
+# target to build an object file
+src/Cura/utils/gettime.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.o
+.PHONY : src/Cura/utils/gettime.cpp.o
+
+src/Cura/utils/gettime.i: src/Cura/utils/gettime.cpp.i
+.PHONY : src/Cura/utils/gettime.i
+
+# target to preprocess a source file
+src/Cura/utils/gettime.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.i
+.PHONY : src/Cura/utils/gettime.cpp.i
+
+src/Cura/utils/gettime.s: src/Cura/utils/gettime.cpp.s
+.PHONY : src/Cura/utils/gettime.s
+
+# target to generate assembly for a file
+src/Cura/utils/gettime.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/gettime.cpp.s
+.PHONY : src/Cura/utils/gettime.cpp.s
+
+src/Cura/utils/polygon.o: src/Cura/utils/polygon.cpp.o
+.PHONY : src/Cura/utils/polygon.o
+
+# target to build an object file
+src/Cura/utils/polygon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.o
+.PHONY : src/Cura/utils/polygon.cpp.o
+
+src/Cura/utils/polygon.i: src/Cura/utils/polygon.cpp.i
+.PHONY : src/Cura/utils/polygon.i
+
+# target to preprocess a source file
+src/Cura/utils/polygon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.i
+.PHONY : src/Cura/utils/polygon.cpp.i
+
+src/Cura/utils/polygon.s: src/Cura/utils/polygon.cpp.s
+.PHONY : src/Cura/utils/polygon.s
+
+# target to generate assembly for a file
+src/Cura/utils/polygon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/polygon.cpp.s
+.PHONY : src/Cura/utils/polygon.cpp.s
+
+src/Cura/utils/polygonUtils.o: src/Cura/utils/polygonUtils.cpp.o
+.PHONY : src/Cura/utils/polygonUtils.o
+
+# target to build an object file
+src/Cura/utils/polygonUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.o
+.PHONY : src/Cura/utils/polygonUtils.cpp.o
+
+src/Cura/utils/polygonUtils.i: src/Cura/utils/polygonUtils.cpp.i
+.PHONY : src/Cura/utils/polygonUtils.i
+
+# target to preprocess a source file
+src/Cura/utils/polygonUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.i
+.PHONY : src/Cura/utils/polygonUtils.cpp.i
+
+src/Cura/utils/polygonUtils.s: src/Cura/utils/polygonUtils.cpp.s
+.PHONY : src/Cura/utils/polygonUtils.s
+
+# target to generate assembly for a file
+src/Cura/utils/polygonUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/polygonUtils.cpp.s
+.PHONY : src/Cura/utils/polygonUtils.cpp.s
+
+src/Cura/utils/socket.o: src/Cura/utils/socket.cpp.o
+.PHONY : src/Cura/utils/socket.o
+
+# target to build an object file
+src/Cura/utils/socket.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.o
+.PHONY : src/Cura/utils/socket.cpp.o
+
+src/Cura/utils/socket.i: src/Cura/utils/socket.cpp.i
+.PHONY : src/Cura/utils/socket.i
+
+# target to preprocess a source file
+src/Cura/utils/socket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.i
+.PHONY : src/Cura/utils/socket.cpp.i
+
+src/Cura/utils/socket.s: src/Cura/utils/socket.cpp.s
+.PHONY : src/Cura/utils/socket.s
+
+# target to generate assembly for a file
+src/Cura/utils/socket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Cura/utils/socket.cpp.s
+.PHONY : src/Cura/utils/socket.cpp.s
+
+src/CuraSlicing.o: src/CuraSlicing.cpp.o
+.PHONY : src/CuraSlicing.o
+
+# target to build an object file
+src/CuraSlicing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.o
+.PHONY : src/CuraSlicing.cpp.o
+
+src/CuraSlicing.i: src/CuraSlicing.cpp.i
+.PHONY : src/CuraSlicing.i
+
+# target to preprocess a source file
+src/CuraSlicing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.i
+.PHONY : src/CuraSlicing.cpp.i
+
+src/CuraSlicing.s: src/CuraSlicing.cpp.s
+.PHONY : src/CuraSlicing.s
+
+# target to generate assembly for a file
+src/CuraSlicing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/CuraSlicing.cpp.s
+.PHONY : src/CuraSlicing.cpp.s
 
 src/FillHole.o: src/FillHole.cpp.o
 .PHONY : src/FillHole.o
@@ -262,29 +2686,53 @@ src/RWfile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/RWfile.cpp.s
 .PHONY : src/RWfile.cpp.s
 
-src/Slicing.o: src/Slicing.cpp.o
-.PHONY : src/Slicing.o
+src/TransformCalcu.o: src/TransformCalcu.cpp.o
+.PHONY : src/TransformCalcu.o
 
 # target to build an object file
-src/Slicing.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Slicing.cpp.o
-.PHONY : src/Slicing.cpp.o
+src/TransformCalcu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.o
+.PHONY : src/TransformCalcu.cpp.o
 
-src/Slicing.i: src/Slicing.cpp.i
-.PHONY : src/Slicing.i
+src/TransformCalcu.i: src/TransformCalcu.cpp.i
+.PHONY : src/TransformCalcu.i
 
 # target to preprocess a source file
-src/Slicing.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Slicing.cpp.i
-.PHONY : src/Slicing.cpp.i
+src/TransformCalcu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.i
+.PHONY : src/TransformCalcu.cpp.i
 
-src/Slicing.s: src/Slicing.cpp.s
-.PHONY : src/Slicing.s
+src/TransformCalcu.s: src/TransformCalcu.cpp.s
+.PHONY : src/TransformCalcu.s
 
 # target to generate assembly for a file
-src/Slicing.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/Slicing.cpp.s
-.PHONY : src/Slicing.cpp.s
+src/TransformCalcu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/TransformCalcu.cpp.s
+.PHONY : src/TransformCalcu.cpp.s
+
+src/clipper.o: src/clipper.cpp.o
+.PHONY : src/clipper.o
+
+# target to build an object file
+src/clipper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/clipper.cpp.o
+.PHONY : src/clipper.cpp.o
+
+src/clipper.i: src/clipper.cpp.i
+.PHONY : src/clipper.i
+
+# target to preprocess a source file
+src/clipper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/clipper.cpp.i
+.PHONY : src/clipper.cpp.i
+
+src/clipper.s: src/clipper.cpp.s
+.PHONY : src/clipper.s
+
+# target to generate assembly for a file
+src/clipper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/_readfile.dir/build.make CMakeFiles/_readfile.dir/src/clipper.cpp.s
+.PHONY : src/clipper.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -344,6 +2792,309 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... _readfile"
 	@echo "... readfile"
+	@echo "... src/Cura/Application.o"
+	@echo "... src/Cura/Application.i"
+	@echo "... src/Cura/Application.s"
+	@echo "... src/Cura/BeadingStrategy/BeadingStrategy.o"
+	@echo "... src/Cura/BeadingStrategy/BeadingStrategy.i"
+	@echo "... src/Cura/BeadingStrategy/BeadingStrategy.s"
+	@echo "... src/Cura/BeadingStrategy/BeadingStrategyFactory.o"
+	@echo "... src/Cura/BeadingStrategy/BeadingStrategyFactory.i"
+	@echo "... src/Cura/BeadingStrategy/BeadingStrategyFactory.s"
+	@echo "... src/Cura/BeadingStrategy/DistributedBeadingStrategy.o"
+	@echo "... src/Cura/BeadingStrategy/DistributedBeadingStrategy.i"
+	@echo "... src/Cura/BeadingStrategy/DistributedBeadingStrategy.s"
+	@echo "... src/Cura/BeadingStrategy/LimitedBeadingStrategy.o"
+	@echo "... src/Cura/BeadingStrategy/LimitedBeadingStrategy.i"
+	@echo "... src/Cura/BeadingStrategy/LimitedBeadingStrategy.s"
+	@echo "... src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.o"
+	@echo "... src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.i"
+	@echo "... src/Cura/BeadingStrategy/OuterWallInsetBeadingStrategy.s"
+	@echo "... src/Cura/BeadingStrategy/RedistributeBeadingStrategy.o"
+	@echo "... src/Cura/BeadingStrategy/RedistributeBeadingStrategy.i"
+	@echo "... src/Cura/BeadingStrategy/RedistributeBeadingStrategy.s"
+	@echo "... src/Cura/BeadingStrategy/WideningBeadingStrategy.o"
+	@echo "... src/Cura/BeadingStrategy/WideningBeadingStrategy.i"
+	@echo "... src/Cura/BeadingStrategy/WideningBeadingStrategy.s"
+	@echo "... src/Cura/ConicalOverhang.o"
+	@echo "... src/Cura/ConicalOverhang.i"
+	@echo "... src/Cura/ConicalOverhang.s"
+	@echo "... src/Cura/ExtruderTrain.o"
+	@echo "... src/Cura/ExtruderTrain.i"
+	@echo "... src/Cura/ExtruderTrain.s"
+	@echo "... src/Cura/FffGcodeWriter.o"
+	@echo "... src/Cura/FffGcodeWriter.i"
+	@echo "... src/Cura/FffGcodeWriter.s"
+	@echo "... src/Cura/FffPolygonGenerator.o"
+	@echo "... src/Cura/FffPolygonGenerator.i"
+	@echo "... src/Cura/FffPolygonGenerator.s"
+	@echo "... src/Cura/FffProcessor.o"
+	@echo "... src/Cura/FffProcessor.i"
+	@echo "... src/Cura/FffProcessor.s"
+	@echo "... src/Cura/GCodePathConfig.o"
+	@echo "... src/Cura/GCodePathConfig.i"
+	@echo "... src/Cura/GCodePathConfig.s"
+	@echo "... src/Cura/InsetOrderOptimizer.o"
+	@echo "... src/Cura/InsetOrderOptimizer.i"
+	@echo "... src/Cura/InsetOrderOptimizer.s"
+	@echo "... src/Cura/LayerPlan.o"
+	@echo "... src/Cura/LayerPlan.i"
+	@echo "... src/Cura/LayerPlan.s"
+	@echo "... src/Cura/LayerPlanBuffer.o"
+	@echo "... src/Cura/LayerPlanBuffer.i"
+	@echo "... src/Cura/LayerPlanBuffer.s"
+	@echo "... src/Cura/MeshGroup.o"
+	@echo "... src/Cura/MeshGroup.i"
+	@echo "... src/Cura/MeshGroup.s"
+	@echo "... src/Cura/Mold.o"
+	@echo "... src/Cura/Mold.i"
+	@echo "... src/Cura/Mold.s"
+	@echo "... src/Cura/PathOrderPath.o"
+	@echo "... src/Cura/PathOrderPath.i"
+	@echo "... src/Cura/PathOrderPath.s"
+	@echo "... src/Cura/Preheat.o"
+	@echo "... src/Cura/Preheat.i"
+	@echo "... src/Cura/Preheat.s"
+	@echo "... src/Cura/PrimeTower.o"
+	@echo "... src/Cura/PrimeTower.i"
+	@echo "... src/Cura/PrimeTower.s"
+	@echo "... src/Cura/Scene.o"
+	@echo "... src/Cura/Scene.i"
+	@echo "... src/Cura/Scene.s"
+	@echo "... src/Cura/SkeletalTrapezoidation.o"
+	@echo "... src/Cura/SkeletalTrapezoidation.i"
+	@echo "... src/Cura/SkeletalTrapezoidation.s"
+	@echo "... src/Cura/SkeletalTrapezoidationGraph.o"
+	@echo "... src/Cura/SkeletalTrapezoidationGraph.i"
+	@echo "... src/Cura/SkeletalTrapezoidationGraph.s"
+	@echo "... src/Cura/SkirtBrim.o"
+	@echo "... src/Cura/SkirtBrim.i"
+	@echo "... src/Cura/SkirtBrim.s"
+	@echo "... src/Cura/Slice.o"
+	@echo "... src/Cura/Slice.i"
+	@echo "... src/Cura/Slice.s"
+	@echo "... src/Cura/SupportInfillPart.o"
+	@echo "... src/Cura/SupportInfillPart.i"
+	@echo "... src/Cura/SupportInfillPart.s"
+	@echo "... src/Cura/TopSurface.o"
+	@echo "... src/Cura/TopSurface.i"
+	@echo "... src/Cura/TopSurface.s"
+	@echo "... src/Cura/TreeModelVolumes.o"
+	@echo "... src/Cura/TreeModelVolumes.i"
+	@echo "... src/Cura/TreeModelVolumes.s"
+	@echo "... src/Cura/TreeSupport.o"
+	@echo "... src/Cura/TreeSupport.i"
+	@echo "... src/Cura/TreeSupport.s"
+	@echo "... src/Cura/WallToolPaths.o"
+	@echo "... src/Cura/WallToolPaths.i"
+	@echo "... src/Cura/WallToolPaths.s"
+	@echo "... src/Cura/WallsComputation.o"
+	@echo "... src/Cura/WallsComputation.i"
+	@echo "... src/Cura/WallsComputation.s"
+	@echo "... src/Cura/Weaver.o"
+	@echo "... src/Cura/Weaver.i"
+	@echo "... src/Cura/Weaver.s"
+	@echo "... src/Cura/Wireframe2gcode.o"
+	@echo "... src/Cura/Wireframe2gcode.i"
+	@echo "... src/Cura/Wireframe2gcode.s"
+	@echo "... src/Cura/bridge.o"
+	@echo "... src/Cura/bridge.i"
+	@echo "... src/Cura/bridge.s"
+	@echo "... src/Cura/communication/ArcusCommunication.o"
+	@echo "... src/Cura/communication/ArcusCommunication.i"
+	@echo "... src/Cura/communication/ArcusCommunication.s"
+	@echo "... src/Cura/communication/ArcusCommunicationPrivate.o"
+	@echo "... src/Cura/communication/ArcusCommunicationPrivate.i"
+	@echo "... src/Cura/communication/ArcusCommunicationPrivate.s"
+	@echo "... src/Cura/communication/CommandLine.o"
+	@echo "... src/Cura/communication/CommandLine.i"
+	@echo "... src/Cura/communication/CommandLine.s"
+	@echo "... src/Cura/communication/Listener.o"
+	@echo "... src/Cura/communication/Listener.i"
+	@echo "... src/Cura/communication/Listener.s"
+	@echo "... src/Cura/gcodeExport.o"
+	@echo "... src/Cura/gcodeExport.i"
+	@echo "... src/Cura/gcodeExport.s"
+	@echo "... src/Cura/infill.o"
+	@echo "... src/Cura/infill.i"
+	@echo "... src/Cura/infill.s"
+	@echo "... src/Cura/infill/GyroidInfill.o"
+	@echo "... src/Cura/infill/GyroidInfill.i"
+	@echo "... src/Cura/infill/GyroidInfill.s"
+	@echo "... src/Cura/infill/ImageBasedDensityProvider.o"
+	@echo "... src/Cura/infill/ImageBasedDensityProvider.i"
+	@echo "... src/Cura/infill/ImageBasedDensityProvider.s"
+	@echo "... src/Cura/infill/LightningDistanceField.o"
+	@echo "... src/Cura/infill/LightningDistanceField.i"
+	@echo "... src/Cura/infill/LightningDistanceField.s"
+	@echo "... src/Cura/infill/LightningGenerator.o"
+	@echo "... src/Cura/infill/LightningGenerator.i"
+	@echo "... src/Cura/infill/LightningGenerator.s"
+	@echo "... src/Cura/infill/LightningLayer.o"
+	@echo "... src/Cura/infill/LightningLayer.i"
+	@echo "... src/Cura/infill/LightningLayer.s"
+	@echo "... src/Cura/infill/LightningTreeNode.o"
+	@echo "... src/Cura/infill/LightningTreeNode.i"
+	@echo "... src/Cura/infill/LightningTreeNode.s"
+	@echo "... src/Cura/infill/NoZigZagConnectorProcessor.o"
+	@echo "... src/Cura/infill/NoZigZagConnectorProcessor.i"
+	@echo "... src/Cura/infill/NoZigZagConnectorProcessor.s"
+	@echo "... src/Cura/infill/SierpinskiFill.o"
+	@echo "... src/Cura/infill/SierpinskiFill.i"
+	@echo "... src/Cura/infill/SierpinskiFill.s"
+	@echo "... src/Cura/infill/SierpinskiFillProvider.o"
+	@echo "... src/Cura/infill/SierpinskiFillProvider.i"
+	@echo "... src/Cura/infill/SierpinskiFillProvider.s"
+	@echo "... src/Cura/infill/SubDivCube.o"
+	@echo "... src/Cura/infill/SubDivCube.i"
+	@echo "... src/Cura/infill/SubDivCube.s"
+	@echo "... src/Cura/infill/ZigzagConnectorProcessor.o"
+	@echo "... src/Cura/infill/ZigzagConnectorProcessor.i"
+	@echo "... src/Cura/infill/ZigzagConnectorProcessor.s"
+	@echo "... src/Cura/layerPart.o"
+	@echo "... src/Cura/layerPart.i"
+	@echo "... src/Cura/layerPart.s"
+	@echo "... src/Cura/mesh.o"
+	@echo "... src/Cura/mesh.i"
+	@echo "... src/Cura/mesh.s"
+	@echo "... src/Cura/multiVolumes.o"
+	@echo "... src/Cura/multiVolumes.i"
+	@echo "... src/Cura/multiVolumes.s"
+	@echo "... src/Cura/pathPlanning/Comb.o"
+	@echo "... src/Cura/pathPlanning/Comb.i"
+	@echo "... src/Cura/pathPlanning/Comb.s"
+	@echo "... src/Cura/pathPlanning/GCodePath.o"
+	@echo "... src/Cura/pathPlanning/GCodePath.i"
+	@echo "... src/Cura/pathPlanning/GCodePath.s"
+	@echo "... src/Cura/pathPlanning/LinePolygonsCrossings.o"
+	@echo "... src/Cura/pathPlanning/LinePolygonsCrossings.i"
+	@echo "... src/Cura/pathPlanning/LinePolygonsCrossings.s"
+	@echo "... src/Cura/pathPlanning/NozzleTempInsert.o"
+	@echo "... src/Cura/pathPlanning/NozzleTempInsert.i"
+	@echo "... src/Cura/pathPlanning/NozzleTempInsert.s"
+	@echo "... src/Cura/pathPlanning/TimeMaterialEstimates.o"
+	@echo "... src/Cura/pathPlanning/TimeMaterialEstimates.i"
+	@echo "... src/Cura/pathPlanning/TimeMaterialEstimates.s"
+	@echo "... src/Cura/progress/Progress.o"
+	@echo "... src/Cura/progress/Progress.i"
+	@echo "... src/Cura/progress/Progress.s"
+	@echo "... src/Cura/progress/ProgressStageEstimator.o"
+	@echo "... src/Cura/progress/ProgressStageEstimator.i"
+	@echo "... src/Cura/progress/ProgressStageEstimator.s"
+	@echo "... src/Cura/raft.o"
+	@echo "... src/Cura/raft.i"
+	@echo "... src/Cura/raft.s"
+	@echo "... src/Cura/settings/AdaptiveLayerHeights.o"
+	@echo "... src/Cura/settings/AdaptiveLayerHeights.i"
+	@echo "... src/Cura/settings/AdaptiveLayerHeights.s"
+	@echo "... src/Cura/settings/FlowTempGraph.o"
+	@echo "... src/Cura/settings/FlowTempGraph.i"
+	@echo "... src/Cura/settings/FlowTempGraph.s"
+	@echo "... src/Cura/settings/PathConfigStorage.o"
+	@echo "... src/Cura/settings/PathConfigStorage.i"
+	@echo "... src/Cura/settings/PathConfigStorage.s"
+	@echo "... src/Cura/settings/Settings.o"
+	@echo "... src/Cura/settings/Settings.i"
+	@echo "... src/Cura/settings/Settings.s"
+	@echo "... src/Cura/settings/ZSeamConfig.o"
+	@echo "... src/Cura/settings/ZSeamConfig.i"
+	@echo "... src/Cura/settings/ZSeamConfig.s"
+	@echo "... src/Cura/skin.o"
+	@echo "... src/Cura/skin.i"
+	@echo "... src/Cura/skin.s"
+	@echo "... src/Cura/sliceDataStorage.o"
+	@echo "... src/Cura/sliceDataStorage.i"
+	@echo "... src/Cura/sliceDataStorage.s"
+	@echo "... src/Cura/slicer.o"
+	@echo "... src/Cura/slicer.i"
+	@echo "... src/Cura/slicer.s"
+	@echo "... src/Cura/support.o"
+	@echo "... src/Cura/support.i"
+	@echo "... src/Cura/support.s"
+	@echo "... src/Cura/timeEstimate.o"
+	@echo "... src/Cura/timeEstimate.i"
+	@echo "... src/Cura/timeEstimate.s"
+	@echo "... src/Cura/utils/AABB.o"
+	@echo "... src/Cura/utils/AABB.i"
+	@echo "... src/Cura/utils/AABB.s"
+	@echo "... src/Cura/utils/AABB3D.o"
+	@echo "... src/Cura/utils/AABB3D.i"
+	@echo "... src/Cura/utils/AABB3D.s"
+	@echo "... src/Cura/utils/Date.o"
+	@echo "... src/Cura/utils/Date.i"
+	@echo "... src/Cura/utils/Date.s"
+	@echo "... src/Cura/utils/ExtrusionJunction.o"
+	@echo "... src/Cura/utils/ExtrusionJunction.i"
+	@echo "... src/Cura/utils/ExtrusionJunction.s"
+	@echo "... src/Cura/utils/ExtrusionLine.o"
+	@echo "... src/Cura/utils/ExtrusionLine.i"
+	@echo "... src/Cura/utils/ExtrusionLine.s"
+	@echo "... src/Cura/utils/ExtrusionSegment.o"
+	@echo "... src/Cura/utils/ExtrusionSegment.i"
+	@echo "... src/Cura/utils/ExtrusionSegment.s"
+	@echo "... src/Cura/utils/FMatrix4x3.o"
+	@echo "... src/Cura/utils/FMatrix4x3.i"
+	@echo "... src/Cura/utils/FMatrix4x3.s"
+	@echo "... src/Cura/utils/LinearAlg2D.o"
+	@echo "... src/Cura/utils/LinearAlg2D.i"
+	@echo "... src/Cura/utils/LinearAlg2D.s"
+	@echo "... src/Cura/utils/ListPolyIt.o"
+	@echo "... src/Cura/utils/ListPolyIt.i"
+	@echo "... src/Cura/utils/ListPolyIt.s"
+	@echo "... src/Cura/utils/MinimumSpanningTree.o"
+	@echo "... src/Cura/utils/MinimumSpanningTree.i"
+	@echo "... src/Cura/utils/MinimumSpanningTree.s"
+	@echo "... src/Cura/utils/Point3.o"
+	@echo "... src/Cura/utils/Point3.i"
+	@echo "... src/Cura/utils/Point3.s"
+	@echo "... src/Cura/utils/PolygonConnector.o"
+	@echo "... src/Cura/utils/PolygonConnector.i"
+	@echo "... src/Cura/utils/PolygonConnector.s"
+	@echo "... src/Cura/utils/PolygonsPointIndex.o"
+	@echo "... src/Cura/utils/PolygonsPointIndex.i"
+	@echo "... src/Cura/utils/PolygonsPointIndex.s"
+	@echo "... src/Cura/utils/PolygonsSegmentIndex.o"
+	@echo "... src/Cura/utils/PolygonsSegmentIndex.i"
+	@echo "... src/Cura/utils/PolygonsSegmentIndex.s"
+	@echo "... src/Cura/utils/PolylineStitcher.o"
+	@echo "... src/Cura/utils/PolylineStitcher.i"
+	@echo "... src/Cura/utils/PolylineStitcher.s"
+	@echo "... src/Cura/utils/ProximityPointLink.o"
+	@echo "... src/Cura/utils/ProximityPointLink.i"
+	@echo "... src/Cura/utils/ProximityPointLink.s"
+	@echo "... src/Cura/utils/SVG.o"
+	@echo "... src/Cura/utils/SVG.i"
+	@echo "... src/Cura/utils/SVG.s"
+	@echo "... src/Cura/utils/Simplify.o"
+	@echo "... src/Cura/utils/Simplify.i"
+	@echo "... src/Cura/utils/Simplify.s"
+	@echo "... src/Cura/utils/SquareGrid.o"
+	@echo "... src/Cura/utils/SquareGrid.i"
+	@echo "... src/Cura/utils/SquareGrid.s"
+	@echo "... src/Cura/utils/ThreadPool.o"
+	@echo "... src/Cura/utils/ThreadPool.i"
+	@echo "... src/Cura/utils/ThreadPool.s"
+	@echo "... src/Cura/utils/ToolpathVisualizer.o"
+	@echo "... src/Cura/utils/ToolpathVisualizer.i"
+	@echo "... src/Cura/utils/ToolpathVisualizer.s"
+	@echo "... src/Cura/utils/VoronoiUtils.o"
+	@echo "... src/Cura/utils/VoronoiUtils.i"
+	@echo "... src/Cura/utils/VoronoiUtils.s"
+	@echo "... src/Cura/utils/gettime.o"
+	@echo "... src/Cura/utils/gettime.i"
+	@echo "... src/Cura/utils/gettime.s"
+	@echo "... src/Cura/utils/polygon.o"
+	@echo "... src/Cura/utils/polygon.i"
+	@echo "... src/Cura/utils/polygon.s"
+	@echo "... src/Cura/utils/polygonUtils.o"
+	@echo "... src/Cura/utils/polygonUtils.i"
+	@echo "... src/Cura/utils/polygonUtils.s"
+	@echo "... src/Cura/utils/socket.o"
+	@echo "... src/Cura/utils/socket.i"
+	@echo "... src/Cura/utils/socket.s"
+	@echo "... src/CuraSlicing.o"
+	@echo "... src/CuraSlicing.i"
+	@echo "... src/CuraSlicing.s"
 	@echo "... src/FillHole.o"
 	@echo "... src/FillHole.i"
 	@echo "... src/FillHole.s"
@@ -359,9 +3110,12 @@ help:
 	@echo "... src/RWfile.o"
 	@echo "... src/RWfile.i"
 	@echo "... src/RWfile.s"
-	@echo "... src/Slicing.o"
-	@echo "... src/Slicing.i"
-	@echo "... src/Slicing.s"
+	@echo "... src/TransformCalcu.o"
+	@echo "... src/TransformCalcu.i"
+	@echo "... src/TransformCalcu.s"
+	@echo "... src/clipper.o"
+	@echo "... src/clipper.i"
+	@echo "... src/clipper.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
