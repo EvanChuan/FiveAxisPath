@@ -43,10 +43,17 @@ void CuraSlicer::subpart_slicing(vector<vector<Tri>>& trianglemesh, vector<Funct
     //load_parameters(json_filename, *last_settings);
     std::cout << "Load filename successfully" << std::endl;
 
+    // Set the output Gcode file.
+    char const* outfile = "fiveaxis.gcode";
+    if (! FffProcessor::getInstance()->setTargetFile(outfile)){
+        spdlog::error("Failed to open {} for output.", outfile);
+        exit(1);
+    }
+
     FMatrix4x3 transformation; // A matrix to rotate the mesh to the desired orientation
     vector<std::pair<float,float>> rotated_angle;     // Storing the rotational angle
-    //for(int i=0;i<num_mesh_groups;i++){
-    for(int i=0;i<1;i++){
+    for(int i=0;i<num_mesh_groups;i++){
+    //for(int i=0;i<1;i++){
         vector<Tri> current_tri = trianglemesh[i];  // current triangle data
         
         // Since the rotation is a sequence, the matrices are superimposed.

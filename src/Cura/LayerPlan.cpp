@@ -1649,12 +1649,11 @@ void LayerPlan::processFanSpeedAndMinimalLayerTime(Point starting_position)
 
 
 void LayerPlan::writeGCode(GCodeExport& gcode)
-{
-    Communication* communication = Application::getInstance().communication;
-    communication->setLayerForSend(layer_nr);
-    communication->sendCurrentPosition(gcode.getPositionXY());
+{   
+    //Communication* communication = Application::getInstance().communication;
+    //communication->setLayerForSend(layer_nr);
+    //communication->sendCurrentPosition(gcode.getPositionXY());
     gcode.setLayerNr(layer_nr);
-
     gcode.writeLayerComment(layer_nr);
 
     // flow-rate compensation
@@ -1863,7 +1862,6 @@ void LayerPlan::writeGCode(GCodeExport& gcode)
 
             // for some movements such as prime tower purge, the speed may get changed by this factor
             speed *= path.speed_factor;
-
             // Apply the extrusion speed factor if it's an extrusion move.
             if (! path.config->isTravelPath())
             {
@@ -1877,6 +1875,7 @@ void LayerPlan::writeGCode(GCodeExport& gcode)
                 ss << "MESH:" << current_mesh;
                 gcode.writeComment(ss.str());
             }
+
             if (path.config->isTravelPath())
             { // early comp for travel paths, which are handled more simply
                 if (! path.perform_z_hop && final_travel_z != z && extruder_plan_idx == (extruder_plans.size() - 1) && path_idx == (paths.size() - 1))
@@ -1899,7 +1898,7 @@ void LayerPlan::writeGCode(GCodeExport& gcode)
                     gcode.writeUnretractionAndPrime();
                 }
                 gcode.writeTravel(path.points.back(), speed);
-                continue;
+                continue;                
             }
 
             bool spiralize = path.spiralize;
@@ -1919,7 +1918,7 @@ void LayerPlan::writeGCode(GCodeExport& gcode)
                     for (unsigned int point_idx = 0; point_idx < path.points.size(); point_idx++)
                     {
                         const double extrude_speed = speed * path.speed_back_pressure_factor;
-                        communication->sendLineTo(path.config->type, path.points[point_idx], path.getLineWidthForLayerView(), path.config->getLayerThickness(), extrude_speed);
+                        //communication->sendLineTo(path.config->type, path.points[point_idx], path.getLineWidthForLayerView(), path.config->getLayerThickness(), extrude_speed);
                         gcode.writeExtrusion(path.points[point_idx], extrude_speed, path.getExtrusionMM3perMM(), path.config->type, update_extrusion_offset);
                     }
                 }
@@ -1954,7 +1953,7 @@ void LayerPlan::writeGCode(GCodeExport& gcode)
                         gcode.setZ(std::round(z + layer_thickness * length / totalLength));
 
                         const double extrude_speed = speed * path.speed_back_pressure_factor;
-                        communication->sendLineTo(path.config->type, path.points[point_idx], path.getLineWidthForLayerView(), path.config->getLayerThickness(), extrude_speed);
+                        //communication->sendLineTo(path.config->type, path.points[point_idx], path.getLineWidthForLayerView(), path.config->getLayerThickness(), extrude_speed);
                         gcode.writeExtrusion(path.points[point_idx], extrude_speed, path.getExtrusionMM3perMM(), path.config->type, update_extrusion_offset);
                     }
                     // for layer display only - the loop finished at the seam vertex but as we started from
@@ -1966,7 +1965,7 @@ void LayerPlan::writeGCode(GCodeExport& gcode)
                     // vertex would not be shifted (as it's the last vertex in the sequence). The smoother the model,
                     // the less the vertices are shifted and the less obvious is the ridge. If the layer display
                     // really displayed a spiral rather than slices of a spiral, this would not be required.
-                    communication->sendLineTo(path.config->type, path.points[0], path.getLineWidthForLayerView(), path.config->getLayerThickness(), speed);
+                    //communication->sendLineTo(path.config->type, path.points[0], path.getLineWidthForLayerView(), path.config->getLayerThickness(), speed);
                 }
                 path_idx--; // the last path_idx didnt spiralize, so it's not part of the current spiralize path
             }
@@ -1994,7 +1993,7 @@ void LayerPlan::writeGCode(GCodeExport& gcode)
         extruder_plan.handleAllRemainingInserts(gcode);
     } // extruder plans /\  .
 
-    communication->sendLayerComplete(layer_nr, z, layer_thickness);
+    //communication->sendLayerComplete(layer_nr, z, layer_thickness);
     gcode.updateTotalPrintTime();
 }
 
@@ -2125,13 +2124,13 @@ bool LayerPlan::writePathWithCoasting(GCodeExport& gcode, const size_t extruder_
     }
 
     { // write normal extrude path:
-        Communication* communication = Application::getInstance().communication;
+        //Communication* communication = Application::getInstance().communication;
         for (size_t point_idx = 0; point_idx <= point_idx_before_start; point_idx++)
         {
-            communication->sendLineTo(path.config->type, path.points[point_idx], path.getLineWidthForLayerView(), path.config->getLayerThickness(), extrude_speed);
+            //communication->sendLineTo(path.config->type, path.points[point_idx], path.getLineWidthForLayerView(), path.config->getLayerThickness(), extrude_speed);
             gcode.writeExtrusion(path.points[point_idx], extrude_speed, path.getExtrusionMM3perMM(), path.config->type);
         }
-        communication->sendLineTo(path.config->type, start, path.getLineWidthForLayerView(), path.config->getLayerThickness(), extrude_speed);
+        //communication->sendLineTo(path.config->type, start, path.getLineWidthForLayerView(), path.config->getLayerThickness(), extrude_speed);
         gcode.writeExtrusion(start, extrude_speed, path.getExtrusionMM3perMM(), path.config->type);
     }
 

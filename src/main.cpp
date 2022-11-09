@@ -7,7 +7,6 @@
 #include "MCF_Skeleton.h"
 #include "Function.h"
 #include "RWfile.h"
-//#include "Slicing.h"
 #include "CuraSlicing.h"
 #include "Cura/Application.h"
 
@@ -18,7 +17,8 @@ int main(int argc, char* argv[])
         std::cout << "usage: ./main <input_file>" << std::endl;
         return EXIT_FAILURE;
     }
-
+    
+    // Read input mesh file
     std::ifstream input(argv[1], std::ios_base::binary);
     Polyhedron tmesh;
     input >> tmesh;
@@ -35,7 +35,7 @@ int main(int argc, char* argv[])
     MCF_Skeleton MS;         // declare the class as a object
     MS.MCF_Skeleton_Fun(skeleton, mcs);
     
-    // Extract Skeleton Points
+    // Extract Skeleton Points and deal with order
     Function FN;
     vector<vector<double>> SKP = FN.ExtractSkelPoints(skeleton);
     FN.Sorting(SKP);    // Rearrange the skeleton points. But it needs general solution far.
@@ -97,10 +97,6 @@ int main(int argc, char* argv[])
     
     // **************** The slicing process (input:vector<vector<Tri>> trianglemesh  output:pregcode_data) ****************
     double layerheight = 0.2;
-    //Slicer SL;    // slicing by myself coding
-    // The size of plane_points and trianglemesh differ by 1.
-    //vector<vector<Slicer::slice>> pregcode_data = SL.subpart_slicing(trianglemesh,plane_points,layerheight);
-    
     CuraSlicer CSL;  // use CuraEngine to slicing
     cura::Application::getInstance().startThreadPool();
     CSL.subpart_slicing(trianglemesh,plane_points,layerheight);

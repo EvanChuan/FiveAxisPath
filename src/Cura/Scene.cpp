@@ -70,7 +70,6 @@ void Scene::processMeshGroup(MeshGroup& mesh_group)
     TimeKeeper time_keeper_total;
 
     bool empty = true;
-    std::cout << "mesh_group.meshes len:" << mesh_group.meshes.size() << std::endl;
     for (Mesh& mesh : mesh_group.meshes)
     {
         if (! mesh.settings.get<bool>("infill_mesh") && ! mesh.settings.get<bool>("anti_overhang_mesh"))
@@ -109,8 +108,7 @@ void Scene::processMeshGroup(MeshGroup& mesh_group)
         }
 
         Progress::messageProgressStage(Progress::Stage::EXPORT, &fff_processor->time_keeper);
-        //fff_processor->gcode_writer.writeGCode(storage, fff_processor->time_keeper);
-        std::cout << "Test to here! (20221104)" << std::endl;
+        fff_processor->gcode_writer.writeGCode(storage, fff_processor->time_keeper);
     }
     
     Progress::messageProgress(Progress::Stage::FINISH, 1, 1); // 100% on this meshgroup

@@ -69,8 +69,8 @@ bool FffGcodeWriter::setTargetFile(const char* filename)
 void FffGcodeWriter::writeGCode(SliceDataStorage& storage, TimeKeeper& time_keeper)
 {   std::cout << "Test writeGCode!" << std::endl;
     const size_t start_extruder_nr = getStartExtruder(storage);
-    gcode.preSetup(start_extruder_nr);
-    gcode.setSliceUUID(slice_uuid);
+    gcode.preSetup(start_extruder_nr);   // the gcode object is declear in the header file of this cpp script.
+    gcode.setSliceUUID(slice_uuid);     // these functions need to be found in gcodeExport.cpp.
 
     Scene& scene = Application::getInstance().current_slice->scene;
     if (scene.current_mesh_group == scene.mesh_groups.begin()) // First mesh group.
@@ -79,20 +79,20 @@ void FffGcodeWriter::writeGCode(SliceDataStorage& storage, TimeKeeper& time_keep
         gcode.setInitialAndBuildVolumeTemps(start_extruder_nr);
     }
 
-    //Application::getInstance().communication->beginGCode();
+    //Application::getInstance().communication->beginGCode(); // EC: communication is null so coment this line.
     setConfigFanSpeedLayerTime();
     setConfigRetraction(storage);
     setConfigWipe(storage);
-    std::cout << "Tmp point 0." << std::endl;
+
     if (scene.current_mesh_group == scene.mesh_groups.begin())
-    {   std::cout << "AA" << std::endl;
+    {
         processStartingCode(storage, start_extruder_nr);
     }
     else
-    {   std::cout << "BB" << std::endl;
+    {
         processNextMeshGroupCode(storage);
     }
-    std::cout << "Tmp point 1." << std::endl;
+
     size_t total_layers = 0;
     for (SliceMeshStorage& mesh : storage.meshes)
     {
@@ -103,11 +103,11 @@ void FffGcodeWriter::writeGCode(SliceDataStorage& storage, TimeKeeper& time_keep
 
         setInfillAndSkinAngles(mesh);
     }
-    std::cout << "Tmp point 2." << std::endl;
+
     setSupportAngles(storage);
-    std::cout << "Tmp point 3." << std::endl;
+
     gcode.writeLayerCountComment(total_layers);
-    std::cout << "Tmp point 4." << std::endl;
+
     { // calculate the mesh order for each extruder
         const size_t extruder_count = Application::getInstance().current_slice->scene.extruders.size();
         mesh_order_per_extruder.clear(); // Might be not empty in case of sequential printing.
@@ -119,12 +119,12 @@ void FffGcodeWriter::writeGCode(SliceDataStorage& storage, TimeKeeper& time_keep
     }
     calculateExtruderOrderPerLayer(storage);
     calculatePrimeLayerPerExtruder(storage);
-    std::cout << "Tmp point 5." << std::endl;
+
     if (scene.current_mesh_group->settings.get<bool>("magic_spiralize"))
     {
         findLayerSeamsForSpiralize(storage, total_layers);
     }
-    std::cout << "Tmp point 6." << std::endl;
+
     int process_layer_starting_layer_nr = 0;
     const bool has_raft = scene.current_mesh_group->settings.get<EPlatformAdhesion>("adhesion_type") == EPlatformAdhesion::RAFT;
     if (has_raft)
@@ -141,7 +141,7 @@ void FffGcodeWriter::writeGCode(SliceDataStorage& storage, TimeKeeper& time_keep
             }
         }
     }
-    std::cout << "Tmp point 7." << std::endl;
+
     run_multiple_producers_ordered_consumer(
         process_layer_starting_layer_nr,
         total_layers,
@@ -151,19 +151,15 @@ void FffGcodeWriter::writeGCode(SliceDataStorage& storage, TimeKeeper& time_keep
             Progress::messageProgress(Progress::Stage::EXPORT, std::max(0, gcode_layer->getLayerNr()) + 1, total_layers);
             layer_plan_buffer.handle(*gcode_layer, gcode);
         });
-    std::cout << "Tmp point 8." << std::endl;
-
     layer_plan_buffer.flush();
-    std::cout << "Tmp point 9." << std::endl;
+
     Progress::messageProgressStage(Progress::Stage::FINISH, &time_keeper);
-    std::cout << "Tmp point 10." << std::endl;
+
     // Store the object height for when we are printing multiple objects, as we need to clear every one of them when moving to the next position.
     max_object_height = std::max(max_object_height, storage.model_max.z);
-    std::cout << "Tmp point11." << std::endl;
 
     constexpr bool force = true;
     gcode.writeRetraction(storage.retraction_config_per_extruder[gcode.getExtruderNr()], force); // retract after finishing each meshgroup
-    std::cout << "writeGCode Done!" << std::endl;
 }
 
 unsigned int FffGcodeWriter::findSpiralizedLayerSeamVertexIndex(const SliceDataStorage& storage, const SliceMeshStorage& mesh, const int layer_nr, const int last_layer_nr)
@@ -587,7 +583,8 @@ void FffGcodeWriter::processInitialLayerTemperature(const SliceDataStorage& stor
 void FffGcodeWriter::processStartingCode(const SliceDataStorage& storage, const size_t start_extruder_nr)
 {
     std::vector<bool> extruder_is_used = storage.getExtrudersUsed();
-    if (Application::getInstance().communication->isSequential()) // If we must output the g-code sequentially, we must already place the g-code header here even if we don't know the exact time/material usages yet.
+    //if (Application::getInstance().communication->isSequential()) // If we must output the g-code sequentially, we must already place the g-code header here even if we don't know the exact time/material usages yet.
+    if (false)
     {
         std::string prefix = gcode.getFileHeader(extruder_is_used);
         gcode.writeCode(prefix.c_str());
@@ -625,7 +622,7 @@ void FffGcodeWriter::processStartingCode(const SliceDataStorage& storage, const 
         gcode.writeBuildVolumeTemperatureCommand(mesh_group_settings.get<Temperature>("build_volume_temperature"));
     }
 
-    Application::getInstance().communication->sendCurrentPosition(gcode.getPositionXY());
+    //Application::getInstance().communication->sendCurrentPosition(gcode.getPositionXY());
     gcode.startExtruder(start_extruder_nr);
 
     if (gcode.getFlavor() == EGCodeFlavor::BFB)
@@ -667,7 +664,7 @@ void FffGcodeWriter::processNextMeshGroupCode(const SliceDataStorage& storage)
     gcode.writeFanCommand(0);
     gcode.setZ(max_object_height + MM2INT(5));
 
-    Application::getInstance().communication->sendCurrentPosition(gcode.getPositionXY());
+    //Application::getInstance().communication->sendCurrentPosition(gcode.getPositionXY());
     gcode.writeTravel(gcode.getPositionXY(), Application::getInstance().current_slice->scene.extruders[gcode.getExtruderNr()].settings.get<Velocity>("speed_travel"));
     Point start_pos(storage.model_min.x, storage.model_min.y);
     gcode.writeTravel(start_pos, Application::getInstance().current_slice->scene.extruders[gcode.getExtruderNr()].settings.get<Velocity>("speed_travel"));
@@ -986,7 +983,7 @@ void FffGcodeWriter::processRaft(const SliceDataStorage& storage)
 
 LayerPlan& FffGcodeWriter::processLayer(const SliceDataStorage& storage, LayerIndex layer_nr, const size_t total_layers) const
 {
-    spdlog::debug("GcodeWriter processing layer {} of {}", layer_nr, total_layers);
+    spdlog::warn("GcodeWriter processing layer {} of {}", layer_nr, total_layers);
 
     const Settings& mesh_group_settings = Application::getInstance().current_slice->scene.current_mesh_group->settings;
     coord_t layer_thickness = mesh_group_settings.get<coord_t>("layer_height");
@@ -1476,7 +1473,7 @@ void FffGcodeWriter::addMeshLayerToGCode(const SliceDataStorage& storage, const 
     {
         addMeshPartToGCode(storage, mesh, extruder_nr, mesh_config, *path.vertices, gcode_layer);
     }
-    std::cout << "addMeshLayerToGCode" << std::endl;
+
     const std::string extruder_identifier = (mesh.settings.get<size_t>("roofing_layer_count") > 0) ? "roofing_extruder_nr" : "top_bottom_extruder_nr";
     if (extruder_nr == mesh.settings.get<ExtruderTrain&>(extruder_identifier).extruder_nr)
     {

@@ -348,10 +348,8 @@ class MultipleProducersOrderedConsumer
                 consume_many(lock); // Consume a contiguous block starting at consumer_wait_idx
             }
         }
-
         // Notify eventual workers waiting for a free slot but never got one during the interval of producing the last items
         free_slot_cond.notify_all();
-
         if (--workers_count == 0)
         {   // Last worker exiting: signal run() about workers completion
             work_done_cond.notify_one();

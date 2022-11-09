@@ -53,7 +53,7 @@ LayerPlan* LayerPlanBuffer::processBuffer()
     if (buffer.size() > buffer_size)
     {
         LayerPlan* ret = buffer.front();
-        Application::getInstance().communication->flushGCode();
+        //Application::getInstance().communication->flushGCode();
         buffer.pop_front();
         return ret;
     }
@@ -62,7 +62,7 @@ LayerPlan* LayerPlanBuffer::processBuffer()
 
 void LayerPlanBuffer::flush()
 {
-    Application::getInstance().communication->flushGCode(); // If there was still g-code in a layer, flush that as a separate layer. Don't want to group them together accidentally.
+    //Application::getInstance().communication->flushGCode(); // If there was still g-code in a layer, flush that as a separate layer. Don't want to group them together accidentally.
     if (buffer.size() > 0)
     {
         insertTempCommands(); // insert preheat commands of the very last layer
@@ -70,7 +70,7 @@ void LayerPlanBuffer::flush()
     while (! buffer.empty())
     {
         buffer.front()->writeGCode(gcode);
-        Application::getInstance().communication->flushGCode();
+        //Application::getInstance().communication->flushGCode();
         delete buffer.front();
         buffer.pop_front();
     }

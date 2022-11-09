@@ -720,7 +720,7 @@ void GCodeExport::writeTravel(const coord_t x, const coord_t y, const coord_t z,
     const PrintFeatureType travel_move_type = extruder_attr[current_extruder].retraction_e_amount_current ? PrintFeatureType::MoveRetraction : PrintFeatureType::MoveCombing;
     const int display_width = extruder_attr[current_extruder].retraction_e_amount_current ? MM2INT(0.2) : MM2INT(0.1);
     const double layer_height = Application::getInstance().current_slice->scene.current_mesh_group->settings.get<double>("layer_height");
-    Application::getInstance().communication->sendLineTo(travel_move_type, Point(x, y), display_width, layer_height, speed);
+    //Application::getInstance().communication->sendLineTo(travel_move_type, Point(x, y), display_width, layer_height, speed);
 
     *output_stream << "G0";
     writeFXYZE(speed, x, y, z, current_e_value, travel_move_type);
@@ -1030,8 +1030,8 @@ void GCodeExport::startExtruder(const size_t new_extruder)
         }
     }
 
-    Application::getInstance().communication->setExtruderForSend(Application::getInstance().current_slice->scene.extruders[new_extruder]);
-    Application::getInstance().communication->sendCurrentPosition(getPositionXY());
+    //Application::getInstance().communication->setExtruderForSend(Application::getInstance().current_slice->scene.extruders[new_extruder]);
+    //Application::getInstance().communication->sendCurrentPosition(getPositionXY());
 
     // Change the Z position so it gets re-written again. We do not know if the switch code modified the Z position.
     currentPosition.z += 1;
