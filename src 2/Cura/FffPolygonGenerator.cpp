@@ -88,7 +88,7 @@ size_t FffPolygonGenerator::getDraftShieldLayerCount(const size_t total_layers) 
 
 bool FffPolygonGenerator::sliceModel(MeshGroup* meshgroup, TimeKeeper& timeKeeper, SliceDataStorage& storage) /// slices the model
 {
-    Progress::messageProgressStage(Progress::Stage::SLICING, &timeKeeper);  // this line will show something.
+    Progress::messageProgressStage(Progress::Stage::SLICING, &timeKeeper);  // this line will show "[info] Starting slice..."
 
     storage.model_min = meshgroup->min();
     storage.model_max = meshgroup->max();
@@ -190,17 +190,17 @@ bool FffPolygonGenerator::sliceModel(MeshGroup* meshgroup, TimeKeeper& timeKeepe
         return true; // This is NOT an error state!
     }
 
-    std::vector<Slicer*> slicerList;
+    std::vector<Slicer*> slicerList;  // store the slicing result data.
     for (unsigned int mesh_idx = 0; mesh_idx < meshgroup->meshes.size(); mesh_idx++)
-    {   
+    {
         // Check if adaptive layers is populated to prevent accessing a method on NULL
         std::vector<AdaptiveLayer>* adaptive_layer_height_values = {};
         if (adaptive_layer_heights != nullptr)
         {
             adaptive_layer_height_values = adaptive_layer_heights->getLayers();
         }
-        Mesh& mesh = meshgroup->meshes[mesh_idx];  // 第幾層layer？
-        Slicer* slicer = new Slicer(&mesh, layer_thickness, slice_layer_count, use_variable_layer_heights, adaptive_layer_height_values);
+        Mesh& mesh = meshgroup->meshes[mesh_idx];  // 第幾個mesh進行切成 
+        Slicer* slicer = new Slicer(&mesh, layer_thickness, slice_layer_count, use_variable_layer_heights, adaptive_layer_height_values,mesh_idx);
         slicerList.push_back(slicer);
 
         /*
@@ -212,12 +212,10 @@ bool FffPolygonGenerator::sliceModel(MeshGroup* meshgroup, TimeKeeper& timeKeepe
         }
         */
         Progress::messageProgress(Progress::Stage::SLICING, mesh_idx + 1, meshgroup->meshes.size());
-
     }
 
     // Clear the mesh face and vertex data, it is no longer needed after this point, and it saves a lot of memory.
     meshgroup->clear();
-    spdlog::info("Slicing END...");
     Mold::process(slicerList);
 
     Scene& scene = Application::getInstance().current_slice->scene;
@@ -889,7 +887,6 @@ void FffPolygonGenerator::computePrintHeightStatistics(SliceDataStorage& storage
     }
 }
 
-
 void FffPolygonGenerator::processOozeShield(SliceDataStorage& storage)
 {
     const Settings& mesh_group_settings = Application::getInstance().current_slice->scene.current_mesh_group->settings;
@@ -1015,7 +1012,6 @@ void FffPolygonGenerator::processPlatformAdhesion(SliceDataStorage& storage)
     }
 }
 
-
 void FffPolygonGenerator::processFuzzyWalls(SliceMeshStorage& mesh)
 {
     if (mesh.settings.get<size_t>("wall_line_count") == 0)
@@ -1131,6 +1127,5 @@ void FffPolygonGenerator::processFuzzyWalls(SliceMeshStorage& mesh)
         }
     }
 }
-
 
 } // namespace cura

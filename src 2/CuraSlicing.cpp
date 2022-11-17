@@ -16,11 +16,11 @@ void CuraSlicer::subpart_slicing(vector<vector<Tri>>& trianglemesh, vector<Funct
     
     // ************* Reference from CommandLine::sliceNext() ************* //
     size_t num_mesh_groups = trianglemesh.size();   // Count the number of sub mesh groups for slicing.
-    Slice slice(num_mesh_groups);  // a container for slicing mesh, create Scene object.
+    Slice slice(num_mesh_groups);                   // a container for slicing mesh, create Scene object.
     
     Application::getInstance().current_slice = &slice;  // the current_slice is a pointer in Application class. the address of slice
     size_t mesh_group_index = 0;
-    Settings* last_settings = &slice.scene.settings;  // the pointer last_settings point to parameter slice.scene.settings
+    Settings* last_settings = &slice.scene.settings;    // the pointer last_settings point to parameter slice.scene.settings
 
     //*** 宣告extruder的vector大小，並做存放
     //slice.scene.extruders.reserve(arguments.size() >> 1); // Allocate enough memory to prevent moves.
@@ -41,7 +41,7 @@ void CuraSlicer::subpart_slicing(vector<vector<Tri>>& trianglemesh, vector<Funct
         }
     }      
     //load_parameters(json_filename, *last_settings);
-    std::cout << "Load filename successfully" << std::endl;
+    std::cout << "Load Setting Successfully" << std::endl;
 
     // Set the output Gcode file.
     char const* outfile = "fiveaxis.gcode";
@@ -53,28 +53,30 @@ void CuraSlicer::subpart_slicing(vector<vector<Tri>>& trianglemesh, vector<Funct
     FMatrix4x3 transformation; // A matrix to rotate the mesh to the desired orientation
     vector<std::pair<float,float>> rotated_angle;     // Storing the rotational angle
     for(int i=0;i<num_mesh_groups;i++){
-    //for(int i=0;i<1;i++){
+        std::cout << "The " << i << " Mesh_Group." << std::endl;
         vector<Tri> current_tri = trianglemesh[i];  // current triangle data
         
         // Since the rotation is a sequence, the matrices are superimposed.
+        // The submesh rotate angles are store at the same time.
         TransformCalcu::GetTransformation(i,transformation, current_tri, rotated_angle);
 
         // load trianglemesh data to Cura mesh_group.meshes data
-        if(!loadMeshIntoMeshGroup_(&slice.scene.mesh_groups[mesh_group_index], current_tri, transformation,last_extruder->settings))
+        if(!loadMeshIntoMeshGroup_(i,&slice.scene.mesh_groups[mesh_group_index], current_tri, transformation,last_extruder->settings,plane_points,rotated_angle))
         {
             std::cout << "Load Failed." << std::endl;
         }
-        //std::cout << "meshgroup.size: " << slice.scene.mesh_groups[mesh_group_index].meshes.size() << std::endl;
     
-        if(i == 0){
-        slice.scene.mesh_groups[mesh_group_index].finalize();
+        if(i == 0){ // deal the base sub-mesh
+        //slice.scene.mesh_groups[mesh_group_index].finalize();
         }
         //spdlog::info("Loaded from disk in {:3}s\n", FffProcessor::getInstance()->time_keeper.restart());
+        mesh_group_index++;
     }
+
     // Start slicing.
     slice.compute();
     
-    std::cout << "subpart_slicing done!" << std::endl;
+    std::cout << "Slicing is done!" << std::endl;
     return;
 }
 

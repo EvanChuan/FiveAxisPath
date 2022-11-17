@@ -84,6 +84,7 @@ private:
                                                                                        //!< and fan speeds. Configured for each extruder.
 
     std::string slice_uuid; //!< The UUID of the current slice.
+
   public:
     /*
      * \brief Construct a g-code writer.

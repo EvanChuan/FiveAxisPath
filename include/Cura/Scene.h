@@ -71,6 +71,9 @@ public:
      */
     void processMeshGroup(MeshGroup& mesh_group);
 
+    // record the order dealing mesh group
+    int mesh_group_num;
+
 private:
     /*
      * \brief You are not allowed to copy the scene.

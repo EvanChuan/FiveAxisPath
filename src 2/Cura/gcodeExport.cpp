@@ -341,6 +341,13 @@ EGCodeFlavor GCodeExport::getFlavor() const
 void GCodeExport::setZ(int z)
 {
     current_layer_z = z;
+    std::cout << "current_layer_z : " << current_layer_z << std::endl;
+}
+
+void GCodeExport::setAngle(float a, float c)
+{
+    current_angle_a = a;
+    current_angle_c = c;
 }
 
 void GCodeExport::addExtraPrimeAmount(double extra_prime_volume)
@@ -812,6 +819,8 @@ void GCodeExport::writeFXYZE(const Velocity& speed, const coord_t x, const coord
     if (z != currentPosition.z)
     {
         *output_stream << " Z" << MMtoStream{ z };
+        // write the angle to gcode when Z change.
+        *output_stream << " A" << to_string(current_angle_a) << " B" << to_string(current_angle_c);
     }
     if (e + current_e_offset != current_e_value)
     {

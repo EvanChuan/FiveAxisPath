@@ -31,6 +31,7 @@
 
 namespace cura
 {
+bool include_helper_parts; // global variable in this script.
 
 FffGcodeWriter::FffGcodeWriter() : max_object_height(0), layer_plan_buffer(gcode), slice_uuid(boost::uuids::to_string(boost::uuids::random_generator()()))
 {
@@ -67,7 +68,7 @@ bool FffGcodeWriter::setTargetFile(const char* filename)
 }
 
 void FffGcodeWriter::writeGCode(SliceDataStorage& storage, TimeKeeper& time_keeper)
-{   std::cout << "Test writeGCode!" << std::endl;
+{
     const size_t start_extruder_nr = getStartExtruder(storage);
     gcode.preSetup(start_extruder_nr);   // the gcode object is declear in the header file of this cpp script.
     gcode.setSliceUUID(slice_uuid);     // these functions need to be found in gcodeExport.cpp.
@@ -86,11 +87,13 @@ void FffGcodeWriter::writeGCode(SliceDataStorage& storage, TimeKeeper& time_keep
 
     if (scene.current_mesh_group == scene.mesh_groups.begin())
     {
-        processStartingCode(storage, start_extruder_nr);
+        processStartingCode(storage, start_extruder_nr);    // set pregcode paremters.
+        include_helper_parts = true;
     }
     else
     {
         processNextMeshGroupCode(storage);
+        include_helper_parts = false;
     }
 
     size_t total_layers = 0;
@@ -156,8 +159,10 @@ void FffGcodeWriter::writeGCode(SliceDataStorage& storage, TimeKeeper& time_keep
     Progress::messageProgressStage(Progress::Stage::FINISH, &time_keeper);
 
     // Store the object height for when we are printing multiple objects, as we need to clear every one of them when moving to the next position.
-    max_object_height = std::max(max_object_height, storage.model_max.z);
-
+    //max_object_height = std::max(max_object_height, storage.model_max.z);
+    if (scene.current_mesh_group != scene.mesh_groups.end()){
+    max_object_height = storage.submesh_startSliceZ;  // EC:
+    }
     constexpr bool force = true;
     gcode.writeRetraction(storage.retraction_config_per_extruder[gcode.getExtruderNr()], force); // retract after finishing each meshgroup
 }
@@ -663,6 +668,7 @@ void FffGcodeWriter::processNextMeshGroupCode(const SliceDataStorage& storage)
 {
     gcode.writeFanCommand(0);
     gcode.setZ(max_object_height + MM2INT(5));
+    gcode.setAngle(storage.A_C_angle.first,storage.A_C_angle.second); // A C angle
 
     //Application::getInstance().communication->sendCurrentPosition(gcode.getPositionXY());
     gcode.writeTravel(gcode.getPositionXY(), Application::getInstance().current_slice->scene.extruders[gcode.getExtruderNr()].settings.get<Velocity>("speed_travel"));
@@ -983,12 +989,12 @@ void FffGcodeWriter::processRaft(const SliceDataStorage& storage)
 
 LayerPlan& FffGcodeWriter::processLayer(const SliceDataStorage& storage, LayerIndex layer_nr, const size_t total_layers) const
 {
-    spdlog::warn("GcodeWriter processing layer {} of {}", layer_nr, total_layers);
+    //spdlog::warn("GcodeWriter processing layer {} of {}", layer_nr, total_layers);
 
     const Settings& mesh_group_settings = Application::getInstance().current_slice->scene.current_mesh_group->settings;
     coord_t layer_thickness = mesh_group_settings.get<coord_t>("layer_height");
     coord_t z;
-    bool include_helper_parts = true;
+    //bool include_helper_parts = true;
     if (layer_nr < 0)
     {
 #ifdef DEBUG

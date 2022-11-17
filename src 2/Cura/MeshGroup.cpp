@@ -130,13 +130,13 @@ void MeshGroup::scaleFromBottom(const Ratio factor_xy, const Ratio factor_z)
 
 bool loadMeshSTL_binary(Mesh* mesh, vector<Tri>& T, const FMatrix4x3& matrix)
 {
-    size_t face_count = T.size()-1;  // skip the first one
+    size_t face_count = T.size()-1; // the first one which is store cut plane so need to -1.
     // For each face read:
     // float(x,y,z) = normal, float(X,Y,Z)*3 = vertexes, uint16_t = flags
     //  Every Face is 50 Bytes: Normal(3*float), Vertices(9*float), 2 Bytes Spacer
     mesh->faces.reserve(face_count);
     mesh->vertices.reserve(face_count);
-    for (unsigned int i = 0; i < face_count; i++)
+    for (unsigned int i = 1; i < face_count; i++)   // skip the first one which is store at cut plane
     {
         Point3 v0 = matrix.apply(FPoint3((float)T[i].P1_x, (float)T[i].P1_y, (float)T[i].P1_z));
         Point3 v1 = matrix.apply(FPoint3((float)T[i].P2_x, (float)T[i].P2_y, (float)T[i].P2_z));
@@ -147,16 +147,27 @@ bool loadMeshSTL_binary(Mesh* mesh, vector<Tri>& T, const FMatrix4x3& matrix)
     return true;
 }
 
-bool loadMeshIntoMeshGroup_(MeshGroup* meshgroup,vector<Tri>& current_tri,const FMatrix4x3& transformation,Settings& object_parent_settings)
+bool loadMeshIntoMeshGroup_(int Id,MeshGroup* meshgroup,vector<Tri>& current_tri,const FMatrix4x3& transformation,Settings& object_parent_settings,vector<Function::Skel_Points>& plane_points, vector<std::pair<float,float>>& rotated_angle)
 {
     TimeKeeper load_timer;
 
     Mesh mesh(object_parent_settings);
-    //Mesh mesh;
     if(!loadMeshSTL_binary(&mesh, current_tri, transformation)){ return false;} // Return on failure, otherwise continue.
-    
     meshgroup->meshes.push_back(mesh);
-    spdlog::info("loading data took {:3} seconds", load_timer.restart());
+    
+    if(Id < plane_points.size())
+    {
+    // calculate the rotated cutplan point and stored in the Id th MeshGroup.
+    std::cout << "orig cutplan_p.z : " << plane_points[Id].Z << std::endl;
+    Point3 cutplan_p = transformation.apply(Point3((float)plane_points[Id].X, (float)plane_points[Id].Y, (float)plane_points[Id].Z));
+    std::cout << "cutplan_p.z : " << cutplan_p.z << std::endl;
+    meshgroup->rotated_Zvaule = cutplan_p.z;
+    }
+
+    // stored the A,C angle which calculate before in the Id th MeshGroup.
+    std::cout << "rotated_angle : " << rotated_angle[Id].first << " " << rotated_angle[Id].second << std::endl;
+    meshgroup->angle = rotated_angle[Id];
+    //spdlog::info("loading data took {:3} seconds", load_timer.restart());
     
     return true;
 }

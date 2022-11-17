@@ -5,7 +5,7 @@ float MY_PI = 3.1415926;
 
 using namespace cura;
 
-void TransformCalcu::GetTransformation(int Id, FMatrix4x3& transformation,vector<Tri>& current_tri,vector<std::pair<float,float>> rotated_angle)
+void TransformCalcu::GetTransformation(int Id, FMatrix4x3& transformation,vector<Tri>& current_tri,vector<std::pair<float,float>>& rotated_angle)
 {
     float arc_A = 0, arc_C = 0;  // the angles here are ith mesh to (i-1)th mesh
     
@@ -14,12 +14,16 @@ void TransformCalcu::GetTransformation(int Id, FMatrix4x3& transformation,vector
         return;
     }
     // Handling not the base mesh, i>0
-    // 1. rotate cutplan_normal
+    // 1. rotate cutplan_normal and the cutplan_point
     double cn[3][1] = {current_tri[0].n_x,current_tri[0].n_y,current_tri[0].n_z};
     Point3 afterRotate_cn = transformation.apply(FPoint3((float)cn[0][0], (float)cn[1][0], (float)cn[2][0]));
     // 2. After rotate the current cutplan_normal to previousframe, and then calulate needed angle
     FMatrix4x3 Frame_i_matrix;
     calculate_rotateangle(afterRotate_cn, arc_A, arc_C, Frame_i_matrix);
+    float drg_A = todegree(arc_A);
+    float drg_C = todegree(arc_C);
+    std:: cout << "angle :A " << drg_A << ", C" << drg_C << std::endl;
+    rotated_angle.push_back(make_pair(drg_A,drg_C));
     // 3. update the rotation matrix from i to base
     FMatrix4x3 tmp_matrix;
     Multiple_Matrix(transformation,Frame_i_matrix,tmp_matrix);       // The rotation matrix is translate from i to base 
@@ -68,7 +72,7 @@ float TransformCalcu::get_angle(float a, float b){
     else{
         deg = (90-deg);
     }
-    std:: cout << "angle in degree:" << deg << std::endl;
+    //std:: cout << "angle in degree:" << deg << std::endl;
     deg=deg*(MY_PI/180);
     /*
     // using acsin
@@ -83,12 +87,25 @@ float TransformCalcu::get_angle(float a, float b){
     return deg;
 }
 
+float TransformCalcu::todegree(float& angle){
+    return angle = angle*(180/MY_PI);
+}
+
 Point3 TransformCalcu::deal_3by1Matrix(float m[3][3], const FPoint3& p)
 {
     return Point3(
         MM2INT(p.x * m[0][0] + p.y * m[0][1] + p.z * m[0][2]),
         MM2INT(p.x * m[1][0] + p.y * m[1][1] + p.z * m[1][2]),
         MM2INT(p.x * m[2][0] + p.y * m[2][1] + p.z * m[2][2])
+    );
+}
+
+Point3 TransformCalcu::Multiple_3by1Matrix(FMatrix4x3& FM, const FPoint3& p)
+{
+    return Point3(
+        p.x * FM.m[0][0] + p.y * FM.m[0][1] + p.z * FM.m[0][2],
+        p.x * FM.m[1][0] + p.y * FM.m[1][1] + p.z * FM.m[1][2],
+        p.x * FM.m[2][0] + p.y * FM.m[2][1] + p.z * FM.m[2][2]
     );
 }
 

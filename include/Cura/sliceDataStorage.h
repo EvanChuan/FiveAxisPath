@@ -333,6 +333,9 @@ public:
     std::vector<Polygons> oozeShield;        //oozeShield per layer
     Polygons draft_protection_shield; //!< The polygons for a heightened skirt which protects from warping by gusts of wind and acts as a heated chamber.
 
+    coord_t submesh_startSliceZ;
+    std::pair<float, float> A_C_angle; // store submesh rotate angle
+
     /*!
      * \brief Creates a new slice data storage that stores the slice data of the
      * current mesh group.

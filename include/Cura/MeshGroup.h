@@ -7,6 +7,7 @@
 #include "Cura/mesh.h"
 #include "Cura/utils/NoCopy.h"
 #include "Cura/settings/Settings.h"
+#include "Cura/sliceDataStorage.h"
 #include "Function.h"
 
 namespace cura
@@ -24,6 +25,8 @@ class MeshGroup : public NoCopy
 {
 public:
     std::vector<Mesh> meshes;
+    coord_t rotated_Zvaule;
+    std::pair<float,float> angle;
     Settings settings;
 
     Point3 min() const; //! minimal corner of bounding box
@@ -51,7 +54,7 @@ public:
  * \param transformation The transformation applied to all vertices
  * \return whether the file could be loaded
  */
-bool loadMeshIntoMeshGroup_(MeshGroup* meshgroup, vector<Tri>& current_tri, const FMatrix4x3& transformation, Settings& object_parent_settings);
+bool loadMeshIntoMeshGroup_(int Id,MeshGroup* meshgroup, vector<Tri>& current_tri, const FMatrix4x3& transformation, Settings& object_parent_settings,vector<Function::Skel_Points>& plane_points, vector<std::pair<float,float>>& rotated_angle);
 
 bool loadMeshIntoMeshGroup(MeshGroup* meshgroup, const char* filename, const FMatrix4x3& transformation, Settings& object_parent_settings);
 

@@ -779,7 +779,7 @@ void SlicerLayer::makePolygons(const Mesh* mesh)
     openPolylines.removeDegenerateVertsPolyline();
 }
 
-Slicer::Slicer(Mesh* i_mesh, const coord_t thickness, const size_t slice_layer_count, bool use_variable_layer_heights, std::vector<AdaptiveLayer>* adaptive_layers) : mesh(i_mesh)
+Slicer::Slicer(Mesh* i_mesh, const coord_t thickness, const size_t slice_layer_count, bool use_variable_layer_heights, std::vector<AdaptiveLayer>* adaptive_layers) : mesh(i_mesh) // for original
 {
     const SlicingTolerance slicing_tolerance = mesh->settings.get<SlicingTolerance>("slicing_tolerance");
     const coord_t initial_layer_thickness = Application::getInstance().current_slice->scene.current_mesh_group->settings.get<coord_t>("layer_height_0");
@@ -788,10 +788,29 @@ Slicer::Slicer(Mesh* i_mesh, const coord_t thickness, const size_t slice_layer_c
 
     TimeKeeper slice_timer;
 
-    layers = buildLayersWithHeight(slice_layer_count, slicing_tolerance, initial_layer_thickness, thickness, use_variable_layer_heights, adaptive_layers);
+    layers = buildLayersWithHeight(slice_layer_count, slicing_tolerance, initial_layer_thickness, thickness, use_variable_layer_heights, adaptive_layers); // layers is declear in slicer.h
     std::vector<std::pair<int32_t, int32_t>> zbbox = buildZHeightsForFaces(*mesh);  
 
-    buildSegments(*mesh, zbbox, slicing_tolerance, layers);
+    buildSegments(*mesh, zbbox, slicing_tolerance, layers);  // find intersection points.
+    spdlog::info("Slice of mesh took {:3} seconds", slice_timer.restart());
+
+    makePolygons(*i_mesh, slicing_tolerance, layers);
+    spdlog::info("Make polygons took {:3} seconds", slice_timer.restart());
+}
+
+Slicer::Slicer(Mesh* i_mesh, const coord_t thickness, const size_t slice_layer_count, bool use_variable_layer_heights, std::vector<AdaptiveLayer>* adaptive_layers,unsigned int mesh_idx) : mesh(i_mesh) // 等同初始設定 mesh=i_mesh
+{
+    const SlicingTolerance slicing_tolerance = mesh->settings.get<SlicingTolerance>("slicing_tolerance");
+    const coord_t initial_layer_thickness = Application::getInstance().current_slice->scene.current_mesh_group->settings.get<coord_t>("layer_height_0");
+
+    assert(slice_layer_count > 0);
+
+    TimeKeeper slice_timer;
+
+    layers = buildLayersWithHeight(slice_layer_count, slicing_tolerance, initial_layer_thickness, thickness, use_variable_layer_heights, adaptive_layers); // layers is declear in slicer.h
+    std::vector<std::pair<int32_t, int32_t>> zbbox = buildZHeightsForFaces(*mesh);  
+
+    buildSegments(*mesh, zbbox, slicing_tolerance, layers);  // find intersection points.
     spdlog::info("Slice of mesh took {:3} seconds", slice_timer.restart());
 
     makePolygons(*i_mesh, slicing_tolerance, layers);
@@ -802,7 +821,7 @@ void Slicer::buildSegments(const Mesh& mesh, const std::vector<std::pair<int32_t
 {
     cura::parallel_for(layers,[&](auto layer_it)
                        {   
-                           SlicerLayer& layer = *layer_it;
+                           SlicerLayer& layer = *layer_it;  // store each layer segments line
                            const int32_t& z = layer.z;
                            layer.segments.reserve(100);
 

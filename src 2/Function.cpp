@@ -19,7 +19,7 @@ std::vector<std::vector<double>> Function::cutting_plan(std::vector<std::vector<
   for(std::vector<std::vector<double>>::iterator it = points.begin(); it != points.end(); ++it){
       std::vector<double> it_v = {it[0][0] - preP[0],it[0][1] - preP[1],it[0][2] - preP[2]};
       std::vector<double> unit_it_v = Normal(it_v);
-      float tha = angle(unit_it_v,printDIR);
+      float tha = angle(unit_it_v,printDIR);  // calculate the angle between unit_it_v(vector of two skeleton points) and printDIR
       if( tha > 30){
           //std::cout << "more than 30 " << std::endl;
           printDIR = unit_it_v;
@@ -150,6 +150,7 @@ void Function::PolytoTri(std::vector<std::vector<double>>& newpoly, vector<Tri>&
 }
 
 vector< vector<Tri> > Function::TransfertoTriMesh(Polyhedron& tmesh,vector<Polyhedron>& cut_res, std::vector<std::vector<double>>& input){
+  // input: it is the cut plane data
   vector< vector<Tri> > STLdata;
   int count = 0;
   // the first part is store in tmesh

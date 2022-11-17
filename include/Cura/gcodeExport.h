@@ -135,6 +135,8 @@ private:
      * \note After GCodeExport::writeExtrusion(Point, double, double) has been called currentPosition.z coincides with this value
      */
     coord_t current_layer_z;
+    coord_t current_angle_a;
+    coord_t current_angle_c;   
     coord_t is_z_hopped; //!< The amount by which the print head is currently z hopped, or zero if it is not z hopped. (A z hop is used during travel moves to avoid collision with other layer parts)
 
     size_t current_extruder;
@@ -242,6 +244,7 @@ public:
     EGCodeFlavor getFlavor() const;
     
     void setZ(int z);
+    void setAngle(float a, float c);
 
     void setFlowRateExtrusionSettings(double max_extrusion_offset, double extrusion_offset_factor);
 

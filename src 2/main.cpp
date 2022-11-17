@@ -44,14 +44,14 @@ int main(int argc, char* argv[])
     vector<vector<double>> plane;
     vector<Function::Skel_Points> plane_points;
     plane = FN.cutting_plan(SKP,plane_points);   // The data of plane is [a,b,c,d] which are normal vector and parameter d.
-    
+
     // run mesh cut divid. 
     vector<Polyhedron> cut_res;
     try{
         FN.set_poly(tmesh);
         cut_res = FN.plane_cut(tmesh,plane);  // cut model is stored in cut_res vector
         // First cut plan is the build plan of last sub-part which store in first of cut_res
-        std::cout << "cut_res size :"<< cut_res.size() << std::endl;
+        //std::cout << "cut_res size :"<< cut_res.size() << std::endl;
     }
     catch (std::exception &e) { // exception should be caught by reference
         cout << "exception: " << e.what() << "\n";
@@ -95,10 +95,11 @@ int main(int argc, char* argv[])
     file.close();
     */
     
-    // **************** The slicing process (input:vector<vector<Tri>> trianglemesh  output:pregcode_data) ****************
+    // **************** The slicing process (input:vector<vector<Tri>> trianglemesh  output:gcode file) ****************
     double layerheight = 0.2;
     CuraSlicer CSL;  // use CuraEngine to slicing
     cura::Application::getInstance().startThreadPool();
+    //std::cout << "plane_num : " << plane_points.size() << std::endl;
     CSL.subpart_slicing(trianglemesh,plane_points,layerheight);
     
     return 0;

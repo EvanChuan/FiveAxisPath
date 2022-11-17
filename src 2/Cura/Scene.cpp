@@ -106,7 +106,9 @@ void Scene::processMeshGroup(MeshGroup& mesh_group)
         {
             return;
         }
-
+        
+        storage.submesh_startSliceZ = mesh_group.rotated_Zvaule;     
+        storage.A_C_angle = mesh_group.angle;
         Progress::messageProgressStage(Progress::Stage::EXPORT, &fff_processor->time_keeper);
         fff_processor->gcode_writer.writeGCode(storage, fff_processor->time_keeper);
     }
